@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Loader2 } from "lucide-react";
+import { Send, Loader2, Mail, MapPin, Phone, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -32,7 +32,7 @@ export function Contact() {
                     email: data.email,
                     phone: data.phone,
                     company: data.company,
-                    companySize: data.size, // Mapped to match schema
+                    companySize: data.size,
                     location: data.location,
                     message: data.message,
                     currentSetup: data.currentSetup,
@@ -56,172 +56,236 @@ export function Contact() {
         }
     }
 
-    if (isSuccess) {
-        return (
-            <section id="contact" className="py-24 bg-[#08090a] flex items-center justify-center">
-                <div className="text-center space-y-4">
-                    <div className="w-16 h-16 bg-[#d5d5d5]/10 rounded-full flex items-center justify-center mx-auto">
-                        <Send className="h-8 w-8 text-[#d5d5d5]" />
-                    </div>
-                    <h2 className="text-2xl font-bold text-[#d5d5d5]">Message Sent!</h2>
-                    <p className="text-[#d5d5d5]/70">We&apos;ll get back to you within 24 hours.</p>
-                    <Button
-                        variant="outline"
-                        onClick={() => setIsSuccess(false)}
-                        className="mt-4 border-[#d5d5d5]/20 text-[#d5d5d5] hover:bg-[#d5d5d5]/10"
-                    >
-                        Send Another Message
-                    </Button>
-                </div>
-            </section>
-        );
-    }
-
     return (
-        <section id="contact" className="py-24 bg-[#08090a]">
-            <div className="container mx-auto px-4 md:px-6 max-w-xl">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#d5d5d5] mb-4">
-                        Get Started with Folksmeal
-                    </h2>
-                    <p className="text-[#d5d5d5]/70">
-                        Fill out the form below and we&apos;ll be in touch shortly.
-                    </p>
-                </div>
+        <section id="contact" className="py-24 bg-[#08090a] relative overflow-hidden">
+            {/* Background Effects */}
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
 
-                <motion.form
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    onSubmit={handleSubmit}
-                    className="space-y-6 bg-[#d5d5d5]/5 p-8 rounded-2xl border border-[#d5d5d5]/10 backdrop-blur-sm"
-                >
-                    <div className="space-y-2">
-                        <label htmlFor="name" className="text-sm font-medium text-[#d5d5d5]/80">
-                            Full Name
-                        </label>
-                        <Input
-                            id="name"
-                            name="name"
-                            placeholder="John Doe"
-                            required
-                            className="bg-[#08090a]/50 border-[#d5d5d5]/20 focus:ring-[#d5d5d5] text-[#d5d5d5] placeholder:text-[#d5d5d5]/30"
-                        />
+            <div className="container mx-auto px-4 md:px-6 relative z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+                    {/* Left Column: Contact Info */}
+                    <div className="space-y-8 lg:sticky lg:top-24">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            <h2 className="text-3xl md:text-5xl font-bold text-[#d5d5d5] mb-6 tracking-tighter">
+                                Get Started with <br />
+                                <span className="text-emerald-500">Folksmeal</span>
+                            </h2>
+                            <p className="text-[#d5d5d5]/70 text-lg leading-relaxed mb-8">
+                                Transform your office dining experience today. Fill out the form, and our team will get back to you with a customized plan within 24 hours.
+                            </p>
+
+                            <div className="space-y-6">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-lg bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 flex items-center justify-center shrink-0">
+                                        <Mail className="w-5 h-5 text-[#d5d5d5]" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-[#d5d5d5] font-medium mb-1">Email Us</h3>
+                                        <a href="mailto:support@folksmeal.com" className="text-[#d5d5d5]/60 hover:text-emerald-400 transition-colors">
+                                            support@folksmeal.com
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-lg bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 flex items-center justify-center shrink-0">
+                                        <Phone className="w-5 h-5 text-[#d5d5d5]" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-[#d5d5d5] font-medium mb-1">Call Us</h3>
+                                        <a href="tel:+919876543210" className="text-[#d5d5d5]/60 hover:text-emerald-400 transition-colors">
+                                            +91 98765 43210
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-lg bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 flex items-center justify-center shrink-0">
+                                        <MapPin className="w-5 h-5 text-[#d5d5d5]" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-[#d5d5d5] font-medium mb-1">Visit Us</h3>
+                                        <p className="text-[#d5d5d5]/60 max-w-xs">
+                                            Building No 439, 1st Floor, Aghapur, Sector 41, Noida 201303
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                            <label htmlFor="email" className="text-sm font-medium text-[#d5d5d5]/80">
-                                Work Email
-                            </label>
-                            <Input
-                                id="email"
-                                name="email"
-                                type="email"
-                                placeholder="john@company.com"
-                                required
-                                className="bg-[#08090a]/50 border-[#d5d5d5]/20 focus:ring-[#d5d5d5] text-[#d5d5d5] placeholder:text-[#d5d5d5]/30"
-                            />
-                        </div>
-                        <div className="space-y-2">
-                            <label htmlFor="phone" className="text-sm font-medium text-[#d5d5d5]/80">
-                                Phone Number
-                            </label>
-                            <Input
-                                id="phone"
-                                name="phone"
-                                type="tel"
-                                placeholder="+91 98765 43210"
-                                required
-                                className="bg-[#08090a]/50 border-[#d5d5d5]/20 focus:ring-[#d5d5d5] text-[#d5d5d5] placeholder:text-[#d5d5d5]/30"
-                            />
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                            <label htmlFor="company" className="text-sm font-medium text-[#d5d5d5]/80">
-                                Company Name
-                            </label>
-                            <Input
-                                id="company"
-                                name="company"
-                                placeholder="Acme Inc."
-                                required
-                                className="bg-[#08090a]/50 border-[#d5d5d5]/20 focus:ring-[#d5d5d5] text-[#d5d5d5] placeholder:text-[#d5d5d5]/30"
-                            />
-                        </div>
-                        <div className="space-y-2">
-                            <label htmlFor="size" className="text-sm font-medium text-[#d5d5d5]/80">
-                                Team Size
-                            </label>
-                            <Input
-                                id="size"
-                                name="size"
-                                type="number"
-                                placeholder="50"
-                                required
-                                className="bg-[#08090a]/50 border-[#d5d5d5]/20 focus:ring-[#d5d5d5] text-[#d5d5d5] placeholder:text-[#d5d5d5]/30"
-                            />
-                        </div>
-                    </div>
-
-                    <div className="space-y-2">
-                        <label htmlFor="location" className="text-sm font-medium text-[#d5d5d5]/80">
-                            Location
-                        </label>
-                        <Input
-                            id="location"
-                            name="location"
-                            placeholder="e.g. Gurugram, Cyber City"
-                            required
-                            className="bg-[#08090a]/50 border-[#d5d5d5]/20 focus:ring-[#d5d5d5] text-[#d5d5d5] placeholder:text-[#d5d5d5]/30"
-                        />
-                    </div>
-
-                    <div className="space-y-2">
-                        <label htmlFor="currentSetup" className="text-sm font-medium text-[#d5d5d5]/80">
-                            Current Meal Setup <span className="text-[#d5d5d5]/40 font-normal">(Optional)</span>
-                        </label>
-                        <Input
-                            id="currentSetup"
-                            name="currentSetup"
-                            placeholder="e.g. In-house pantry, Zomato, Local Caterer"
-                            className="bg-[#08090a]/50 border-[#d5d5d5]/20 focus:ring-[#d5d5d5] text-[#d5d5d5] placeholder:text-[#d5d5d5]/30"
-                        />
-                    </div>
-
-                    <div className="space-y-2">
-                        <label htmlFor="message" className="text-sm font-medium text-[#d5d5d5]/80">
-                            Message
-                        </label>
-                        <Textarea
-                            id="message"
-                            name="message"
-                            placeholder="Tell us about your requirements..."
-                            className="bg-[#08090a]/50 border-[#d5d5d5]/20 focus:ring-[#d5d5d5] min-h-[100px] text-[#d5d5d5] placeholder:text-[#d5d5d5]/30"
-                        />
-                    </div>
-
-                    {errorMsg && (
-                        <p className="text-red-400 text-sm">{errorMsg}</p>
-                    )}
-
-                    <Button
-                        type="submit"
-                        className="w-full bg-[#d5d5d5] hover:bg-white text-[#08090a]"
-                        disabled={isLoading}
+                    {/* Right Column: Form */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
+                        className="relative"
                     >
-                        {isLoading ? (
-                            <>
-                                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                                Sending...
-                            </>
-                        ) : (
-                            "Request Quote"
-                        )}
-                    </Button>
-                </motion.form>
+                        <div className="absolute inset-0 bg-gradient-to-b from-[#d5d5d5]/5 to-transparent rounded-3xl blur-xl" />
+                        <div className="relative bg-[#0a0b0c]/80 backdrop-blur-xl border border-[#d5d5d5]/10 rounded-3xl p-6 md:p-8 shadow-2xl">
+                            {isSuccess ? (
+                                <div className="text-center py-12 space-y-6">
+                                    <div className="w-20 h-20 bg-emerald-500/10 rounded-full flex items-center justify-center mx-auto">
+                                        <CheckCircle2 className="h-10 w-10 text-emerald-500" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-2xl font-bold text-[#d5d5d5] mb-2">Message Sent!</h3>
+                                        <p className="text-[#d5d5d5]/60">
+                                            Thank you for reaching out. We'll get back to you within 24 hours.
+                                        </p>
+                                    </div>
+                                    <Button
+                                        variant="outline"
+                                        onClick={() => setIsSuccess(false)}
+                                        className="border-[#d5d5d5]/20 text-[#d5d5d5] hover:bg-[#d5d5d5]/10 hover:text-white"
+                                    >
+                                        Send Another Message
+                                    </Button>
+                                </div>
+                            ) : (
+                                <form onSubmit={handleSubmit} className="space-y-5">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                        <div className="space-y-2">
+                                            <label htmlFor="name" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                                Full Name <span className="text-red-500">*</span>
+                                            </label>
+                                            <Input
+                                                id="name"
+                                                name="name"
+                                                placeholder="John Doe"
+                                                required
+                                                className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                            />
+                                        </div>
+                                        <div className="space-y-2">
+                                            <label htmlFor="email" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                                Work Email <span className="text-red-500">*</span>
+                                            </label>
+                                            <Input
+                                                id="email"
+                                                name="email"
+                                                type="email"
+                                                placeholder="john@company.com"
+                                                required
+                                                className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                        <div className="space-y-2">
+                                            <label htmlFor="phone" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                                Phone Number <span className="text-red-500">*</span>
+                                            </label>
+                                            <Input
+                                                id="phone"
+                                                name="phone"
+                                                type="tel"
+                                                placeholder="+91 98765 43210"
+                                                required
+                                                className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                            />
+                                        </div>
+                                        <div className="space-y-2">
+                                            <label htmlFor="company" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                                Company Name <span className="text-red-500">*</span>
+                                            </label>
+                                            <Input
+                                                id="company"
+                                                name="company"
+                                                placeholder="Acme Inc."
+                                                required
+                                                className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                        <div className="space-y-2">
+                                            <label htmlFor="size" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                                Team Size <span className="text-red-500">*</span>
+                                            </label>
+                                            <Input
+                                                id="size"
+                                                name="size"
+                                                type="number"
+                                                placeholder="e.g. 50"
+                                                required
+                                                className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                            />
+                                        </div>
+                                        <div className="space-y-2">
+                                            <label htmlFor="location" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                                Office Location <span className="text-red-500">*</span>
+                                            </label>
+                                            <Input
+                                                id="location"
+                                                name="location"
+                                                placeholder="e.g. Gurugram"
+                                                required
+                                                className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <label htmlFor="currentSetup" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                            Current Meal Setup <span className="text-[#d5d5d5]/40 font-normal">(Optional)</span>
+                                        </label>
+                                        <Input
+                                            id="currentSetup"
+                                            name="currentSetup"
+                                            placeholder="e.g. In-house pantry, Zomato, Local Caterer"
+                                            className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                        />
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <label htmlFor="message" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                            Message <span className="text-[#d5d5d5]/40 font-normal">(Optional)</span>
+                                        </label>
+                                        <Textarea
+                                            id="message"
+                                            name="message"
+                                            placeholder="Tell us about your specific requirements..."
+                                            className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 min-h-[120px] resize-none"
+                                        />
+                                    </div>
+
+                                    {errorMsg && (
+                                        <div className="p-3 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400 text-sm">
+                                            {errorMsg}
+                                        </div>
+                                    )}
+
+                                    <Button
+                                        type="submit"
+                                        className="w-full h-12 bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-base shadow-lg shadow-emerald-900/20 transition-all hover:scale-[1.02]"
+                                        disabled={isLoading}
+                                    >
+                                        {isLoading ? (
+                                            <>
+                                                <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                                                Sending Request...
+                                            </>
+                                        ) : (
+                                            <>
+                                                Request Quote <Send className="ml-2 h-4 w-4" />
+                                            </>
+                                        )}
+                                    </Button>
+                                </form>
+                            )}
+                        </div>
+                    </motion.div>
+                </div>
             </div>
         </section>
     );

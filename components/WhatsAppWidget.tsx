@@ -22,7 +22,7 @@ export function WhatsAppWidget() {
             aria-label="Chat on WhatsApp"
             title="Chat on WhatsApp"
         >
-            <Image src="/whatsapp.png" alt="WhatsApp" width={80} height={80} />
+            <Image src="/whatsapp.png" alt="WhatsApp" width={56} height={56} />
         </motion.a>
     );
 }

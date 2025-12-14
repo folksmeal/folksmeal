@@ -8,11 +8,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-    { name: "Why", href: "#problem" },
-    { name: "Solution", href: "#solution" },
-    { name: "How it Works", href: "#how-it-works" },
-    { name: "Features", href: "#features" },
-    { name: "FAQ", href: "#faq" },
+    { name: "Why", href: "/#problem" },
+    { name: "Solution", href: "/#solution" },
+    { name: "How it Works", href: "/#how-it-works" },
+    { name: "Features", href: "/#features" },
+    { name: "FAQ", href: "/#faq" },
 ];
 
 export function Navbar() {
@@ -58,7 +58,7 @@ export function Navbar() {
                 </nav>
 
                 <div className="hidden md:flex items-center gap-4">
-                    <Link href="#contact">
+                    <Link href="/#contact">
                         <Button variant="default" className="bg-[#d5d5d5] text-[#08090a] hover:bg-white font-medium">
                             Request Quote
                         </Button>
@@ -94,7 +94,7 @@ export function Navbar() {
                                     {link.name}
                                 </Link>
                             ))}
-                            <Link href="#contact">
+                            <Link href="/#contact">
                                 <Button className="w-full bg-[#d5d5d5] text-[#08090a]">Request Quote</Button>
                             </Link>
                         </div>

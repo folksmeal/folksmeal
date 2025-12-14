@@ -109,7 +109,7 @@ const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index:
                     </div>
 
                     {/* Folksmeal - Highlighted */}
-                    <div className="flex items-start gap-3 pt-3 border-t border-[#d5d5d5]/10">
+                    <div className="flex items-center gap-3 pt-3 border-t border-[#d5d5d5]/10">
                         <div className="flex-shrink-0 w-32 text-xs font-bold text-[#d5d5d5] uppercase tracking-wider pt-1">
                             Folksmeal
                         </div>
@@ -153,11 +153,11 @@ export function Comparison() {
                         <span className="text-sm text-[#d5d5d5]/70 font-medium">Competitive Analysis</span>
                     </div>
 
-                    <h2 className="text-4xl md:text-6xl font-bold text-[#d5d5d5] mb-6 tracking-tight">
+                    <h2 className="text-3xl md:text-5xl font-bold text-[#d5d5d5] mb-4 tracking-tighter">
                         The Folksmeal Advantage
                     </h2>
 
-                    <p className="text-lg text-[#d5d5d5]/60 leading-relaxed">
+                    <p className="text-lg text-[#d5d5d5]/70 leading-relaxed">
                         Built from the ground up for corporate wellness. See how we deliver what traditional solutions can't.
                     </p>
                 </motion.div>
@@ -186,19 +186,19 @@ export function Comparison() {
                             <div className="flex flex-wrap justify-center gap-6 text-sm text-[#d5d5d5]/60">
                                 <div className="flex items-center gap-2">
                                     <div className="w-1.5 h-1.5 rounded-full bg-[#d5d5d5]/60" />
-                                    <span>ISO Certified Kitchen</span>
+                                    <span className="leading-relaxed">ISO Certified Kitchen</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <div className="w-1.5 h-1.5 rounded-full bg-[#d5d5d5]/60" />
-                                    <span>Dietitian-Curated Menus</span>
+                                    <span className="leading-relaxed">Dietitian-Curated Menus</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <div className="w-1.5 h-1.5 rounded-full bg-[#d5d5d5]/60" />
-                                    <span>Real-Time Analytics</span>
+                                    <span className="leading-relaxed">Real-Time Analytics</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <div className="w-1.5 h-1.5 rounded-full bg-[#d5d5d5]/60" />
-                                    <span>Zero Admin Hassle</span>
+                                    <span className="leading-relaxed">Zero Admin Hassle</span>
                                 </div>
                             </div>
                         </div>

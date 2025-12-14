@@ -85,7 +85,7 @@ export function Footer() {
                         <h4 className="text-sm font-bold text-[#d5d5d5] uppercase tracking-wider mb-6">Contact</h4>
                         <ul className="space-y-4">
                             {contactInfo.map((info, index) => (
-                                <li key={index} className="flex items-start gap-3 group">
+                                <li key={index} className="flex items-center gap-3 group">
                                     <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 flex items-center justify-center text-[#d5d5d5]/70 group-hover:bg-[#d5d5d5]/10 group-hover:border-[#d5d5d5]/20 transition-all duration-300">
                                         {info.icon}
                                     </div>
@@ -122,10 +122,10 @@ export function Footer() {
                         </p>
 
                         <div className="flex gap-6 text-sm text-[#d5d5d5]/50">
-                            <Link href="#" className="hover:text-[#d5d5d5] transition-colors duration-200">
+                            <Link href="/privacy-policy" className="hover:text-[#d5d5d5] transition-colors duration-200">
                                 Privacy Policy
                             </Link>
-                            <Link href="#" className="hover:text-[#d5d5d5] transition-colors duration-200">
+                            <Link href="/terms" className="hover:text-[#d5d5d5] transition-colors duration-200">
                                 Terms of Service
                             </Link>
                         </div>
