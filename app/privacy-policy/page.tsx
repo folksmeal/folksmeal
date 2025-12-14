@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
         <main className="min-h-screen bg-black text-white selection:bg-emerald-500/30">
             <Navbar />
 
-            <div className="pt-32 pb-24 container mx-auto px-4 md:px-6 max-w-4xl">
+            <div className="pt-32 pb-24 container mx-auto px-6 md:px-12 max-w-4xl">
                 <h1 className="text-4xl md:text-5xl font-bold text-[#d5d5d5] mb-8">Privacy Policy</h1>
 
                 <div className="space-y-8 text-[#d5d5d5]/80 leading-relaxed">

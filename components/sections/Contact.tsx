@@ -57,15 +57,17 @@ export function Contact() {
     }
 
     return (
-        <section id="contact" className="py-24 bg-[#08090a] relative overflow-hidden">
+        <section id="contact" className="py-24 bg-[#08090a] relative">
             {/* Background Effects */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-3xl" />
+                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl" />
+            </div>
 
-            <div className="container mx-auto px-4 md:px-6 relative z-10">
+            <div className="container mx-auto px-6 md:px-12 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
                     {/* Left Column: Contact Info */}
-                    <div className="space-y-8 lg:sticky lg:top-24">
+                    <div className="space-y-8 sticky top-24">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}

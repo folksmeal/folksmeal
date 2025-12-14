@@ -17,7 +17,7 @@ export function Hero() {
             <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px] pointer-events-none" />
             <div className="absolute inset-0 flex items-center justify-center bg-[#08090a] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none" />
 
-            <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
+            <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

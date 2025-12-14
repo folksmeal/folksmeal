@@ -34,7 +34,7 @@ export function Footer() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#d5d5d5]/[0.02] pointer-events-none" />
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#d5d5d5]/[0.02] rounded-full blur-3xl" />
 
-            <div className="container mx-auto px-4 md:px-6 relative z-10">
+            <div className="container mx-auto px-6 md:px-12 relative z-10">
                 {/* Main Footer Content */}
                 <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* Brand Section */}

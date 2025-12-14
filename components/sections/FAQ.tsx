@@ -37,7 +37,7 @@ export function FAQ() {
 
     return (
         <section id="faq" className="py-24 bg-[#08090a]">
-            <div className="container mx-auto px-4 md:px-6 max-w-3xl">
+            <div className="container mx-auto px-6 md:px-12 max-w-3xl">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-[#d5d5d5] mb-4 tracking-tighter">
                         Frequently Asked Questions

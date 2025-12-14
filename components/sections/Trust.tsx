@@ -3,7 +3,7 @@
 export function Trust() {
     return (
         <section className="py-12 bg-[#08090a] border-y border-[#d5d5d5]/10">
-            <div className="container mx-auto px-4 md:px-6">
+            <div className="container mx-auto px-6 md:px-12">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                     {[
                         { label: "Corporate Clients", value: "50+" },

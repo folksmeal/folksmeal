@@ -36,7 +36,7 @@ export function Navbar() {
                     : "bg-transparent"
             )}
         >
-            <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+            <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
                 <Link href="/" className="text-xl font-bold tracking-tighter text-[#d5d5d5] flex items-center gap-2 cursor-pointer">
                     <div className="w-8 h-8 rounded-lg bg-[#d5d5d5] flex items-center justify-center text-[#08090a]">
                         F
@@ -83,7 +83,7 @@ export function Navbar() {
                         exit={{ opacity: 0, height: 0 }}
                         className="md:hidden bg-[#08090a]/90 backdrop-blur-xl border-b border-[#d5d5d5]/10 overflow-hidden"
                     >
-                        <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
+                        <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}

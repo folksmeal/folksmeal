@@ -35,7 +35,7 @@ export function HowItWorks() {
                 <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#d5d5d5]/5 rounded-full blur-3xl" />
             </div>
 
-            <div className="container mx-auto px-4 md:px-6 relative z-10">
+            <div className="container mx-auto px-6 md:px-12 relative z-10">
                 <div className="text-center mb-20">
                     <h2 className="text-3xl md:text-5xl font-bold text-[#d5d5d5] mb-6 tracking-tighter">
                         How It Works

@@ -52,3 +52,18 @@ body {
     }
   }
 }
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--foreground) !important;
+  border-radius: 3px !important;
+}

@@ -139,7 +139,7 @@ export function Comparison() {
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#d5d5d5]/[0.02] rounded-full blur-3xl" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#d5d5d5]/[0.02] rounded-full blur-3xl" />
 
-            <div className="container mx-auto px-4 md:px-6 relative z-10">
+            <div className="container mx-auto px-6 md:px-12 relative z-10">
                 {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
