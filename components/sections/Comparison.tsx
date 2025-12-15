@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { TrendingUp, Shield, Zap, Heart, BarChart3, Rocket } from "lucide-react";
 
+
 interface ComparisonFeature {
     icon: React.ReactNode;
     category: string;
@@ -68,58 +69,56 @@ const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index:
         <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="group relative"
+            className="group relative h-full bg-[#0a0b0c]/50 backdrop-blur-sm p-6 border border-[#d5d5d5]/10 hover:border-[#d5d5d5]/20 transition-all duration-300 flex flex-col cursor-pointer rounded-2xl"
         >
-            <div className="absolute inset-0 bg-gradient-to-br from-[#d5d5d5]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#d5d5d5]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-            <div className="relative bg-[#0a0b0c]/50 backdrop-blur-sm rounded-2xl border border-[#d5d5d5]/10 p-6 hover:border-[#d5d5d5]/20 transition-all duration-300">
-                {/* Header */}
-                <div className="flex items-start gap-4 mb-6">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-[#d5d5d5]/10 to-[#d5d5d5]/5 flex items-center justify-center text-[#d5d5d5] border border-[#d5d5d5]/20">
-                        {feature.icon}
+            {/* Header */}
+            <div className="flex items-start gap-4 mb-6 relative z-10">
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-[#d5d5d5]/10 to-[#d5d5d5]/5 flex items-center justify-center text-[#d5d5d5] border border-[#d5d5d5]/20">
+                    {feature.icon}
+                </div>
+                <div className="flex-1">
+                    <h3 className="text-lg font-bold text-[#d5d5d5] mb-1">{feature.category}</h3>
+                    <p className="text-sm text-[#d5d5d5]/60">{feature.description}</p>
+                </div>
+            </div>
+
+            {/* Comparison Grid */}
+            <div className="space-y-4 relative z-10 flex-grow">
+                {/* Traditional */}
+                <div className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-32 text-xs font-medium text-[#d5d5d5]/40 uppercase tracking-wider pt-1">
+                        Traditional
                     </div>
                     <div className="flex-1">
-                        <h3 className="text-lg font-bold text-[#d5d5d5] mb-1">{feature.category}</h3>
-                        <p className="text-sm text-[#d5d5d5]/60">{feature.description}</p>
+                        <p className="text-sm text-[#d5d5d5]/50 leading-relaxed">{feature.traditional}</p>
                     </div>
                 </div>
 
-                {/* Comparison Grid */}
-                <div className="space-y-4">
-                    {/* Traditional */}
-                    <div className="flex items-start gap-3">
-                        <div className="flex-shrink-0 w-32 text-xs font-medium text-[#d5d5d5]/40 uppercase tracking-wider pt-1">
-                            Traditional
-                        </div>
-                        <div className="flex-1">
-                            <p className="text-sm text-[#d5d5d5]/50 leading-relaxed">{feature.traditional}</p>
-                        </div>
+                {/* Aggregators */}
+                <div className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-32 text-xs font-medium text-[#d5d5d5]/40 uppercase tracking-wider pt-1">
+                        Aggregators
                     </div>
-
-                    {/* Aggregators */}
-                    <div className="flex items-start gap-3">
-                        <div className="flex-shrink-0 w-32 text-xs font-medium text-[#d5d5d5]/40 uppercase tracking-wider pt-1">
-                            Aggregators
-                        </div>
-                        <div className="flex-1">
-                            <p className="text-sm text-[#d5d5d5]/50 leading-relaxed">{feature.aggregators}</p>
-                        </div>
+                    <div className="flex-1">
+                        <p className="text-sm text-[#d5d5d5]/50 leading-relaxed">{feature.aggregators}</p>
                     </div>
+                </div>
 
-                    {/* Folksmeal - Highlighted */}
-                    <div className="flex items-center gap-3 pt-3 border-t border-[#d5d5d5]/10">
-                        <div className="flex-shrink-0 w-32 text-xs font-bold text-[#d5d5d5] uppercase tracking-wider pt-1">
-                            Folksmeal
-                        </div>
-                        <div className="flex-1">
-                            <div className="relative">
-                                <div className="absolute inset-0 bg-gradient-to-r from-[#d5d5d5]/10 to-transparent rounded-lg blur-sm" />
-                                <p className="relative text-sm text-[#d5d5d5] font-medium leading-relaxed bg-[#d5d5d5]/5 px-3 py-2 rounded-lg border border-[#d5d5d5]/20">
-                                    {feature.folksmeal}
-                                </p>
-                            </div>
+                {/* Folksmeal - Highlighted */}
+                <div className="flex items-center gap-3 pt-3 border-t border-[#d5d5d5]/10">
+                    <div className="flex-shrink-0 w-32 text-xs font-bold text-[#d5d5d5] uppercase tracking-wider pt-1">
+                        Folksmeal
+                    </div>
+                    <div className="flex-1">
+                        <div className="relative">
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#d5d5d5]/10 to-transparent rounded-lg blur-sm" />
+                            <p className="relative text-sm text-[#d5d5d5] font-medium leading-relaxed bg-[#d5d5d5]/5 px-3 py-2 rounded-lg border border-[#d5d5d5]/20">
+                                {feature.folksmeal}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -150,7 +149,7 @@ export function Comparison() {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 mb-6">
                         <div className="w-2 h-2 rounded-full bg-[#d5d5d5] animate-pulse" />
-                        <span className="text-sm text-[#d5d5d5]/70 font-medium">Competitive Analysis</span>
+                        <span className="text-sm text-[#d5d5d5]/70 font-medium leading-relaxed">Competitive Analysis</span>
                     </div>
 
                     <h2 className="text-3xl md:text-5xl font-bold text-[#d5d5d5] mb-4 tracking-tighter">

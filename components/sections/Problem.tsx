@@ -55,10 +55,10 @@ export function Problem() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
-                            className="group relative p-8 rounded-2xl bg-[#d5d5d5]/5 border border-red-500/10 hover:border-red-500/30 hover:bg-red-500/5 transition-all duration-300"
+                            className="group relative p-8 rounded-2xl bg-[#d5d5d5]/5 border border-red-500/10 hover:border-red-500/30 hover:bg-red-500/5 transition-colors duration-300 cursor-pointer"
                         >
                             <div className="relative z-10 flex flex-col items-center text-center h-full">
-                                <div className="w-16 h-16 rounded-full bg-red-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-red-500/20">
+                                <div className="w-16 h-16 rounded-full bg-red-500/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-red-500/20">
                                     <problem.icon className="h-8 w-8 text-red-400" />
                                 </div>
 

@@ -6,9 +6,20 @@ import { ArrowRight } from "lucide-react";
 import { Spotlight } from "@/components/ui/spotlight";
 import Link from "next/link";
 
+import Image from "next/image";
+
 export function Hero() {
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#08090a] pt-20">
+            <div className="absolute inset-0 w-full h-full z-0">
+                <Image
+                    src="/bg.svg"
+                    alt="Hero Background"
+                    fill
+                    className="object-cover"
+                    priority
+                />
+            </div>
             <Spotlight
                 className="-top-40 left-0 md:left-60 md:-top-20"
                 fill="white"

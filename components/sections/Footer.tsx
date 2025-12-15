@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { Mail, MapPin, Linkedin, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
 
+import Image from "next/image";
+
 export function Footer() {
     const currentYear = new Date().getFullYear();
 
@@ -31,12 +33,20 @@ export function Footer() {
     return (
         <footer className="bg-[#08090a] border-t border-[#d5d5d5]/10 relative overflow-hidden">
             {/* Background Effects */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#d5d5d5]/[0.02] pointer-events-none" />
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#d5d5d5]/[0.02] rounded-full blur-3xl" />
+            <div className="absolute inset-0 w-full h-full z-0">
+                <Image
+                    src="/bg.svg"
+                    alt="Footer Background"
+                    fill
+                    className="object-cover opacity-50"
+                />
+            </div>
+            <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px] pointer-events-none" />
+            <div className="absolute inset-0 flex items-center justify-center bg-[#08090a] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none" />
 
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 {/* Main Footer Content */}
-                <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div className="py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* Brand Section */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -45,7 +55,15 @@ export function Footer() {
                         transition={{ duration: 0.5 }}
                         className="lg:col-span-2"
                     >
-                        <h3 className="text-2xl font-bold text-[#d5d5d5] mb-4">Folksmeal</h3>
+                        <div className="mb-6">
+                            <Image
+                                src="/logo-large.png"
+                                alt="Folksmeal Logo"
+                                width={150}
+                                height={40}
+                                className="h-10 w-auto object-contain"
+                            />
+                        </div>
                         <p className="text-[#d5d5d5]/70 leading-relaxed mb-6 max-w-md">
                             Transforming corporate wellness through healthy, dietitian-curated meals.
                             We help organizations improve employee productivity and well-being with zero admin hassle.
@@ -92,12 +110,12 @@ export function Footer() {
                                     <div className="flex-1">
                                         <p className="text-xs text-[#d5d5d5]/40 uppercase tracking-wider mb-1">{info.label}</p>
                                         {info.href ? (
-                                            <a
+                                            <Link
                                                 href={info.href}
                                                 className="text-sm text-[#d5d5d5]/70 hover:text-[#d5d5d5] transition-colors duration-200"
                                             >
                                                 {info.value}
-                                            </a>
+                                            </Link>
                                         ) : (
                                             <p className="text-sm text-[#d5d5d5]/70">{info.value}</p>
                                         )}
@@ -114,7 +132,7 @@ export function Footer() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="border-t border-[#d5d5d5]/10 py-8"
+                    className="border-t border-[#d5d5d5]/10 py-4"
                 >
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-sm text-[#d5d5d5]/50">

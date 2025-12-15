@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ChefHat, Building2, Smartphone, PieChart } from "lucide-react";
 
+
 const steps = [
     {
         icon: ChefHat,
@@ -53,7 +54,7 @@ export function HowItWorks() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
-                            className="group relative p-8 rounded-3xl bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 hover:bg-[#d5d5d5]/10 hover:border-[#d5d5d5]/30 transition-all duration-300 cursor-pointer overflow-hidden"
+                            className="group relative cursor-pointer h-full p-8 bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 hover:bg-[#d5d5d5]/10 transition-colors duration-300 overflow-hidden flex flex-col rounded-[1.5rem]"
                         >
                             {/* Number Watermark */}
                             <div className="absolute right-0 -top-4 text-9xl font-bold text-[#d5d5d5]/5 group-hover:text-[#d5d5d5]/10 transition-colors select-none pr-2">

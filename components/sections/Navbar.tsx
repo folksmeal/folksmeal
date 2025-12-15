@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const navLinks = [
     { name: "Why", href: "/#problem" },
@@ -37,11 +38,15 @@ export function Navbar() {
             )}
         >
             <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-                <Link href="/" className="text-xl font-bold tracking-tighter text-[#d5d5d5] flex items-center gap-2 cursor-pointer">
-                    <div className="w-8 h-8 rounded-lg bg-[#d5d5d5] flex items-center justify-center text-[#08090a]">
-                        F
-                    </div>
-                    Folksmeal
+                <Link href="/" className="flex items-center gap-2 cursor-pointer">
+                    <Image
+                        src="/logo-large.png"
+                        alt="Folksmeal Logo"
+                        width={150}
+                        height={40}
+                        className="h-10 w-auto object-contain"
+                        priority
+                    />
                 </Link>
 
                 {/* Desktop Nav */}
@@ -88,7 +93,7 @@ export function Navbar() {
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="text-[#d5d5d5]/70 hover:text-[#d5d5d5] py-2"
+                                    className="text-sm font-medium text-[#d5d5d5]/70 hover:text-[#d5d5d5] py-2"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {link.name}
