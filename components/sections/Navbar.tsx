@@ -7,14 +7,7 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-
-const navLinks = [
-    { name: "Why", href: "/#problem" },
-    { name: "Solution", href: "/#solution" },
-    { name: "How it Works", href: "/#how-it-works" },
-    { name: "Features", href: "/#features" },
-    { name: "FAQ", href: "/#faq" },
-];
+import { navLinks } from "@/constants/navbar";
 
 export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +26,7 @@ export function Navbar() {
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
                 isScrolled
-                    ? "bg-[#08090a]/50 backdrop-blur-sm"
+                    ? "bg-background/50 backdrop-blur-sm"
                     : "bg-transparent"
             )}
         >
@@ -64,7 +57,7 @@ export function Navbar() {
 
                 <div className="hidden md:flex items-center gap-4">
                     <Link href="/#contact">
-                        <Button variant="default" className="bg-[#d5d5d5] text-[#08090a] hover:bg-white font-medium">
+                        <Button variant="default" className="bg-[#d5d5d5] text-background hover:bg-white font-medium">
                             Request Quote
                         </Button>
                     </Link>
@@ -86,7 +79,7 @@ export function Navbar() {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-[#08090a]/90 backdrop-blur-xl border-b border-[#d5d5d5]/10 overflow-hidden"
+                        className="md:hidden bg-background/90 backdrop-blur-xl border-b border-[#d5d5d5]/10 overflow-hidden"
                     >
                         <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
                             {navLinks.map((link) => (
@@ -100,7 +93,7 @@ export function Navbar() {
                                 </Link>
                             ))}
                             <Link href="/#contact">
-                                <Button className="w-full bg-[#d5d5d5] text-[#08090a]">Request Quote</Button>
+                                <Button className="w-full bg-[#d5d5d5] text-background">Request Quote</Button>
                             </Link>
                         </div>
                     </motion.div>

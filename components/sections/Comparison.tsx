@@ -1,68 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TrendingUp, Shield, Zap, Heart, BarChart3, Rocket } from "lucide-react";
-
-
-interface ComparisonFeature {
-    icon: React.ReactNode;
-    category: string;
-    description: string;
-    traditional: string;
-    aggregators: string;
-    folksmeal: string;
-}
-
-const features: ComparisonFeature[] = [
-    {
-        icon: <Shield className="w-5 h-5" />,
-        category: "Quality Control",
-        description: "End-to-end food safety and consistency",
-        traditional: "Inconsistent quality across vendors",
-        aggregators: "No control over restaurant standards",
-        folksmeal: "ISO-certified central kitchen with real-time monitoring"
-    },
-    {
-        icon: <Heart className="w-5 h-5" />,
-        category: "Nutrition Focus",
-        description: "Dietitian-approved balanced meals",
-        traditional: "Generic catering menus",
-        aggregators: "Restaurant food, no health focus",
-        folksmeal: "Dietitian-curated menus with macro tracking"
-    },
-    {
-        icon: <Zap className="w-5 h-5" />,
-        category: "Technology",
-        description: "Seamless integration and automation",
-        traditional: "Manual coordination required",
-        aggregators: "Consumer app, not B2B optimized",
-        folksmeal: "HRMS integration, analytics dashboard, automated billing"
-    },
-    {
-        icon: <BarChart3 className="w-5 h-5" />,
-        category: "Data & Insights",
-        description: "Employee wellness and engagement metrics",
-        traditional: "No data or reporting",
-        aggregators: "Basic order history only",
-        folksmeal: "Comprehensive analytics on preferences, nutrition, ROI"
-    },
-    {
-        icon: <TrendingUp className="w-5 h-5" />,
-        category: "Business Model",
-        description: "Predictable recurring revenue",
-        traditional: "Event-based, irregular income",
-        aggregators: "Consumer transactions, no B2B focus",
-        folksmeal: "Subscription-based B2B with long-term contracts"
-    },
-    {
-        icon: <Rocket className="w-5 h-5" />,
-        category: "Scalability",
-        description: "Growth without compromising quality",
-        traditional: "Limited by vendor capacity",
-        aggregators: "High volume but fragmented quality",
-        folksmeal: "Centralized operations with consistent brand experience"
-    }
-];
+import { MovingBorderContainer } from "../ui/moving-border";
+import { comparisonFeatures, type ComparisonFeature } from "@/constants/comparison";
 
 const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index: number }) => {
     return (
@@ -71,7 +11,7 @@ const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index:
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="group relative h-full bg-[#0a0b0c]/50 backdrop-blur-sm p-6 border border-[#d5d5d5]/10 hover:border-[#d5d5d5]/20 transition-all duration-300 flex flex-col cursor-pointer rounded-2xl"
+            className="group relative h-full bg-[#0a0b0c]/50 backdrop-blur-sm p-6 border border-[#d5d5d5]/10 hover:border-[#d5d5d5]/20 transition-colors duration-300 flex flex-col cursor-pointer rounded-2xl"
         >
             <div className="absolute inset-0 bg-gradient-to-br from-[#d5d5d5]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
@@ -129,7 +69,7 @@ const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index:
 
 export function Comparison() {
     return (
-        <section className="py-24 bg-[#08090a] relative overflow-hidden">
+        <section className="py-24 bg-background relative overflow-hidden">
             {/* Sophisticated background effects */}
             <div className="absolute inset-0">
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,#d5d5d5_1px,transparent_1px),linear-gradient(to_bottom,#d5d5d5_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-[0.015]" />
@@ -163,7 +103,7 @@ export function Comparison() {
 
                 {/* Comparison Cards Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
-                    {features.map((feature, index) => (
+                    {comparisonFeatures.map((feature, index) => (
                         <ComparisonCard key={index} feature={feature} index={index} />
                     ))}
                 </div>
@@ -178,7 +118,12 @@ export function Comparison() {
                 >
                     <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-r from-[#d5d5d5]/5 via-[#d5d5d5]/10 to-[#d5d5d5]/5 rounded-2xl blur-xl" />
-                        <div className="relative bg-gradient-to-br from-[#0a0b0c] to-[#08090a] rounded-2xl border border-[#d5d5d5]/20 p-8 text-center">
+                        <MovingBorderContainer
+                            borderRadius="1rem"
+                            duration={30000}
+                            className="bg-gradient-to-br from-[#0a0b0c] to-background p-8 text-center border border-[#d5d5d5]/10"
+                            borderClassName="bg-[radial-gradient(#d5d5d5_40%,transparent_60%)]"
+                        >
                             <p className="text-[#d5d5d5]/80 text-lg leading-relaxed mb-4">
                                 <span className="font-semibold text-[#d5d5d5]">Folksmeal isn't just another food service.</span> We're a complete corporate wellness platform that combines nutrition science, technology, and operational excellence to transform how companies feed their teams.
                             </p>
@@ -200,7 +145,7 @@ export function Comparison() {
                                     <span className="leading-relaxed">Zero Admin Hassle</span>
                                 </div>
                             </div>
-                        </div>
+                        </MovingBorderContainer>
                     </div>
                 </motion.div>
             </div>

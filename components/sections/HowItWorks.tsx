@@ -1,35 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChefHat, Building2, Smartphone, PieChart } from "lucide-react";
-
-
-const steps = [
-    {
-        icon: ChefHat,
-        title: "In-House Kitchens",
-        description: "We cook all meals in Folksmeal-operated kitchens, ensuring hygiene, freshness, and consistency.",
-    },
-    {
-        icon: Building2,
-        title: "Corporate Partnerships",
-        description: "Companies subscribe to Folksmeal plans. We handle delivery, quality, and reporting.",
-    },
-    {
-        icon: Smartphone,
-        title: "Employee App",
-        description: "Employees pre-book or order lunch via our app, with subsidies auto-applied by HR.",
-    },
-    {
-        icon: PieChart,
-        title: "Analytics Dashboard",
-        description: "Companies track meal usage, cost, and feedback in real-time. No manual billing.",
-    },
-];
+import { howItWorksSteps } from "@/constants/howItWorks";
 
 export function HowItWorks() {
     return (
-        <section id="how-it-works" className="py-24 bg-[#08090a] relative overflow-hidden">
+        <section id="how-it-works" className="py-24 bg-background relative overflow-hidden">
             {/* Background Gradients */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
                 <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#d5d5d5]/5 rounded-full blur-3xl" />
@@ -47,7 +23,7 @@ export function HowItWorks() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {steps.map((step, index) => (
+                    {howItWorksSteps.map((step, index) => (
                         <motion.div
                             key={step.title}
                             initial={{ opacity: 0, y: 20 }}

@@ -1,37 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Linkedin, Instagram, Twitter } from "lucide-react";
+import { Linkedin, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
-
+import { footerContactInfo, footerQuickLinks } from "@/constants/footer";
 import Image from "next/image";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
 
-    const contactInfo = [
-        {
-            icon: <MapPin className="w-4 h-4" />,
-            label: "Address",
-            value: "Building No 439, 1st Floor, Aghapur, Sector 41, Near HP Petrol Pump, Noida 201303"
-        },
-        {
-            icon: <Mail className="w-4 h-4" />,
-            label: "Email",
-            value: "support@folksmeal.com",
-            href: "mailto:support@folksmeal.com"
-        }
-    ];
-
-    const quickLinks = [
-        { name: "About Us", href: "#about" },
-        { name: "How It Works", href: "#how-it-works" },
-        { name: "Features", href: "#features" },
-        { name: "Contact", href: "#contact" }
-    ];
-
     return (
-        <footer className="bg-[#08090a] border-t border-[#d5d5d5]/10 relative overflow-hidden">
+        <footer className="bg-background border-t border-[#d5d5d5]/10 relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute inset-0 w-full h-full z-0">
                 <Image
@@ -42,7 +21,7 @@ export function Footer() {
                 />
             </div>
             <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px] pointer-events-none" />
-            <div className="absolute inset-0 flex items-center justify-center bg-[#08090a] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none" />
+            <div className="absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none" />
 
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 {/* Main Footer Content */}
@@ -79,7 +58,7 @@ export function Footer() {
                     >
                         <h4 className="text-sm font-bold text-[#d5d5d5] uppercase tracking-wider mb-6">Quick Links</h4>
                         <ul className="space-y-3">
-                            {quickLinks.map((link, index) => (
+                            {footerQuickLinks.map((link, index) => (
                                 <li key={index}>
                                     <Link
                                         href={link.href}
@@ -102,7 +81,7 @@ export function Footer() {
                     >
                         <h4 className="text-sm font-bold text-[#d5d5d5] uppercase tracking-wider mb-6">Contact</h4>
                         <ul className="space-y-4">
-                            {contactInfo.map((info, index) => (
+                            {footerContactInfo.map((info, index) => (
                                 <li key={index} className="flex items-center gap-3 group">
                                     <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 flex items-center justify-center text-[#d5d5d5]/70 group-hover:bg-[#d5d5d5]/10 group-hover:border-[#d5d5d5]/20 transition-all duration-300">
                                         {info.icon}

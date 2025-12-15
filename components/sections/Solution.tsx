@@ -4,10 +4,11 @@ import { Check, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { solutionFeatures, solutionMenu } from "@/constants/solution";
 
 export function Solution() {
     return (
-        <section id="solution" className="py-24 bg-[#08090a] relative overflow-hidden">
+        <section id="solution" className="py-24 bg-background relative overflow-hidden">
             {/* Background Gradients - Cool tones for 'Solution' */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
                 <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl" />
@@ -32,11 +33,7 @@ export function Solution() {
                         </p>
 
                         <div className="space-y-4">
-                            {[
-                                "In-House Kitchens: We cook everything ourselves. No vendors.",
-                                "Tech-Powered: HR dashboard, employee app, auto-subsidies.",
-                                "End-to-End Management: We handle planning, cooking, and delivery."
-                            ].map((item, index) => (
+                            {solutionFeatures.map((item, index) => (
                                 <motion.div
                                     key={item}
                                     initial={{ opacity: 0, x: -10 }}
@@ -92,14 +89,14 @@ export function Solution() {
 
                             {/* Stats Grid */}
                             <div className="grid grid-cols-2 gap-3">
-                                <div className="p-3 rounded-xl bg-[#08090a]/40 border border-[#d5d5d5]/5">
+                                <div className="p-3 rounded-xl bg-background/40 border border-[#d5d5d5]/5">
                                     <div className="text-xs text-[#d5d5d5]/50 mb-1">Meals Prepared</div>
                                     <div className="text-xl font-bold text-[#d5d5d5]">1,240</div>
                                     <div className="w-full h-1 bg-[#d5d5d5]/10 rounded-full mt-2">
                                         <div className="w-[80%] h-full bg-emerald-500 rounded-full" />
                                     </div>
                                 </div>
-                                <div className="p-3 rounded-xl bg-[#08090a]/40 border border-[#d5d5d5]/5">
+                                <div className="p-3 rounded-xl bg-background/40 border border-[#d5d5d5]/5">
                                     <div className="text-xs text-[#d5d5d5]/50 mb-1">On-Time Delivery</div>
                                     <div className="text-xl font-bold text-[#d5d5d5]">99.8%</div>
                                     <div className="w-full h-1 bg-[#d5d5d5]/10 rounded-full mt-2">
@@ -111,7 +108,7 @@ export function Solution() {
                             {/* Live Delivery Map & Menu Grid */}
                             <div className="grid grid-cols-2 gap-3 flex-1">
                                 {/* Live Map Mockup */}
-                                <div className="bg-[#08090a]/40 rounded-xl p-3 border border-[#d5d5d5]/5 flex flex-col">
+                                <div className="bg-background/40 rounded-xl p-3 border border-[#d5d5d5]/5 flex flex-col">
                                     <div className="text-xs font-medium text-[#d5d5d5]/70 mb-2 flex items-center justify-between">
                                         <span>Live Fleet</span>
                                         <span className="text-[10px] text-emerald-500 bg-emerald-500/10 px-1.5 py-0.5 rounded">Active</span>
@@ -136,14 +133,10 @@ export function Solution() {
                                 </div>
 
                                 {/* Menu Calendar Mockup */}
-                                <div className="bg-[#08090a]/40 rounded-xl p-3 border border-[#d5d5d5]/5 flex flex-col">
+                                <div className="bg-background/40 rounded-xl p-3 border border-[#d5d5d5]/5 flex flex-col">
                                     <div className="text-xs font-medium text-[#d5d5d5]/70 mb-2">Next Week&apos;s Menu</div>
                                     <div className="space-y-2">
-                                        {[
-                                            { day: "Mon", meal: "Grilled Chicken", tag: "High Protein" },
-                                            { day: "Tue", meal: "Paneer Tikka", tag: "Veg Special" },
-                                            { day: "Wed", meal: "Asian Bowl", tag: "Chef's Choice" },
-                                        ].map((item) => (
+                                        {solutionMenu.map((item) => (
                                             <div key={item.day} className="bg-[#d5d5d5]/5 rounded-lg p-2">
                                                 <div className="flex justify-between items-center mb-1">
                                                     <span className="text-[10px] text-[#d5d5d5]/40 font-bold">{item.day}</span>

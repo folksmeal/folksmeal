@@ -44,20 +44,24 @@ export const BentoGridItem = ({
             borderRadius="0.75rem"
             containerClassName={className}
             className={cn(
-                "h-full w-full p-4 flex flex-col justify-between space-y-4 bg-white dark:bg-black border border-transparent",
+                "h-full w-full p-4 flex flex-col justify-between space-y-4 bg-background/20 backdrop-blur-3xl border border-transparent hover:border-foreground/20 hover:bg-foreground/[0.015] transition-colors duration-300",
                 contentClassName
             )}
             borderClassName={borderClassName}
             duration={duration}
         >
             {header}
-            <div className="group-hover/bento:translate-x-2 transition duration-200">
-                {icon}
-                <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
-                    {title}
+            <div className="group-hover/bento:translate-x-2 transition duration-200 flex items-center gap-2">
+                <div className="flex-1">
+                    <div className="font-sans font-bold text-neutral-200 mb-1">
+                        {title}
+                    </div>
+                    <div className="font-sans font-normal text-xs text-neutral-300">
+                        {description}
+                    </div>
                 </div>
-                <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
-                    {description}
+                <div className="flex-shrink-0">
+                    {icon}
                 </div>
             </div>
         </MovingBorderContainer>

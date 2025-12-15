@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF, CONTACT_ADDRESS_SHORT } from "@/constants/contact";
 
 export function Contact() {
     const [isLoading, setIsLoading] = useState(false);
@@ -57,7 +58,7 @@ export function Contact() {
     }
 
     return (
-        <section id="contact" className="py-24 bg-[#08090a] relative">
+        <section id="contact" className="py-24 bg-background relative">
             {/* Background Effects */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-3xl" />
@@ -75,46 +76,45 @@ export function Contact() {
                             transition={{ duration: 0.5 }}
                         >
                             <h2 className="text-3xl md:text-5xl font-bold text-[#d5d5d5] mb-6 tracking-tighter">
-                                Get Started with <br />
-                                <span className="text-emerald-500">Folksmeal</span>
+                                Get Started with <span className="text-emerald-500">Folksmeal</span>
                             </h2>
                             <p className="text-[#d5d5d5]/70 text-lg leading-relaxed mb-8">
                                 Transform your office dining experience today. Fill out the form, and our team will get back to you with a customized plan within 24 hours.
                             </p>
 
                             <div className="space-y-6">
-                                <div className="flex items-start gap-4">
+                                <div className="flex items-center gap-4 border border-[#d5d5d5]/10 p-4 rounded-lg bg-[#d5d5d5]/5">
                                     <div className="w-10 h-10 rounded-lg bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 flex items-center justify-center shrink-0">
                                         <Mail className="w-5 h-5 text-[#d5d5d5]" />
                                     </div>
                                     <div>
                                         <h3 className="text-[#d5d5d5] font-medium mb-1">Email Us</h3>
-                                        <a href="mailto:support@folksmeal.com" className="text-[#d5d5d5]/60 hover:text-emerald-400 transition-colors">
-                                            support@folksmeal.com
+                                        <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#d5d5d5]/60 hover:text-emerald-400 transition-colors">
+                                            {CONTACT_EMAIL}
                                         </a>
                                     </div>
                                 </div>
 
-                                <div className="flex items-start gap-4">
+                                <div className="flex items-center gap-4 border border-[#d5d5d5]/10 p-4 rounded-lg bg-[#d5d5d5]/5">
                                     <div className="w-10 h-10 rounded-lg bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 flex items-center justify-center shrink-0">
                                         <Phone className="w-5 h-5 text-[#d5d5d5]" />
                                     </div>
                                     <div>
                                         <h3 className="text-[#d5d5d5] font-medium mb-1">Call Us</h3>
-                                        <a href="tel:+919876543210" className="text-[#d5d5d5]/60 hover:text-emerald-400 transition-colors">
-                                            +91 98765 43210
+                                        <a href={`tel:${CONTACT_PHONE_HREF}`} className="text-[#d5d5d5]/60 hover:text-emerald-400 transition-colors">
+                                            {CONTACT_PHONE}
                                         </a>
                                     </div>
                                 </div>
 
-                                <div className="flex items-start gap-4">
+                                <div className="flex items-center gap-4 border border-[#d5d5d5]/10 p-4 rounded-lg bg-[#d5d5d5]/5">
                                     <div className="w-10 h-10 rounded-lg bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 flex items-center justify-center shrink-0">
                                         <MapPin className="w-5 h-5 text-[#d5d5d5]" />
                                     </div>
                                     <div>
                                         <h3 className="text-[#d5d5d5] font-medium mb-1">Visit Us</h3>
-                                        <p className="text-[#d5d5d5]/60 max-w-xs">
-                                            Building No 439, 1st Floor, Aghapur, Sector 41, Noida 201303
+                                        <p className="text-[#d5d5d5]/60">
+                                            {CONTACT_ADDRESS_SHORT}
                                         </p>
                                     </div>
                                 </div>

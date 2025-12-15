@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#08090a] pt-20">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-20">
             <div className="absolute inset-0 w-full h-full z-0">
                 <Image
                     src="/bg.svg"
@@ -26,7 +26,7 @@ export function Hero() {
             />
 
             <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px] pointer-events-none" />
-            <div className="absolute inset-0 flex items-center justify-center bg-[#08090a] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none" />
+            <div className="absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none" />
 
             <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
                 <motion.div
@@ -48,7 +48,7 @@ export function Hero() {
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link href="#contact">
-                            <Button size="lg" className="h-12 px-8 text-lg bg-[#d5d5d5] text-[#08090a] hover:bg-white font-medium tracking-tight cursor-pointer">
+                            <Button size="lg" className="h-12 px-8 text-lg bg-[#d5d5d5] text-background hover:bg-white font-medium tracking-tight cursor-pointer">
                                 Request a Quote <ArrowRight className="ml-2 h-5 w-5" />
                             </Button>
                         </Link>
