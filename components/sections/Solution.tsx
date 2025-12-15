@@ -40,12 +40,12 @@ export function Solution() {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
-                                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-[#d5d5d5]/5 transition-colors hover:scale-105 cursor-pointer transition-transform ease-in-out duration-500"
+                                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-[#d5d5d5]/5 transition-colors transition-transform hover:scale-105 cursor-pointer ease-in-out duration-500"
                                 >
                                     <div className="w-6 h-6 rounded-full bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/20">
                                         <Check className="h-3.5 w-3.5 text-emerald-500" />
                                     </div>
-                                    <span className="text-[#d5d5d5]/90 font-medium h-6">{item}</span>
+                                    <span className="text-foreground/90 font-medium">{item}</span>
                                 </motion.div>
                             ))}
                         </div>

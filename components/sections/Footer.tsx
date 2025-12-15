@@ -96,7 +96,7 @@ export function Footer() {
                                                 {info.value}
                                             </Link>
                                         ) : (
-                                            <p className="text-sm text-[#d5d5d5]/70">{info.value}</p>
+                                            <p className="text-sm text-[#d5d5d5]/70 leading-relaxed">{info.value}</p>
                                         )}
                                     </div>
                                 </li>

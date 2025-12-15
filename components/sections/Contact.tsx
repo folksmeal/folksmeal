@@ -68,7 +68,7 @@ export function Contact() {
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
                     {/* Left Column: Contact Info */}
-                    <div className="space-y-8 sticky top-24">
+                    <div className="space-y-8 lg:sticky lg:top-24">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -154,7 +154,7 @@ export function Contact() {
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-5">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                        <div className="space-y-2">
+                                        <div className="flex flex-col gap-2">
                                             <label htmlFor="name" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
                                                 Full Name <span className="text-red-500">*</span>
                                             </label>
@@ -166,7 +166,7 @@ export function Contact() {
                                                 className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
                                             />
                                         </div>
-                                        <div className="space-y-2">
+                                        <div className="flex flex-col gap-2">
                                             <label htmlFor="email" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
                                                 Work Email <span className="text-red-500">*</span>
                                             </label>
@@ -182,7 +182,7 @@ export function Contact() {
                                     </div>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                        <div className="space-y-2">
+                                        <div className="flex flex-col gap-2">
                                             <label htmlFor="phone" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
                                                 Phone Number <span className="text-red-500">*</span>
                                             </label>
@@ -195,7 +195,7 @@ export function Contact() {
                                                 className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
                                             />
                                         </div>
-                                        <div className="space-y-2">
+                                        <div className="flex flex-col gap-2">
                                             <label htmlFor="company" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
                                                 Company Name <span className="text-red-500">*</span>
                                             </label>
@@ -210,7 +210,7 @@ export function Contact() {
                                     </div>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                        <div className="space-y-2">
+                                        <div className="flex flex-col gap-2">
                                             <label htmlFor="size" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
                                                 Team Size <span className="text-red-500">*</span>
                                             </label>
@@ -223,7 +223,7 @@ export function Contact() {
                                                 className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
                                             />
                                         </div>
-                                        <div className="space-y-2">
+                                        <div className="flex flex-col gap-2">
                                             <label htmlFor="location" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
                                                 Office Location <span className="text-red-500">*</span>
                                             </label>
@@ -237,7 +237,7 @@ export function Contact() {
                                         </div>
                                     </div>
 
-                                    <div className="space-y-2">
+                                    <div className="flex flex-col gap-2">
                                         <label htmlFor="currentSetup" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
                                             Current Meal Setup <span className="text-[#d5d5d5]/40 font-normal">(Optional)</span>
                                         </label>
@@ -249,7 +249,7 @@ export function Contact() {
                                         />
                                     </div>
 
-                                    <div className="space-y-2">
+                                    <div className="flex flex-col gap-2">
                                         <label htmlFor="message" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
                                             Message <span className="text-[#d5d5d5]/40 font-normal">(Optional)</span>
                                         </label>
