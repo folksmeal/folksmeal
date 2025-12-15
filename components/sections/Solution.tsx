@@ -40,23 +40,29 @@ export function Solution() {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
-                                    className="flex items-start gap-3 p-3 rounded-xl hover:bg-[#d5d5d5]/5 transition-colors"
+                                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-[#d5d5d5]/5 transition-colors hover:scale-105 cursor-pointer transition-transform ease-in-out duration-500"
                                 >
-                                    <div className="mt-1 w-6 h-6 rounded-full bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/20">
+                                    <div className="w-6 h-6 rounded-full bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/20">
                                         <Check className="h-3.5 w-3.5 text-emerald-500" />
                                     </div>
-                                    <span className="text-[#d5d5d5]/90 font-medium">{item}</span>
+                                    <span className="text-[#d5d5d5]/90 font-medium h-6">{item}</span>
                                 </motion.div>
                             ))}
                         </div>
 
-                        <div className="pt-4">
-                            <Link href="#contact">
-                                <Button className="bg-emerald-600 hover:bg-emerald-500 text-white h-12 px-8 text-base font-medium tracking-tight shadow-lg shadow-emerald-900/20 transition-all hover:scale-105">
-                                    Request a Quote <ArrowRight className="ml-2 h-4 w-4" />
+                        <motion.div
+                            initial={{ opacity: 0, x: -40 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                            className="pt-4"
+                        >
+                            <Link href="#contact" className="rounded-xl">
+                                <Button className="group py-5 border-b-4 border-r-4 border-transparent hover:border-b-4 hover:border-r-4 hover:border-emerald-500/80 transition-all duration-300 ease-in-out">
+                                    Request a Quote <ArrowRight className="ml-2 h-4 w-4 group-hover:ml-4 transition-all duration-300 ease-in-out" />
                                 </Button>
                             </Link>
-                        </div>
+                        </motion.div>
                     </motion.div>
 
                     <motion.div

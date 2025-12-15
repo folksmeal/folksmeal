@@ -48,7 +48,7 @@ export function Hero() {
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link href="#contact">
-                            <Button size="lg" className="h-12 px-8 text-lg bg-[#d5d5d5] text-background hover:bg-white font-medium tracking-tight cursor-pointer">
+                            <Button size="lg">
                                 Request a Quote <ArrowRight className="ml-2 h-5 w-5" />
                             </Button>
                         </Link>

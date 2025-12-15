@@ -347,37 +347,6 @@ export const features = [
         className: "md:col-span-2",
     },
     {
-        title: "Eco-Friendly",
-        description: "Biodegradable packaging and sustainable practices.",
-        header: (
-            <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-teal-500/5 to-green-500/5 border border-teal-500/10 flex items-center justify-center relative overflow-hidden">
-                {/* Recycling/Cycle Abstract */}
-                <div className="relative w-16 h-16">
-                    <motion.div
-                        animate={{ rotate: 360 }}
-                        transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-                        className="absolute inset-0 rounded-full border-2 border-teal-500/20 border-t-teal-500/60"
-                    />
-                    <motion.div
-                        animate={{ rotate: -360 }}
-                        transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
-                        className="absolute inset-2 rounded-full border-2 border-teal-500/10 border-b-teal-500/40"
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                        <motion.div
-                            animate={{ scale: [1, 1.1, 1] }}
-                            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                        >
-                            <Leaf className="h-5 w-5 text-teal-500/80" />
-                        </motion.div>
-                    </div>
-                </div>
-            </div>
-        ),
-        icon: <Leaf className="h-4 w-4 text-teal-500" />,
-        className: "md:col-span-1",
-    },
-    {
         title: "Real-Time Feedback",
         description: "3-minute feedback loop for continuous improvement.",
         header: (
@@ -410,5 +379,36 @@ export const features = [
         ),
         icon: <ShieldCheck className="h-4 w-4 text-yellow-500" />,
         className: "md:col-span-2",
+    },
+    {
+        title: "Eco-Friendly",
+        description: "Biodegradable packaging and sustainable practices.",
+        header: (
+            <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-teal-500/5 to-green-500/5 border border-teal-500/10 flex items-center justify-center relative overflow-hidden">
+                {/* Recycling/Cycle Abstract */}
+                <div className="relative w-16 h-16">
+                    <motion.div
+                        animate={{ rotate: 360 }}
+                        transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                        className="absolute inset-0 rounded-full border-2 border-teal-500/20 border-t-teal-500/60"
+                    />
+                    <motion.div
+                        animate={{ rotate: -360 }}
+                        transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
+                        className="absolute inset-2 rounded-full border-2 border-teal-500/10 border-b-teal-500/40"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <motion.div
+                            animate={{ scale: [1, 1.1, 1] }}
+                            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                        >
+                            <Leaf className="h-5 w-5 text-teal-500/80" />
+                        </motion.div>
+                    </div>
+                </div>
+            </div>
+        ),
+        icon: <Leaf className="h-4 w-4 text-teal-500" />,
+        className: "md:col-span-1",
     },
 ];

@@ -121,11 +121,11 @@ export function Comparison() {
                         <MovingBorderContainer
                             borderRadius="1rem"
                             duration={30000}
-                            className="bg-gradient-to-br from-[#0a0b0c] to-background p-8 text-center border border-[#d5d5d5]/10"
+                            className="bg-gradient-to-br from-[#0a0b0c] to-background p-8 text-center border-4 border-foreground/7"
                             borderClassName="bg-[radial-gradient(#d5d5d5_40%,transparent_60%)]"
                         >
                             <p className="text-[#d5d5d5]/80 text-lg leading-relaxed mb-4">
-                                <span className="font-semibold text-[#d5d5d5]">Folksmeal isn't just another food service.</span> We're a complete corporate wellness platform that combines nutrition science, technology, and operational excellence to transform how companies feed their teams.
+                                <span className="font-semibold text-foreground">Folksmeal isn't just another food service.</span> We're a complete corporate wellness platform that combines nutrition science, technology, and operational excellence to transform how companies feed their teams.
                             </p>
                             <div className="flex flex-wrap justify-center gap-6 text-sm text-[#d5d5d5]/60">
                                 <div className="flex items-center gap-2">

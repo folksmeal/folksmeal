@@ -33,8 +33,8 @@ export function Features() {
                             "bg-[radial-gradient(#3b82f6_40%,transparent_60%)]",
                             "bg-[radial-gradient(#22c55e_40%,transparent_60%)]",
                             "bg-[radial-gradient(#a855f7_40%,transparent_60%)]",
-                            "bg-[radial-gradient(#14b8a6_40%,transparent_60%)]",
                             "bg-[radial-gradient(#eab308_40%,transparent_60%)]",
+                            "bg-[radial-gradient(#14b8a6_40%,transparent_60%)]",
                         ];
 
                         const durations = [20000, 24000, 30000, 22000, 26000, 28000];

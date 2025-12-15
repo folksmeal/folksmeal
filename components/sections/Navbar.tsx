@@ -33,7 +33,7 @@ export function Navbar() {
             <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2 cursor-pointer">
                     <Image
-                        src="/logo-large.png"
+                        src="/logo-large.svg"
                         alt="Folksmeal Logo"
                         width={150}
                         height={40}
@@ -57,7 +57,7 @@ export function Navbar() {
 
                 <div className="hidden md:flex items-center gap-4">
                     <Link href="/#contact">
-                        <Button variant="default" className="bg-[#d5d5d5] text-background hover:bg-white font-medium">
+                        <Button>
                             Request Quote
                         </Button>
                     </Link>

@@ -56,7 +56,7 @@ export function MovingBorderContainer({
 
             <div
                 className={cn(
-                    "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white w-full h-full antialiased",
+                    "relative bg-slate-900/80 border border-slate-800 backdrop-blur-xl text-white w-full h-full antialiased",
                     className
                 )}
                 style={{

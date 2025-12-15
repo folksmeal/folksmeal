@@ -36,7 +36,7 @@ export function Footer() {
                     >
                         <div className="mb-6">
                             <Image
-                                src="/logo-large.png"
+                                src="/logo-large.svg"
                                 alt="Folksmeal Logo"
                                 width={150}
                                 height={40}
