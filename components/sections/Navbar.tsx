@@ -33,7 +33,7 @@ export function Navbar() {
             <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2 cursor-pointer">
                     <Image
-                        src="/logo-large.svg"
+                        src="/logo-large.png"
                         alt="Folksmeal Logo"
                         width={150}
                         height={40}

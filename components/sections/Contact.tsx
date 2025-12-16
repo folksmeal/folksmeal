@@ -269,7 +269,7 @@ export function Contact() {
 
                                     <Button
                                         type="submit"
-                                        className="w-full h-12 bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-base shadow-lg shadow-emerald-900/20 transition-all hover:scale-[1.02]"
+                                        className="w-full"
                                         disabled={isLoading}
                                     >
                                         {isLoading ? (

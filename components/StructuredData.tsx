@@ -6,7 +6,7 @@ export function StructuredData() {
         "@type": "Organization",
         "name": "Folksmeal",
         "url": "https://folksmeal.com",
-        "logo": "https://folksmeal.com/logo-large.svg",
+        "logo": "https://folksmeal.com/logo-large.png",
         "description": "Transform corporate wellness with Folksmeal's dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle.",
         "address": {
             "@type": "PostalAddress",

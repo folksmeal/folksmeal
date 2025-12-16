@@ -48,8 +48,8 @@ export function Hero() {
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link href="#contact">
-                            <Button size="lg">
-                                Request a Quote <ArrowRight className="ml-2 h-5 w-5" />
+                            <Button className="group" size="lg">
+                                Request a Quote <ArrowRight className="ml-2 h-4 w-4 group-hover:ml-4 transition-all duration-300 ease-in-out" />
                             </Button>
                         </Link>
                     </div>
