@@ -33,7 +33,7 @@ export function Solution() {
                         </h2>
 
                         <p className="text-lg text-foreground/70 leading-relaxed mb-8">
-                            Folksmeal is a comprehensive corporate wellness ecosystem that blends nutrition science, technology, and operational discipline to deliver consistent, personalized meal programs across large teams.
+                            Folksmeal is a comprehensive corporate food & wellness ecosystem that blends nutrition science, technology, and operational discipline to deliver consistent, personalized meal programs across large teams.
                         </p>
 
                         <div className="space-y-4 mb-8">
