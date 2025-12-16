@@ -13,7 +13,7 @@ export const problems = [
     },
     {
         icon: Clock,
-        title: "Limited Access",
+        title: "Limited Options",
         description: "Employees struggle to find healthy, affordable, and hygienic food options during work hours.",
     },
 ];
