@@ -75,45 +75,45 @@ export function Contact() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5 }}
                         >
-                            <h2 className="text-3xl md:text-5xl font-bold text-[#d5d5d5] mb-6 tracking-tighter">
+                            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 tracking-tighter">
                                 Get Started with <span className="text-emerald-500">Folksmeal</span>
                             </h2>
-                            <p className="text-[#d5d5d5]/70 text-lg leading-relaxed mb-8">
+                            <p className="text-foreground/70 text-lg leading-relaxed mb-8">
                                 Transform your office dining experience today. Fill out the form, and our team will get back to you with a customized plan within 24 hours.
                             </p>
 
                             <div className="space-y-6">
-                                <div className="flex items-center gap-4 border border-[#d5d5d5]/10 p-4 rounded-lg bg-[#d5d5d5]/5">
-                                    <div className="w-10 h-10 rounded-lg bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 flex items-center justify-center shrink-0">
-                                        <Mail className="w-5 h-5 text-[#d5d5d5]" />
+                                <div className="flex items-center gap-4 border border-foreground/10 p-4 rounded-lg bg-foreground/5">
+                                    <div className="w-10 h-10 rounded-lg bg-foreground/5 border border-foreground/10 flex items-center justify-center shrink-0">
+                                        <Mail className="w-5 h-5 text-foreground" />
                                     </div>
                                     <div>
-                                        <h3 className="text-[#d5d5d5] font-medium mb-1">Email Us</h3>
-                                        <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#d5d5d5]/60 hover:text-emerald-400 transition-colors">
+                                        <h3 className="text-foreground font-medium mb-1">Email Us</h3>
+                                        <a href={`mailto:${CONTACT_EMAIL}`} className="text-foreground/60 hover:text-emerald-400 transition-colors">
                                             {CONTACT_EMAIL}
                                         </a>
                                     </div>
                                 </div>
 
-                                <div className="flex items-center gap-4 border border-[#d5d5d5]/10 p-4 rounded-lg bg-[#d5d5d5]/5">
-                                    <div className="w-10 h-10 rounded-lg bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 flex items-center justify-center shrink-0">
-                                        <Phone className="w-5 h-5 text-[#d5d5d5]" />
+                                <div className="flex items-center gap-4 border border-foreground/10 p-4 rounded-lg bg-foreground/5">
+                                    <div className="w-10 h-10 rounded-lg bg-foreground/5 border border-foreground/10 flex items-center justify-center shrink-0">
+                                        <Phone className="w-5 h-5 text-foreground" />
                                     </div>
                                     <div>
-                                        <h3 className="text-[#d5d5d5] font-medium mb-1">Call Us</h3>
-                                        <a href={`tel:${CONTACT_PHONE_HREF}`} className="text-[#d5d5d5]/60 hover:text-emerald-400 transition-colors">
+                                        <h3 className="text-foreground font-medium mb-1">Call Us</h3>
+                                        <a href={`tel:${CONTACT_PHONE_HREF}`} className="text-foreground/60 hover:text-emerald-400 transition-colors">
                                             {CONTACT_PHONE}
                                         </a>
                                     </div>
                                 </div>
 
-                                <div className="flex items-center gap-4 border border-[#d5d5d5]/10 p-4 rounded-lg bg-[#d5d5d5]/5">
-                                    <div className="w-10 h-10 rounded-lg bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 flex items-center justify-center shrink-0">
-                                        <MapPin className="w-5 h-5 text-[#d5d5d5]" />
+                                <div className="flex items-center gap-4 border border-foreground/10 p-4 rounded-lg bg-foreground/5">
+                                    <div className="w-10 h-10 rounded-lg bg-foreground/5 border border-foreground/10 flex items-center justify-center shrink-0">
+                                        <MapPin className="w-5 h-5 text-foreground" />
                                     </div>
                                     <div>
-                                        <h3 className="text-[#d5d5d5] font-medium mb-1">Visit Us</h3>
-                                        <p className="text-[#d5d5d5]/60">
+                                        <h3 className="text-foreground font-medium mb-1">Visit Us</h3>
+                                        <p className="text-foreground/60">
                                             {CONTACT_ADDRESS_SHORT}
                                         </p>
                                     </div>
@@ -130,23 +130,23 @@ export function Contact() {
                         transition={{ duration: 0.5 }}
                         className="relative"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-b from-[#d5d5d5]/5 to-transparent rounded-3xl blur-xl" />
-                        <div className="relative bg-[#0a0b0c]/80 backdrop-blur-xl border border-[#d5d5d5]/10 rounded-3xl p-6 md:p-8 shadow-2xl">
+                        <div className="absolute inset-0 bg-gradient-to-b from-foreground/5 to-transparent rounded-3xl blur-xl" />
+                        <div className="relative bg-[#0a0b0c]/80 backdrop-blur-xl border border-foreground/10 rounded-3xl p-6 md:p-8 shadow-2xl">
                             {isSuccess ? (
                                 <div className="text-center py-12 space-y-6">
                                     <div className="w-20 h-20 bg-emerald-500/10 rounded-full flex items-center justify-center mx-auto">
                                         <CheckCircle2 className="h-10 w-10 text-emerald-500" />
                                     </div>
                                     <div>
-                                        <h3 className="text-2xl font-bold text-[#d5d5d5] mb-2">Message Sent!</h3>
-                                        <p className="text-[#d5d5d5]/60">
+                                        <h3 className="text-2xl font-bold text-foreground mb-2">Message Sent!</h3>
+                                        <p className="text-foreground/60">
                                             Thank you for reaching out. We'll get back to you within 24 hours.
                                         </p>
                                     </div>
                                     <Button
                                         variant="outline"
                                         onClick={() => setIsSuccess(false)}
-                                        className="border-[#d5d5d5]/20 text-[#d5d5d5] hover:bg-[#d5d5d5]/10 hover:text-white"
+                                        className="border-foreground/20 text-foreground hover:bg-foreground/10 hover:text-white"
                                     >
                                         Send Another Message
                                     </Button>
@@ -155,7 +155,7 @@ export function Contact() {
                                 <form onSubmit={handleSubmit} className="space-y-5">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                         <div className="flex flex-col gap-2">
-                                            <label htmlFor="name" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                            <label htmlFor="name" className="text-sm font-medium text-foreground/80 ml-1">
                                                 Full Name <span className="text-red-500">*</span>
                                             </label>
                                             <Input
@@ -163,11 +163,11 @@ export function Contact() {
                                                 name="name"
                                                 placeholder="John Doe"
                                                 required
-                                                className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                                className="bg-foreground/5 border-foreground/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-foreground placeholder:text-foreground/20 h-11"
                                             />
                                         </div>
                                         <div className="flex flex-col gap-2">
-                                            <label htmlFor="email" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                            <label htmlFor="email" className="text-sm font-medium text-foreground/80 ml-1">
                                                 Work Email <span className="text-red-500">*</span>
                                             </label>
                                             <Input
@@ -176,14 +176,14 @@ export function Contact() {
                                                 type="email"
                                                 placeholder="john@company.com"
                                                 required
-                                                className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                                className="bg-foreground/5 border-foreground/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-foreground placeholder:text-foreground/20 h-11"
                                             />
                                         </div>
                                     </div>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                         <div className="flex flex-col gap-2">
-                                            <label htmlFor="phone" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                            <label htmlFor="phone" className="text-sm font-medium text-foreground/80 ml-1">
                                                 Phone Number <span className="text-red-500">*</span>
                                             </label>
                                             <Input
@@ -192,11 +192,11 @@ export function Contact() {
                                                 type="tel"
                                                 placeholder="+91 98765 43210"
                                                 required
-                                                className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                                className="bg-foreground/5 border-foreground/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-foreground placeholder:text-foreground/20 h-11"
                                             />
                                         </div>
                                         <div className="flex flex-col gap-2">
-                                            <label htmlFor="company" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                            <label htmlFor="company" className="text-sm font-medium text-foreground/80 ml-1">
                                                 Company Name <span className="text-red-500">*</span>
                                             </label>
                                             <Input
@@ -204,14 +204,14 @@ export function Contact() {
                                                 name="company"
                                                 placeholder="Acme Inc."
                                                 required
-                                                className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                                className="bg-foreground/5 border-foreground/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-foreground placeholder:text-foreground/20 h-11"
                                             />
                                         </div>
                                     </div>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                         <div className="flex flex-col gap-2">
-                                            <label htmlFor="size" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                            <label htmlFor="size" className="text-sm font-medium text-foreground/80 ml-1">
                                                 Team Size <span className="text-red-500">*</span>
                                             </label>
                                             <Input
@@ -220,11 +220,11 @@ export function Contact() {
                                                 type="number"
                                                 placeholder="e.g. 50"
                                                 required
-                                                className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                                className="bg-foreground/5 border-foreground/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-foreground placeholder:text-foreground/20 h-11"
                                             />
                                         </div>
                                         <div className="flex flex-col gap-2">
-                                            <label htmlFor="location" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
+                                            <label htmlFor="location" className="text-sm font-medium text-foreground/80 ml-1">
                                                 Office Location <span className="text-red-500">*</span>
                                             </label>
                                             <Input
@@ -232,32 +232,32 @@ export function Contact() {
                                                 name="location"
                                                 placeholder="e.g. Gurugram"
                                                 required
-                                                className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                                className="bg-foreground/5 border-foreground/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-foreground placeholder:text-foreground/20 h-11"
                                             />
                                         </div>
                                     </div>
 
                                     <div className="flex flex-col gap-2">
-                                        <label htmlFor="currentSetup" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
-                                            Current Meal Setup <span className="text-[#d5d5d5]/40 font-normal">(Optional)</span>
+                                        <label htmlFor="currentSetup" className="text-sm font-medium text-foreground/80 ml-1">
+                                            Current Meal Setup <span className="text-foreground/40 font-normal">(Optional)</span>
                                         </label>
                                         <Input
                                             id="currentSetup"
                                             name="currentSetup"
                                             placeholder="e.g. In-house pantry, Zomato, Local Caterer"
-                                            className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 h-11"
+                                            className="bg-foreground/5 border-foreground/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-foreground placeholder:text-foreground/20 h-11"
                                         />
                                     </div>
 
                                     <div className="flex flex-col gap-2">
-                                        <label htmlFor="message" className="text-sm font-medium text-[#d5d5d5]/80 ml-1">
-                                            Message <span className="text-[#d5d5d5]/40 font-normal">(Optional)</span>
+                                        <label htmlFor="message" className="text-sm font-medium text-foreground/80 ml-1">
+                                            Message <span className="text-foreground/40 font-normal">(Optional)</span>
                                         </label>
                                         <Textarea
                                             id="message"
                                             name="message"
                                             placeholder="Tell us about your specific requirements..."
-                                            className="bg-[#d5d5d5]/5 border-[#d5d5d5]/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-[#d5d5d5] placeholder:text-[#d5d5d5]/20 min-h-[120px] resize-none"
+                                            className="bg-foreground/5 border-foreground/10 focus:border-emerald-500/50 focus:ring-emerald-500/20 text-foreground placeholder:text-foreground/20 min-h-[120px] resize-none"
                                         />
                                     </div>
 
@@ -292,3 +292,4 @@ export function Contact() {
         </section>
     );
 }
+

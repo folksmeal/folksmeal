@@ -20,10 +20,10 @@ export function Problem() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold text-[#d5d5d5] mb-6 tracking-tighter">
+                        <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 tracking-tighter">
                             The Corporate Lunch <span className="text-red-500/80">Crisis</span>
                         </h2>
-                        <p className="text-[#d5d5d5]/70 max-w-2xl mx-auto text-lg">
+                        <p className="text-foreground/70 max-w-2xl mx-auto text-lg">
                             Why the current state of office dining is broken.
                         </p>
                     </motion.div>
@@ -37,18 +37,18 @@ export function Problem() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
-                            className="group relative p-8 rounded-2xl bg-[#d5d5d5]/3 backdrop-blur-sm border border-red-500/10 hover:border-red-500/30 hover:bg-red-500/5 transition-colors duration-300 cursor-pointer"
+                            className="group relative p-8 rounded-2xl bg-foreground/3 backdrop-blur-sm border border-red-500/10 hover:border-red-500/30 hover:bg-red-500/5 transition-colors duration-300 cursor-pointer"
                         >
                             <div className="relative z-10 flex flex-col items-center text-center h-full">
                                 <div className="w-16 h-16 rounded-full bg-red-500/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-red-500/20">
                                     <problem.icon className="h-8 w-8 text-red-400" />
                                 </div>
 
-                                <h3 className="text-xl font-bold text-[#d5d5d5] mb-4 group-hover:text-white transition-colors">
+                                <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-white transition-colors">
                                     {problem.title}
                                 </h3>
 
-                                <p className="text-[#d5d5d5]/60 text-sm leading-relaxed">
+                                <p className="text-foreground/60 text-sm leading-relaxed">
                                     {problem.description}
                                 </p>
                             </div>

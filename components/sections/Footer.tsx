@@ -10,7 +10,7 @@ export function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-background border-t border-[#d5d5d5]/10 relative overflow-hidden">
+        <footer className="bg-background border-t border-foreground/10 relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute inset-0 w-full h-full z-0">
                 <Image
@@ -43,7 +43,7 @@ export function Footer() {
                                 className="h-10 w-auto object-contain"
                             />
                         </div>
-                        <p className="text-[#d5d5d5]/70 leading-relaxed mb-6 max-w-md">
+                        <p className="text-foreground/70 leading-relaxed mb-6 max-w-md">
                             Transforming corporate wellness through healthy, dietitian-curated meals.
                             We help organizations improve employee productivity and well-being with zero admin hassle.
                         </p>
@@ -56,15 +56,15 @@ export function Footer() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.1 }}
                     >
-                        <h4 className="text-sm font-bold text-[#d5d5d5] uppercase tracking-wider mb-6">Quick Links</h4>
+                        <h4 className="text-sm font-bold text-foreground uppercase tracking-wider mb-6">Quick Links</h4>
                         <ul className="space-y-3">
                             {footerQuickLinks.map((link, index) => (
                                 <li key={index}>
                                     <Link
                                         href={link.href}
-                                        className="text-[#d5d5d5]/60 hover:text-[#d5d5d5] transition-colors duration-200 text-sm inline-flex items-center group"
+                                        className="text-foreground/60 hover:text-foreground transition-colors duration-200 text-sm inline-flex items-center group"
                                     >
-                                        <span className="w-0 group-hover:w-2 h-px bg-[#d5d5d5] transition-all duration-200 mr-0 group-hover:mr-2" />
+                                        <span className="w-0 group-hover:w-2 h-px bg-foreground transition-all duration-200 mr-0 group-hover:mr-2" />
                                         {link.name}
                                     </Link>
                                 </li>
@@ -79,24 +79,24 @@ export function Footer() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        <h4 className="text-sm font-bold text-[#d5d5d5] uppercase tracking-wider mb-6">Contact</h4>
+                        <h4 className="text-sm font-bold text-foreground uppercase tracking-wider mb-6">Contact</h4>
                         <ul className="space-y-4">
                             {footerContactInfo.map((info, index) => (
                                 <li key={index} className="flex items-center gap-3 group">
-                                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-[#d5d5d5]/5 border border-[#d5d5d5]/10 flex items-center justify-center text-[#d5d5d5]/70 group-hover:bg-[#d5d5d5]/10 group-hover:border-[#d5d5d5]/20 transition-all duration-300">
+                                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-foreground/5 border border-foreground/10 flex items-center justify-center text-foreground/70 group-hover:bg-foreground/10 group-hover:border-foreground/20 transition-all duration-300">
                                         {info.icon}
                                     </div>
                                     <div className="flex-1">
-                                        <p className="text-xs text-[#d5d5d5]/40 uppercase tracking-wider mb-1">{info.label}</p>
+                                        <p className="text-xs text-foreground/40 uppercase tracking-wider mb-1">{info.label}</p>
                                         {info.href ? (
                                             <Link
                                                 href={info.href}
-                                                className="text-sm text-[#d5d5d5]/70 hover:text-[#d5d5d5] transition-colors duration-200"
+                                                className="text-sm text-foreground/70 hover:text-foreground transition-colors duration-200"
                                             >
                                                 {info.value}
                                             </Link>
                                         ) : (
-                                            <p className="text-sm text-[#d5d5d5]/70 leading-relaxed">{info.value}</p>
+                                            <p className="text-sm text-foreground/70 leading-relaxed">{info.value}</p>
                                         )}
                                     </div>
                                 </li>
@@ -111,18 +111,18 @@ export function Footer() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="border-t border-[#d5d5d5]/10 py-4"
+                    className="border-t border-foreground/10 py-4"
                 >
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="text-sm text-[#d5d5d5]/50">
+                        <p className="text-sm text-foreground/50">
                             © {currentYear} Folksmeal. All rights reserved.
                         </p>
 
-                        <div className="flex gap-6 text-sm text-[#d5d5d5]/50">
-                            <Link href="/privacy-policy" className="hover:text-[#d5d5d5] transition-colors duration-200">
+                        <div className="flex gap-6 text-sm text-foreground/50">
+                            <Link href="/privacy-policy" className="hover:text-foreground transition-colors duration-200">
                                 Privacy Policy
                             </Link>
-                            <Link href="/terms" className="hover:text-[#d5d5d5] transition-colors duration-200">
+                            <Link href="/terms" className="hover:text-foreground transition-colors duration-200">
                                 Terms of Service
                             </Link>
                         </div>

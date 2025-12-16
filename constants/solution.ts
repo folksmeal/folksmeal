@@ -6,6 +6,5 @@ export const solutionFeatures = [
 
 export const solutionMenu = [
     { day: "Mon", meal: "Grilled Chicken", tag: "High Protein" },
-    { day: "Tue", meal: "Paneer Tikka", tag: "Veg Special" },
     { day: "Wed", meal: "Asian Bowl", tag: "Chef's Choice" },
 ];

@@ -35,14 +35,14 @@ export function Hero() {
                     transition={{ duration: 0.5 }}
                     className="max-w-4xl mx-auto"
                 >
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-8 text-[#d5d5d5]">
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-8 text-foreground">
                         Redefining Corporate Meals for <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#d5d5d5] to-[#d5d5d5]/40">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-foreground to-foreground/40">
                             India&apos;s Workforce
                         </span>
                     </h1>
 
-                    <p className="text-xl md:text-2xl text-[#d5d5d5]/70 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl md:text-2xl text-foreground/70 mb-10 max-w-2xl mx-auto leading-relaxed">
                         Healthy, hygienic, and dietitian-curated meals delivered fresh daily. We help organizations improve employee productivity and wellness.
                     </p>
 

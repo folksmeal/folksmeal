@@ -48,7 +48,7 @@ export function Navbar() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-medium text-[#d5d5d5]/70 hover:text-[#d5d5d5] transition-colors"
+                            className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
                         >
                             {link.name}
                         </Link>
@@ -65,7 +65,7 @@ export function Navbar() {
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="md:hidden text-[#d5d5d5] cursor-pointer"
+                    className="md:hidden text-foreground cursor-pointer"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                     {isMobileMenuOpen ? <X /> : <Menu />}
@@ -79,21 +79,21 @@ export function Navbar() {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-background/90 backdrop-blur-xl border-b border-[#d5d5d5]/10 overflow-hidden"
+                        className="md:hidden bg-background/90 backdrop-blur-xl border-b border-foreground/10 overflow-hidden"
                     >
                         <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="text-sm font-medium text-[#d5d5d5]/70 hover:text-[#d5d5d5] py-2"
+                                    className="text-sm font-medium text-foreground/70 hover:text-foreground py-2"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {link.name}
                                 </Link>
                             ))}
                             <Link href="/#contact">
-                                <Button className="w-full bg-[#d5d5d5] text-background">Request Quote</Button>
+                                <Button className="w-full bg-foreground text-background">Request Quote</Button>
                             </Link>
                         </div>
                     </motion.div>

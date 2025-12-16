@@ -17,10 +17,10 @@ export function Features() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold text-[#d5d5d5] mb-4 tracking-tighter">
+                        <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 tracking-tighter">
                             Redefining Corporate Dining
                         </h2>
-                        <p className="text-[#d5d5d5]/70 max-w-2xl mx-auto text-lg">
+                        <p className="text-foreground/70 max-w-2xl mx-auto text-lg">
                             Our unique approach to solving the corporate food crisis.
                         </p>
                     </motion.div>
@@ -47,7 +47,7 @@ export function Features() {
                                 header={item.header}
                                 icon={item.icon}
                                 className={item.className}
-                                contentClassName="border-[#d5d5d5]/10 cursor-pointer"
+                                contentClassName="border-foreground/10 cursor-pointer"
                                 borderClassName={borderColors[i] || borderColors[0]}
                                 duration={durations[i] || 10000}
                             />

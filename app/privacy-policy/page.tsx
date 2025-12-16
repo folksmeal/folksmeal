@@ -7,9 +7,9 @@ export default function PrivacyPolicy() {
             <Navbar />
 
             <div className="pt-32 pb-24 container mx-auto px-6 md:px-12 max-w-4xl">
-                <h1 className="text-4xl md:text-5xl font-bold text-[#d5d5d5] mb-8">Privacy Policy</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8">Privacy Policy</h1>
 
-                <div className="space-y-8 text-[#d5d5d5]/80 leading-relaxed">
+                <div className="space-y-8 text-foreground/80 leading-relaxed">
                     <p className="text-lg">
                         Last updated: {new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}
                     </p>
