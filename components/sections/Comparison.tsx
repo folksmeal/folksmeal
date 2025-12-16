@@ -16,7 +16,7 @@ const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index:
             <div className="absolute inset-0 bg-gradient-to-br from-foreground/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
             {/* Header */}
-            <div className="flex items-start gap-4 mb-6 relative z-10">
+            <div className="flex items-center gap-4 mb-6 relative z-10">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-foreground/10 to-foreground/5 flex items-center justify-center text-foreground border border-foreground/20">
                     {feature.icon}
                 </div>
@@ -28,19 +28,19 @@ const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index:
 
             {/* Comparison Grid */}
             <div className="space-y-4 relative z-10 flex-grow">
-                {/* Traditional */}
-                <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-32 text-xs font-medium text-foreground/40 uppercase tracking-wider pt-1">
-                        Traditional
+                {/* Caterers */}
+                <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3">
+                    <div className="flex-shrink-0 w-full sm:w-32 text-xs font-medium text-foreground/40 uppercase tracking-wider pt-1">
+                        Caterers
                     </div>
                     <div className="flex-1">
-                        <p className="text-sm text-foreground/50 leading-relaxed">{feature.traditional}</p>
+                        <p className="text-sm text-foreground/50 leading-relaxed">{feature.Caterers}</p>
                     </div>
                 </div>
 
                 {/* Aggregators */}
-                <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-32 text-xs font-medium text-foreground/40 uppercase tracking-wider pt-1">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3">
+                    <div className="flex-shrink-0 w-full sm:w-32 text-xs font-medium text-foreground/40 uppercase tracking-wider pt-1">
                         Aggregators
                     </div>
                     <div className="flex-1">
@@ -49,11 +49,11 @@ const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index:
                 </div>
 
                 {/* Folksmeal - Highlighted */}
-                <div className="flex items-center gap-3 pt-3 border-t border-foreground/10">
-                    <div className="flex-shrink-0 w-32 text-xs font-bold text-foreground uppercase tracking-wider pt-1">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 pt-3 border-t border-foreground/10">
+                    <div className="flex-shrink-0 w-full sm:w-32 text-xs font-bold text-foreground uppercase tracking-wider pt-1">
                         Folksmeal
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 w-full">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-r from-foreground/10 to-transparent rounded-lg blur-sm" />
                             <p className="relative text-sm text-foreground font-medium leading-relaxed bg-foreground/5 px-3 py-2 rounded-lg border border-foreground/20">
@@ -87,7 +87,7 @@ export function Comparison() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16 max-w-3xl mx-auto"
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-foreground/5 border border-foreground/10 mb-6">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-foreground/5 border border-foreground/10 mb-4">
                         <div className="w-2 h-2 rounded-full bg-foreground animate-pulse" />
                         <span className="text-sm text-foreground/70 font-medium leading-relaxed">Competitive Analysis</span>
                     </div>
@@ -97,7 +97,7 @@ export function Comparison() {
                     </h2>
 
                     <p className="text-lg text-foreground/70 leading-relaxed">
-                        Built from the ground up for corporate wellness. See how we deliver what traditional solutions can't.
+                        Built from the ground up for corporate wellness. See how we deliver what Caterers solutions can't.
                     </p>
                 </motion.div>
 
@@ -121,27 +121,23 @@ export function Comparison() {
                         <MovingBorderContainer
                             borderRadius="1rem"
                             duration={30000}
-                            className="bg-gradient-to-br from-[#0a0b0c] to-background p-8 text-center border-4 border-foreground/7"
+                            className="bg-gradient-to-br from-[#0a0b0c] to-background p-6 text-center border-4 border-foreground/7"
                             borderClassName="bg-[radial-gradient(var(--foreground)_40%,transparent_60%)]"
                         >
-                            <p className="text-foreground/80 text-lg leading-relaxed mb-4">
+                            <p className="text-foreground/80 text-lg leading-relaxed mb-5">
                                 <span className="font-semibold text-foreground">Folksmeal isn't just another food service.</span> We're a complete corporate wellness platform that combines nutrition science, technology, and operational excellence to transform how companies feed their teams.
                             </p>
-                            <div className="flex flex-wrap justify-center gap-6 text-sm text-foreground/60">
-                                <div className="flex items-center gap-2">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-foreground/60" />
+                            <div className="flex flex-wrap justify-center gap-6 text-sm text-foreground">
+                                <div className="flex items-center gap-2 py-1.5 px-4 rounded-full bg-foreground/5 border border-foreground/15">
                                     <span className="leading-relaxed">ISO Certified Kitchen</span>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-foreground/60" />
+                                <div className="flex items-center gap-2 py-1.5 px-4 rounded-full bg-foreground/5 border border-foreground/15">
                                     <span className="leading-relaxed">Dietitian-Curated Menus</span>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-foreground/60" />
+                                <div className="flex items-center gap-2 py-1.5 px-4 rounded-full bg-foreground/5 border border-foreground/15">
                                     <span className="leading-relaxed">Real-Time Analytics</span>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-foreground/60" />
+                                <div className="flex items-center gap-2 py-1.5 px-4 rounded-full bg-foreground/5 border border-foreground/15">
                                     <span className="leading-relaxed">Zero Admin Hassle</span>
                                 </div>
                             </div>

@@ -14,7 +14,7 @@ export function HowItWorks() {
 
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 <div className="text-center mb-20">
-                    <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 tracking-tighter">
+                    <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 tracking-tighter">
                         How It Works
                     </h2>
                     <p className="text-foreground/70 max-w-2xl mx-auto text-lg">

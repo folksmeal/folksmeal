@@ -75,7 +75,7 @@ export function Contact() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5 }}
                         >
-                            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 tracking-tighter">
+                            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 tracking-tighter">
                                 Get Started with <span className="text-emerald-500">Folksmeal</span>
                             </h2>
                             <p className="text-foreground/70 text-lg leading-relaxed mb-8">

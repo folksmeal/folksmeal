@@ -20,7 +20,7 @@ export function Problem() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 tracking-tighter">
+                        <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 tracking-tighter">
                             The Corporate Lunch <span className="text-red-500/80">Crisis</span>
                         </h2>
                         <p className="text-foreground/70 max-w-2xl mx-auto text-lg">

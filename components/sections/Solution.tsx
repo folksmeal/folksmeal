@@ -26,19 +26,17 @@ export function Solution() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="space-y-8 self-start lg:sticky lg:top-24"
+                        className="self-start lg:sticky lg:top-24"
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tighter leading-tight">
-                            A Comprehensive Corporate <br />
-                            <span className="text-emerald-500">Meal Partner</span>
+                        <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tighter leading-tight mb-4">
+                            A Comprehensive Corporate <span className="text-emerald-500">Meal Partner</span>
                         </h2>
 
-                        <p className="text-lg text-foreground/70 leading-relaxed">
-                            Folksmeal is not just a caterer. We are an end-to-end brand that combines food production, technology,
-                            and analytics to bring consistency and personalization to your office.
+                        <p className="text-lg text-foreground/70 leading-relaxed mb-8">
+                            Folksmeal is a comprehensive corporate wellness ecosystem that blends nutrition science, technology, and operational discipline to deliver consistent, personalized meal programs across large teams.
                         </p>
 
-                        <div className="space-y-4">
+                        <div className="space-y-4 mb-8">
                             {solutionFeatures.map((item, index) => (
                                 <motion.div
                                     key={item}
@@ -88,7 +86,7 @@ export function Solution() {
                             {/* glass card */}
                             <div
                                 className={[
-                                    "relative aspect-square rounded-[2rem] overflow-hidden",
+                                    "relative h-auto md:aspect-square rounded-[2rem] overflow-hidden",
                                     "bg-[#0b0b0b]/35 backdrop-blur-xl",
                                     "border border-foreground/10",
                                     "shadow-[0_0_24px_6px_rgba(255,255,255,0.06),0_0_90px_28px_rgba(16,185,129,0.08)]",
@@ -119,7 +117,7 @@ export function Solution() {
                                 </div>
 
                                 {/* KPI ROW */}
-                                <div className="grid grid-cols-3 gap-3">
+                                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                                     <div className="rounded-2xl bg-foreground/[0.04] border border-foreground/10 p-3">
                                         <div className="text-[11px] text-foreground/55">Headcount confirmed</div>
                                         <div className="mt-1 text-xl font-bold text-foreground">420</div>
@@ -142,7 +140,7 @@ export function Solution() {
                                 </div>
 
                                 {/* MAIN GRID */}
-                                <div className="grid grid-cols-2 gap-3 flex-1">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 flex-1">
                                     {/* DIETARY + COMPLIANCE */}
                                     <div className="rounded-2xl bg-foreground/[0.035] border border-foreground/10 p-3 flex flex-col">
                                         <div className="flex items-center justify-between mb-2">
@@ -274,13 +272,13 @@ export function Solution() {
                                                             <span className="text-[10px] tracking-[0.14em] uppercase text-foreground/45 font-semibold">
                                                                 {item.day}
                                                             </span>
-                                                            <span className="text-[10px] bg-foreground/10 text-foreground/70 px-2 py-0.5 rounded-full border border-foreground/10">
-                                                                {item.tag}
+                                                            <span className="text-[12px] text-foreground/90 font-medium truncate">
+                                                                {item.meal}
                                                             </span>
                                                         </div>
-                                                        <div className="text-[12px] text-foreground/90 font-medium truncate">
-                                                            {item.meal}
-                                                        </div>
+                                                        <span className="text-[10px] bg-foreground/10 text-foreground/70 px-2 py-0.5 rounded-full border border-foreground/10">
+                                                            {item.tag}
+                                                        </span>
                                                     </div>
                                                 ))}
                                             </div>
