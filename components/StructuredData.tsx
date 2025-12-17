@@ -5,8 +5,8 @@ export function StructuredData() {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Folksmeal",
-        "url": "https://folksmeal.com",
-        "logo": "https://folksmeal.com/logo-large.png",
+        "url": "https://www.folksmeal.com",
+        "logo": "https://www.folksmeal.com/logo-large.png",
         "description": "Transform corporate wellness with Folksmeal's dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle.",
         "address": {
             "@type": "PostalAddress",
@@ -48,7 +48,7 @@ export function StructuredData() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Folksmeal",
-        "url": "https://folksmeal.com",
+        "url": "https://www.folksmeal.com",
         "description": "Transform corporate wellness with Folksmeal's dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle."
     };
 

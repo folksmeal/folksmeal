@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 import { StructuredData } from "@/components/StructuredData";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://folksmeal.com",
+    url: "https://www.folksmeal.com",
     siteName: "Folksmeal",
     title: "Folksmeal | Corporate Meal Subscriptions Made Simple",
     description: "Transform corporate wellness with dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle. Trusted by leading companies.",
@@ -102,7 +104,7 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
 
   // Additional Metadata
-  metadataBase: new URL("https://folksmeal.com"),
+  metadataBase: new URL("https://www.folksmeal.com"),
   alternates: {
     canonical: "/",
   },
@@ -138,6 +140,8 @@ export default function RootLayout({
       >
         <StructuredData />
         {children}
+        <Analytics />
+        <SpeedInsights />
         <Toaster position="top-center" />
       </body>
     </html>

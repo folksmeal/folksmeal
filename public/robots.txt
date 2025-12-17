@@ -10,4 +10,4 @@ Disallow: /_next/
 Disallow: /static/
 
 # Sitemap location
-Sitemap: https://folksmeal.com/sitemap.xml
+Sitemap: https://www.folksmeal.com/sitemap.xml
