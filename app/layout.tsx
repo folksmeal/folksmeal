@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://www.folksmeal.com",
     siteName: "Folksmeal",
-    title: "Folksmeal | Managed Office Meal Programs Made Simple",
+    title: "Folksmeal | Managed Office Meal Programs & Employee Food Solutions",
     description: "Transform corporate wellness with dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle. Trusted by leading companies.",
     images: [
       {
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@folksmeal",
     creator: "@folksmeal",
-    title: "Folksmeal | Managed Office Meal Programs Made Simple",
+    title: "Folksmeal | Managed Office Meal Programs & Employee Food Solutions",
     description: "Transform corporate wellness with dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle.",
     images: ["/og-image.png"],
   },
