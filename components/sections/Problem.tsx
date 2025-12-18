@@ -24,7 +24,7 @@ export function Problem() {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="text-lg text-slate-600 max-w-2xl mx-auto"
                     >
-                        Inefficient meal programs lead to more than just hungry employees—they impact your bottom line through lost productivity and health risks.
+                        Inefficient meal programs lead to more than just hungry employees, they impact your bottom line through lost productivity and health risks.
                     </motion.p>
                 </div>
 

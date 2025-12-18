@@ -39,7 +39,7 @@ export function Solution() {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
-                                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-white transition-[background-color,border-color,transform] hover:scale-[1.02] cursor-pointer ease-in-out duration-300 border border-primary/20 hover:border-primary/20"
+                                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-white transition-all hover:scale-[1.02] cursor-pointer ease-in-out duration-300 border border-primary/20 hover:border-primary/20"
                                 >
                                     <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 border border-primary/20">
                                         <Check className="h-3.5 w-3.5 text-primary" />

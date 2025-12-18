@@ -58,7 +58,7 @@ export function Contact() {
     }
 
     return (
-        <section id="contact" className="py-24 bg-slate-50 relative overflow-hidden">
+        <section id="contact" className="py-24 bg-slate-50 relative overflow-x-clip overflow-y-visible">
             {/* Background Effects */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
@@ -68,7 +68,7 @@ export function Contact() {
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
                     {/* Left Column: Contact Info */}
-                    <div className="space-y-8 lg:sticky lg:top-24">
+                    <div className="space-y-8 lg:sticky lg:top-24 self-start">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
