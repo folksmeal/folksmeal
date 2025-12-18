@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 export const features = [
     {
-        title: "Full Control = Consistent Quality",
-        description: "We own our kitchens, ensuring standardized recipes, hygiene, and taste every day.",
+        title: "Self-Operated Kitchens",
+        description: "We own our kitchens, ensuring standardized recipes, strict hygiene, and consistent taste every day.",
         header: (
             <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-orange-500/5 to-red-500/5 border border-orange-500/10 flex items-center justify-center relative overflow-hidden group">
                 <div className="absolute inset-0 bg-grid-white/[0.02]" />
@@ -178,8 +178,8 @@ export const features = [
         className: "md:col-span-2",
     },
     {
-        title: "Tech-Led Platform",
-        description: "HR defines subsidies, employees order via app, and billing is automated.",
+        title: "Unified Ordering Platform",
+        description: "One app for employees to order and HR to manage subsidies and billing.",
         header: (
             <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-blue-500/5 to-cyan-500/5 border border-blue-500/10 flex items-center justify-center relative overflow-hidden">
                 {/* Floating UI Layers */}
@@ -199,7 +199,7 @@ export const features = [
                     />
                     <motion.div
                         animate={{ rotateX: 12 }}
-                        className="absolute inset-0 bg-background/90 border border-blue-500/30 rounded-lg flex flex-col gap-1.5 p-2 shadow-2xl"
+                        className="absolute inset-0 bg-background/90 border border-blue-500/30 rounded-lg flex flex-col gap-1.5 p-2 shadow-lg"
                     >
                         <motion.div
                             animate={{ width: ["40%", "60%", "40%"] }}
@@ -216,8 +216,8 @@ export const features = [
         className: "md:col-span-1",
     },
     {
-        title: "Dietitian-Curated Menus",
-        description: "Balanced, low-oil, high-protein meals designed for productivity.",
+        title: "Healthy & Curated Menus",
+        description: "Balanced, low-oil, high-protein meals designed for workplace productivity.",
         header: (
             <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-green-500/5 to-emerald-500/5 border border-green-500/10 flex items-center justify-center relative overflow-hidden">
                 {/* Macro Nutrient Visualization */}

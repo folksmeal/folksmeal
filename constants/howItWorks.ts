@@ -1,24 +1,44 @@
-import { ChefHat, Building2, Smartphone, PieChart } from "lucide-react";
+import { ChefHat, Building2, Smartphone, Truck, CreditCard, RefreshCw, ClipboardList, FileText } from "lucide-react";
 
 export const howItWorksSteps = [
     {
-        icon: ChefHat,
-        title: "In-House Kitchens",
-        description: "We cook all meals in Folksmeal-operated kitchens, ensuring hygiene, freshness, and consistency.",
+        icon: ClipboardList,
+        title: "Consultation & Audit",
+        description: "We assess your current food operations, employee preferences, and dietary requirements to identify gaps.",
+    },
+    {
+        icon: FileText,
+        title: "Proposal & Customization",
+        description: "We design a tailored meal program, including menu structures, subsidy models, and service logistics.",
     },
     {
         icon: Building2,
-        title: "Corporate Partnerships",
-        description: "Companies subscribe to Folksmeal plans. We handle delivery, quality, and reporting.",
+        title: "Onboarding & Setup",
+        description: "Seamless platform configuration and employee registration with zero administrative burden on your HR team.",
+    },
+    {
+        icon: ChefHat,
+        title: "Menu Curation",
+        description: "Our dietitians and chefs plan weekly rotating menus that balance nutrition, taste, and variety.",
     },
     {
         icon: Smartphone,
-        title: "Employee App",
-        description: "Employees pre-book or order lunch via our app, with subsidies auto-applied by HR.",
+        title: "Employee Ordering",
+        description: "Employees pre-order meals via our intuitive app, ensuring they get exactly what they want.",
     },
     {
-        icon: PieChart,
-        title: "Analytics Dashboard",
-        description: "Companies track meal usage, cost, and feedback in real-time. No manual billing.",
+        icon: ChefHat,
+        title: "Fresh Preparation",
+        description: "Meals are prepared daily in our ISO-certified, self-operated kitchens using fresh, high-quality ingredients.",
+    },
+    {
+        icon: Truck,
+        title: "Timely Delivery",
+        description: "Temperature-controlled logistics ensure meals arrive fresh and on time, every single day.",
+    },
+    {
+        icon: RefreshCw,
+        title: "Feedback & Optimization",
+        description: "We analyze consumption data and user feedback to continuously refine menus and improve service.",
     },
 ];

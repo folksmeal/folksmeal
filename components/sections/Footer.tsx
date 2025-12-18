@@ -10,22 +10,10 @@ export function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-background border-t border-foreground/10 relative overflow-hidden">
-            {/* Background Effects */}
-            <div className="absolute inset-0 w-full h-full z-0">
-                <Image
-                    src="/bg.svg"
-                    alt="Footer Background"
-                    fill
-                    className="object-cover opacity-50"
-                />
-            </div>
-            <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px] pointer-events-none" />
-            <div className="absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none" />
-
+        <footer className="bg-slate-50 border-t border-primary/20 relative overflow-hidden">
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 {/* Main Footer Content */}
-                <div className="py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div className="pt-12 pb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* Brand Section */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -34,19 +22,29 @@ export function Footer() {
                         transition={{ duration: 0.5 }}
                         className="lg:col-span-2"
                     >
-                        <div className="mb-4">
+                        <div className="mb-2">
                             <Image
                                 src="/logo-large.png"
                                 alt="Folksmeal Logo"
                                 width={150}
                                 height={40}
-                                className="h-8 w-auto object-contain"
+                                className="h-10 w-auto object-contain invert"
                             />
                         </div>
-                        <p className="text-foreground/70 leading-relaxed max-w-md">
+                        <p className="text-slate-600 leading-relaxed max-w-md text-lg">
                             Transforming corporate wellness through healthy, dietitian-curated meals.
                             We help organizations improve employee productivity and well-being with zero admin hassle.
                         </p>
+                        <div className="flex gap-4 mt-4">
+                            <Link
+                                href="https://linkedin.com/company/folksmeal"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 rounded-full bg-white border border-primary/20 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary hover:shadow-md transition-all duration-300"
+                            >
+                                <Linkedin className="w-5 h-5" />
+                            </Link>
+                        </div>
                     </motion.div>
 
                     {/* Quick Links */}
@@ -56,15 +54,15 @@ export function Footer() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.1 }}
                     >
-                        <h4 className="text-sm font-bold text-foreground uppercase tracking-wider mb-4">Quick Links</h4>
-                        <ul className="space-y-3">
+                        <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-6">Quick Links</h4>
+                        <ul className="space-y-4">
                             {footerQuickLinks.map((link, index) => (
                                 <li key={index}>
                                     <Link
                                         href={link.href}
-                                        className="text-foreground/60 hover:text-foreground transition-colors duration-200 text-sm inline-flex items-center group"
+                                        className="text-slate-500 hover:text-primary transition-colors duration-200 text-base font-medium inline-flex items-center group"
                                     >
-                                        <span className="w-0 group-hover:w-2 h-px bg-foreground transition-all duration-200 mr-0 group-hover:mr-2" />
+                                        <span className="w-0 group-hover:w-3 h-0.5 bg-primary transition-all duration-200 mr-0 group-hover:mr-2" />
                                         {link.name}
                                     </Link>
                                 </li>
@@ -79,24 +77,24 @@ export function Footer() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        <h4 className="text-sm font-bold text-foreground uppercase tracking-wider mb-4">Contact</h4>
-                        <ul className="space-y-4">
+                        <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-6">Contact</h4>
+                        <ul className="space-y-6">
                             {footerContactInfo.map((info, index) => (
-                                <li key={index} className="flex items-center gap-3 group">
-                                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-foreground/5 border border-foreground/10 flex items-center justify-center text-foreground/70 group-hover:bg-foreground/10 group-hover:border-foreground/20 transition-all duration-300">
+                                <li key={index} className="flex items-start gap-4 group">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-white border border-primary/20 flex items-center justify-center text-primary group-hover:border-primary group-hover:shadow-sm transition-all duration-300">
                                         {info.icon}
                                     </div>
-                                    <div className="flex-1">
-                                        <p className="text-xs text-foreground/40 uppercase tracking-wider mb-1">{info.label}</p>
+                                    <div className="flex-1 pt-0.5">
+                                        <p className="text-xs text-slate-400 uppercase tracking-wider font-bold mb-1">{info.label}</p>
                                         {info.href ? (
                                             <Link
                                                 href={info.href}
-                                                className="text-sm text-foreground/70 hover:text-foreground transition-colors duration-200"
+                                                className="text-sm text-slate-700 hover:text-primary transition-colors duration-200 font-bold"
                                             >
                                                 {info.value}
                                             </Link>
                                         ) : (
-                                            <p className="text-sm text-foreground/70 leading-relaxed">{info.value}</p>
+                                            <p className="text-sm text-slate-700 leading-relaxed font-bold">{info.value}</p>
                                         )}
                                     </div>
                                 </li>
@@ -111,18 +109,18 @@ export function Footer() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="border-t border-foreground/10 py-4"
+                    className="border-t border-primary/20 py-8"
                 >
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="text-sm text-foreground/50">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                        <p className="text-sm text-slate-500 font-medium">
                             © {currentYear} Folksmeal. All rights reserved.
                         </p>
 
-                        <div className="flex gap-6 text-sm text-foreground/50">
-                            <Link href="/privacy-policy" className="hover:text-foreground transition-colors duration-200">
+                        <div className="flex gap-8 text-sm text-slate-500 font-medium">
+                            <Link href="/privacy-policy" className="hover:text-primary transition-colors duration-200">
                                 Privacy Policy
                             </Link>
-                            <Link href="/terms" className="hover:text-foreground transition-colors duration-200">
+                            <Link href="/terms" className="hover:text-primary transition-colors duration-200">
                                 Terms of Service
                             </Link>
                         </div>

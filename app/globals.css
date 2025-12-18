@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #08090a;
-  --foreground: #d5d5d5;
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --primary: #4CAF50;
+  --primary-foreground: #ffffff;
+  --secondary: #d5d5d5;
+  --secondary-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --border: #e2e8f0;
+  --ring: #4CAF50;
 }
 
 html {
@@ -12,32 +20,17 @@ html {
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@utility bg-grid-white {
-  background-size: 40px 40px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-}
-
-@utility bg-grid-small-white {
-  background-size: 20px 20px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-}
-
-@theme inline {
   --animate-spotlight: spotlight 2s ease .75s 1 forwards;
 
   @keyframes spotlight {
@@ -53,6 +46,27 @@ body {
   }
 }
 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@utility bg-grid-black {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
+
+@utility bg-grid-small-black {
+  background-size: 20px 20px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
+
 /* Scrollbar Customization */
 ::-webkit-scrollbar {
   width: 6px !important;
@@ -64,6 +78,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--foreground) !important;
+  background: var(--primary) !important;
   border-radius: 3px !important;
 }
