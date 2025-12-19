@@ -5,14 +5,14 @@ import { howItWorksSteps } from "@/constants/howItWorks";
 
 export function HowItWorks() {
     return (
-        <section id="how-it-works" className="py-24 bg-slate-50 relative overflow-hidden">
+        <section id="how-it-works" className="py-16 sm:py-20 md:py-24 bg-slate-50 relative overflow-hidden">
             {/* Background Gradients */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
                 <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
                 <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
             </div>
 
-            <div className="container mx-auto px-6 md:px-12 relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
                 <div className="text-center mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export function HowItWorks() {
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {howItWorksSteps.map((step, index) => (
                         <motion.div
                             key={index}
@@ -40,10 +40,10 @@ export function HowItWorks() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
-                            className="group relative cursor-pointer h-full p-8 bg-white border border-primary/20 hover:shadow-md transition-[border-color,box-shadow] duration-500 overflow-hidden flex flex-col rounded-3xl"
+                            className="group relative cursor-pointer h-full p-6 sm:p-8 bg-white border border-primary/20 hover:shadow-md transition-[border-color,box-shadow] duration-500 overflow-hidden flex flex-col rounded-3xl"
                         >
                             {/* Number Watermark */}
-                            <div className="absolute right-0 -top-4 text-9xl font-bold text-slate-100 group-hover:text-primary/5 transition-colors select-none pr-2">
+                            <div className="absolute right-0 -top-2 sm:-top-4 text-7xl sm:text-8xl md:text-9xl font-bold text-slate-100 group-hover:text-primary/5 transition-colors select-none pr-2">
                                 {index + 1}
                             </div>
 

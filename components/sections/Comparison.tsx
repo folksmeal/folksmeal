@@ -123,7 +123,7 @@ export function Comparison() {
                             </p>
                             <div className="flex flex-wrap justify-center gap-4 text-sm">
                                 {[
-                                    "ISO Certified Kitchen",
+                                    "FSSAI Certified Kitchen",
                                     "Dietitian-Curated Menus",
                                     "Real-Time Analytics",
                                     "Zero Admin Hassle"
