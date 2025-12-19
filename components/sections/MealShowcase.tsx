@@ -5,42 +5,42 @@ import { motion } from "framer-motion";
 
 const meals = [
     {
+        src: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=800&auto=format&fit=crop",
+        alt: "Indian Thali",
+        title: "Homestyle Indian Meals",
+        desc: "Comforting, balanced, and perfectly portioned."
+    },
+    {
         src: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800&auto=format&fit=crop",
         alt: "Healthy Grain Bowl",
         title: "Nutrient-Dense Bowls",
         desc: "Packed with fiber, protein, and fresh veggies."
     },
     {
-        src: "https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800&auto=format&fit=crop",
-        alt: "Gourmet Mediterranean Bowl",
-        title: "Gourmet Mediterranean Bowls",
-        desc: "Freshly prepared with premium ingredients."
+        src: "/3.jpg",
+        alt: "Gourmet Indian Thali",
+        title: "Gourmet Indian Thalis",
+        desc: "Authentic Indian flavors and balanced."
     },
     {
         src: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop",
         alt: "Fresh Salad",
         title: "Fresh & Crisp Salads",
         desc: "Seasonal ingredients sourced responsibly."
-    },
-    {
-        src: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=800&auto=format&fit=crop",
-        alt: "Indian Thali",
-        title: "Homestyle Indian Meals",
-        desc: "Comforting, balanced, and perfectly portioned."
     }
 ];
 
 export function MealShowcase() {
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
-            <div className="container mx-auto px-6 md:px-12">
+        <section className="py-16 sm:py-20 md:py-24 bg-white relative overflow-hidden">
+            <div className="container mx-auto px-4 sm:px-6 md:px-12">
                 <div className="text-center mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tighter mb-4"
+                        className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tighter mb-4"
                     >
                         Culinary Excellence, <span className="text-primary">Delivered Daily</span>
                     </motion.h2>
@@ -55,7 +55,7 @@ export function MealShowcase() {
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {meals.map((meal, index) => (
                         <motion.div
                             key={index}
@@ -73,10 +73,10 @@ export function MealShowcase() {
                             />
                             <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
 
-                            <div className="absolute bottom-4 left-2 right-2 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                                <div className="bg-white/10 backdrop-blur-md rounded-xl px-4 py-3 border border-white/20">
-                                    <h3 className="text-lg font-bold text-white mb-1.5 leading-none">{meal.title}</h3>
-                                    <p className="text-sm text-white/90">{meal.desc}</p>
+                            <div className="absolute bottom-3 sm:bottom-4 left-2 right-2 translate-y-0 sm:translate-y-2 sm:group-hover:translate-y-0 transition-transform duration-300">
+                                <div className="bg-white/10 backdrop-blur-md rounded-xl px-3 sm:px-4 py-2 sm:py-3 border border-white/20">
+                                    <h3 className="text-base sm:text-lg font-bold text-white mb-1 sm:mb-1.5 leading-none">{meal.title}</h3>
+                                    <p className="text-xs sm:text-sm text-white/90">{meal.desc}</p>
                                 </div>
                             </div>
                         </motion.div>
