@@ -14,18 +14,18 @@ export const comparisonFeatures: ComparisonFeature[] = [
     {
         icon: <Shield className="w-5 h-5" />,
         category: "Quality Control",
-        description: "End-to-end food safety and consistency",
+        description: "End-to-End food safety and consistency",
         Caterers: "Inconsistent quality across vendors",
         aggregators: "No control over restaurant standards",
-        folksmeal: "ISO-certified central kitchen with real-time monitoring"
+        folksmeal: "Self-operated kitchens with strict hygiene protocols"
     },
     {
         icon: <Heart className="w-5 h-5" />,
         category: "Nutrition Focus",
         description: "Dietitian-approved balanced meals",
-        Caterers: "Generic catering menus",
-        aggregators: "Restaurant food, no health focus",
-        folksmeal: "Dietitian-curated menus with macro tracking"
+        Caterers: "Generic vendor menus",
+        aggregators: "Restaurant food, often unhealthy",
+        folksmeal: "Curated daily menus for office wellness"
     },
     {
         icon: <Zap className="w-5 h-5" />,
@@ -33,7 +33,7 @@ export const comparisonFeatures: ComparisonFeature[] = [
         description: "Seamless integration and automation",
         Caterers: "Manual coordination required",
         aggregators: "Consumer app, not B2B optimized",
-        folksmeal: "HRMS integration, analytics dashboard, automated billing"
+        folksmeal: "One platform for ordering, payments & subsidies"
     },
     {
         icon: <BarChart3 className="w-5 h-5" />,
@@ -41,7 +41,7 @@ export const comparisonFeatures: ComparisonFeature[] = [
         description: "Employee wellness and engagement metrics",
         Caterers: "No data or reporting",
         aggregators: "Basic order history only",
-        folksmeal: "Comprehensive analytics on preferences, nutrition, ROI"
+        folksmeal: "Real-time usage & feedback analytics"
     },
     {
         icon: <TrendingUp className="w-5 h-5" />,
@@ -49,7 +49,7 @@ export const comparisonFeatures: ComparisonFeature[] = [
         description: "Predictable recurring revenue",
         Caterers: "Event-based, irregular income",
         aggregators: "Consumer transactions, no B2B focus",
-        folksmeal: "Subscription-based B2B with long-term contracts"
+        folksmeal: "Managed meal program with stable operations"
     },
     {
         icon: <Rocket className="w-5 h-5" />,
@@ -57,6 +57,6 @@ export const comparisonFeatures: ComparisonFeature[] = [
         description: "Growth without compromising quality",
         Caterers: "Limited by vendor capacity",
         aggregators: "High volume but fragmented quality",
-        folksmeal: "Centralized operations with consistent brand experience"
+        folksmeal: "Centralized operations, scalable & consistent"
     }
 ];

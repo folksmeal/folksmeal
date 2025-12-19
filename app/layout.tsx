@@ -19,23 +19,23 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   // Basic Metadata
   title: {
-    default: "Folksmeal | Corporate Meal Subscriptions & Employee Food Solutions",
+    default: "Folksmeal | Managed Office Meal Programs & Employee Food Solutions",
     template: "%s | Folksmeal"
   },
-  description: "Transform corporate wellness with Folksmeal's dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle. Trusted by leading companies in Delhi NCR.",
+  description: "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.",
   keywords: [
     "corporate meal subscriptions",
-    "office food delivery",
-    "employee meal plans",
-    "corporate catering Delhi NCR",
+    "managed meal program",
+    "self-operated kitchens",
     "healthy office meals",
+    "employee food solution",
+    "office lunch delivery",
+    "B2B food service",
+    "workplace dining",
     "dietitian-curated meals",
-    "corporate wellness platform",
-    "office lunch subscription",
-    "employee food benefits",
-    "ISO certified kitchen",
-    "corporate food service",
-    "office meal management"
+    "employee wellness platform",
+    "office food delivery",
+    "corporate food service"
   ],
   authors: [{ name: "Folksmeal" }],
   creator: "Folksmeal",
@@ -60,8 +60,8 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://www.folksmeal.com",
     siteName: "Folksmeal",
-    title: "Folksmeal | Corporate Meal Subscriptions Made Simple",
-    description: "Transform corporate wellness with dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle. Trusted by leading companies.",
+    title: "Folksmeal | Managed Office Meal Programs & Employee Food Solutions",
+    description: "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.",
     images: [
       {
         url: "/og-image.png",
@@ -78,19 +78,19 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@folksmeal",
     creator: "@folksmeal",
-    title: "Folksmeal | Corporate Meal Subscriptions Made Simple",
-    description: "Transform corporate wellness with dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle.",
+    title: "Folksmeal | Managed Office Meal Programs & Employee Food Solutions",
+    description: "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.",
     images: ["/og-image.png"],
   },
 
   // Icons & Favicons
   icons: {
     icon: [
-      { url: "/logo-small.png", sizes: "any" },
-      { url: "/logo-small.png", type: "image/png", sizes: "192x192" },
+      { url: "/favicon.png", type: "image/png", sizes: "192x192" },
+      { url: "/logo-small.png", type: "image/png", sizes: "512x512" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon.png", type: "image/png" },
     ],
     other: [
       {
@@ -135,10 +135,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <StructuredData />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
-        <StructuredData />
         {children}
         <Analytics />
         <SpeedInsights />

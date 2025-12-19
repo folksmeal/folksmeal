@@ -10,6 +10,8 @@ import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 
+import { MealShowcase } from "@/components/sections/MealShowcase";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white selection:bg-emerald-500/30">
@@ -18,6 +20,7 @@ export default function Home() {
       <Problem />
       <Solution />
       <HowItWorks />
+      <MealShowcase />
       <Features />
       <Comparison />
       <FAQ />

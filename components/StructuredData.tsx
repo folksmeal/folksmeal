@@ -1,24 +1,49 @@
-import Script from 'next/script';
+import { CONTACT_EMAIL, CONTACT_PHONE } from '@/constants/contact';
+import { faqs } from '@/constants/faq';
 
 export function StructuredData() {
     const organizationSchema = {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": "FoodService",
         "name": "Folksmeal",
         "url": "https://www.folksmeal.com",
         "logo": "https://www.folksmeal.com/logo-large.png",
-        "description": "Transform corporate wellness with Folksmeal's dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle.",
+        "image": "https://www.folksmeal.com/og-image.png",
+        "description": "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Delhi",
-            "addressRegion": "NCR",
+            "streetAddress": "Building No 439, 1st Floor, Aghapur, Sector 41, Near HP Petrol Pump",
+            "addressLocality": "Noida",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "201303",
             "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "28.5667",
+            "longitude": "77.3500"
         },
         "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "Sales",
-            "email": "support@folksmeal.com"
+            "telephone": CONTACT_PHONE,
+            "email": CONTACT_EMAIL
         },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                ],
+                "opens": "08:00",
+                "closes": "20:00"
+            }
+        ],
         "sameAs": [
             "https://twitter.com/folksmeal",
             "https://linkedin.com/company/folksmeal"
@@ -33,10 +58,20 @@ export function StructuredData() {
             "@type": "Organization",
             "name": "Folksmeal"
         },
-        "areaServed": {
-            "@type": "Place",
-            "name": "Delhi NCR"
-        },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Noida"
+            },
+            {
+                "@type": "City",
+                "name": "Gurugram"
+            },
+            {
+                "@type": "City",
+                "name": "Delhi"
+            }
+        ],
         "description": "Healthy, dietitian-curated office meals delivered daily. ISO-certified kitchen with real-time analytics and zero admin hassle.",
         "offers": {
             "@type": "Offer",
@@ -49,30 +84,50 @@ export function StructuredData() {
         "@type": "WebSite",
         "name": "Folksmeal",
         "url": "https://www.folksmeal.com",
-        "description": "Transform corporate wellness with Folksmeal's dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle."
+        "description": "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort."
+    };
+
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
     };
 
     return (
         <>
-            <Script
+            <script
                 id="organization-schema"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(organizationSchema),
                 }}
             />
-            <Script
+            <script
                 id="service-schema"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(serviceSchema),
                 }}
             />
-            <Script
+            <script
                 id="website-schema"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(websiteSchema),
+                }}
+            />
+            <script
+                id="faq-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(faqSchema),
                 }}
             />
         </>

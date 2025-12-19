@@ -1,7 +1,8 @@
 export const solutionFeatures = [
-    "In-House Kitchens: We cook everything ourselves. No vendors.",
-    "Tech-Powered: HR dashboard, employee app, auto-subsidies.",
-    "End-to-End Management: We handle planning, cooking, and delivery."
+    "Self-Operated Kitchens: We own the kitchens. No vendors, total control.",
+    "One Platform: Employees order, HR manages, we deliver.",
+    "Nutritious & Clean: Balanced meals, responsibly sourced ingredients.",
+    "Full Management: From cooking to payments, we handle everything."
 ];
 
 export const solutionMenu = [

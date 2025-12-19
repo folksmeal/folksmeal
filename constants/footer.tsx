@@ -1,4 +1,3 @@
-import React from "react";
 import { MapPin, Mail } from "lucide-react";
 import { CONTACT_ADDRESS, CONTACT_EMAIL } from "./contact";
 

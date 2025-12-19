@@ -5,53 +5,44 @@ import { problems } from "@/constants/problem";
 
 export function Problem() {
     return (
-        <section id="problem" className="py-24 bg-background relative overflow-hidden">
-            {/* Background Gradients - Warmer tones for 'Problem' */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
-                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500/5 rounded-full blur-3xl" />
-                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl" />
-            </div>
-
-            <div className="container mx-auto px-6 md:px-12 relative z-10">
-                <div className="text-center mb-20">
-                    <motion.div
+        <section id="problem" className="py-24 bg-white relative overflow-hidden">
+            <div className="container mx-auto px-6 md:px-12">
+                <div className="text-center mb-16">
+                    <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
+                        className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tighter mb-4"
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 tracking-tighter">
-                            The Corporate Lunch <span className="text-red-500/80">Crisis</span>
-                        </h2>
-                        <p className="text-foreground/70 max-w-2xl mx-auto text-lg">
-                            Why the current state of office dining is broken.
-                        </p>
-                    </motion.div>
+                        The Hidden Cost of <span className="text-primary">Unmanaged Meals</span>
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.1 }}
+                        className="text-lg text-slate-600 max-w-2xl mx-auto"
+                    >
+                        Inefficient meal programs lead to more than just hungry employees, they impact your bottom line through lost productivity and health risks.
+                    </motion.p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {problems.map((problem, index) => (
                         <motion.div
-                            key={problem.title}
+                            key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.1, duration: 0.5 }}
-                            className="group relative p-8 rounded-2xl bg-foreground/3 backdrop-blur-sm border border-red-500/10 hover:border-red-500/30 hover:bg-red-500/5 transition-colors duration-300 cursor-pointer"
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            className="group p-8 rounded-2xl bg-slate-50 border border-primary/20 hover:bg-white hover:shadow-md transition-[background-color,border-color,box-shadow] duration-500"
                         >
-                            <div className="relative z-10 flex flex-col items-center text-center h-full">
-                                <div className="w-16 h-16 rounded-full bg-red-500/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-red-500/20">
-                                    <problem.icon className="h-8 w-8 text-red-400" />
-                                </div>
-
-                                <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-white transition-colors">
-                                    {problem.title}
-                                </h3>
-
-                                <p className="text-foreground/60 text-sm leading-relaxed">
-                                    {problem.description}
-                                </p>
+                            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                                <problem.icon className="h-6 w-6 text-primary" />
                             </div>
+                            <h3 className="text-xl font-bold text-slate-900 mb-3">{problem.title}</h3>
+                            <p className="text-slate-600 leading-relaxed">{problem.description}</p>
                         </motion.div>
                     ))}
                 </div>

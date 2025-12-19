@@ -1,14 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { WHATSAPP_PHONE_HREF } from "@/constants/contact";
 import Image from "next/image";
 
 export function WhatsAppWidget() {
-    const phoneNumber = "919650796929";
     const message = encodeURIComponent(
         "Hi Folksmeal, I’m interested in corporate meal subscriptions. Please share pricing and next steps."
     );
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE_HREF}?text=${message}`;
 
     return (
         <motion.a

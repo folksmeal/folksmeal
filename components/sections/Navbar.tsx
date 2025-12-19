@@ -24,9 +24,9 @@ export function Navbar() {
     return (
         <header
             className={cn(
-                "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
+                "fixed top-0 left-0 right-0 z-50 transition-[background-color,backdrop-filter,border-color,padding] duration-300 py-4",
                 isScrolled
-                    ? "bg-background/50 backdrop-blur-sm"
+                    ? "bg-white/70 backdrop-blur-md border-b border-black/5"
                     : "bg-transparent"
             )}
         >
@@ -38,7 +38,7 @@ export function Navbar() {
                             alt="Folksmeal Logo"
                             width={40}
                             height={40}
-                            className="h-8 w-auto object-contain lg:hidden"
+                            className="h-8 w-auto object-contain lg:hidden invert"
                             priority
                         />
                         <Image
@@ -46,7 +46,7 @@ export function Navbar() {
                             alt="Folksmeal Logo"
                             width={150}
                             height={40}
-                            className="h-8 w-auto object-contain hidden lg:block"
+                            className="h-8 w-auto object-contain hidden lg:block invert"
                             priority
                         />
                     </div>
@@ -58,7 +58,7 @@ export function Navbar() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
+                            className="text-sm font-medium text-foreground/60 hover:text-primary transition-colors"
                         >
                             {link.name}
                         </Link>
@@ -75,10 +75,10 @@ export function Navbar() {
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="md:hidden text-foreground cursor-pointer"
+                    className="md:hidden text-foreground cursor-pointer p-2 hover:bg-black/5 rounded-lg transition-colors"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
-                    {isMobileMenuOpen ? <X /> : <Menu />}
+                    {isMobileMenuOpen ? <X className="text-primary" /> : <Menu />}
                 </button>
             </div>
 
@@ -89,21 +89,21 @@ export function Navbar() {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-background/90 backdrop-blur-xl border-b border-foreground/10 overflow-hidden"
+                        className="md:hidden bg-white/95 backdrop-blur-xl border-b border-black/5 overflow-hidden"
                     >
-                        <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
+                        <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="text-sm font-medium text-foreground/70 hover:text-foreground py-2"
+                                    className="text-base font-medium text-foreground/70 hover:text-primary py-2 transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {link.name}
                                 </Link>
                             ))}
-                            <Link href="/#contact">
-                                <Button className="w-full bg-foreground text-background">Request Quote</Button>
+                            <Link href="/#contact" className="mt-2">
+                                <Button className="w-full">Request Quote</Button>
                             </Link>
                         </div>
                     </motion.div>
