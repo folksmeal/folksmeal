@@ -40,7 +40,7 @@ export function HowItWorks() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
-                            className="group relative cursor-pointer h-full p-6 sm:p-8 bg-white border border-primary/20 hover:shadow-md transition-[border-color,box-shadow] duration-500 overflow-hidden flex flex-col rounded-3xl"
+                            className="group relative cursor-pointer h-full p-6 sm:p-8 bg-white border border-primary/20  transition-[border-color,box-shadow] duration-500 overflow-hidden flex flex-col rounded-3xl hover:border-primary/35"
                         >
                             {/* Number Watermark */}
                             <div className="absolute right-0 -top-2 sm:-top-4 text-7xl sm:text-8xl md:text-9xl font-bold text-slate-100 group-hover:text-primary/5 transition-colors select-none pr-2">
