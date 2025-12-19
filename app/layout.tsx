@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     url: "https://www.folksmeal.com",
     siteName: "Folksmeal",
     title: "Folksmeal | Managed Office Meal Programs & Employee Food Solutions",
-    description: "Transform corporate wellness with dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle. Trusted by leading companies.",
+    description: "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.",
     images: [
       {
         url: "/og-image.png",
@@ -79,18 +79,18 @@ export const metadata: Metadata = {
     site: "@folksmeal",
     creator: "@folksmeal",
     title: "Folksmeal | Managed Office Meal Programs & Employee Food Solutions",
-    description: "Transform corporate wellness with dietitian-curated office meals. ISO-certified kitchen, real-time analytics, zero admin hassle.",
+    description: "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.",
     images: ["/og-image.png"],
   },
 
   // Icons & Favicons
   icons: {
     icon: [
-      { url: "/logo-small.png", sizes: "any" },
-      { url: "/logo-small.png", type: "image/png", sizes: "192x192" },
+      { url: "/favicon.png", type: "image/png", sizes: "192x192" },
+      { url: "/logo-small.png", type: "image/png", sizes: "512x512" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon.png", type: "image/png" },
     ],
     other: [
       {
