@@ -3,7 +3,7 @@ import { Footer } from "@/components/sections/Footer";
 
 export default function PrivacyPolicy() {
     return (
-        <main className="min-h-screen bg-black text-white selection:bg-emerald-500/30">
+        <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
             <Navbar />
 
             <div className="pt-32 pb-24 container mx-auto px-6 md:px-12 max-w-4xl">
@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
                     </p>
 
                     <section className="space-y-4">
-                        <h2 className="text-2xl font-semibold text-white">1. Introduction</h2>
+                        <h2 className="text-2xl font-semibold text-slate-900">1. Introduction</h2>
                         <p>
                             Welcome to Folksmeal ("we," "our," or "us"). We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and corporate meal services.
                         </p>
@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
                     </section>
 
                     <section className="space-y-4">
-                        <h2 className="text-2xl font-semibold text-white">2. Information We Collect</h2>
+                        <h2 className="text-2xl font-semibold text-slate-900">2. Information We Collect</h2>
                         <p>We collect information that you provide directly to us, including:</p>
                         <ul className="list-disc pl-6 space-y-2">
                             <li><strong>Personal Information:</strong> Name, email address, phone number, and company details when you request a quote or sign up for our services.</li>
@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
                     </section>
 
                     <section className="space-y-4">
-                        <h2 className="text-2xl font-semibold text-white">3. How We Use Your Information</h2>
+                        <h2 className="text-2xl font-semibold text-slate-900">3. How We Use Your Information</h2>
                         <p>We use the information we collect to:</p>
                         <ul className="list-disc pl-6 space-y-2">
                             <li>Provide, operate, and maintain our corporate meal services.</li>
@@ -47,7 +47,7 @@ export default function PrivacyPolicy() {
                     </section>
 
                     <section className="space-y-4">
-                        <h2 className="text-2xl font-semibold text-white">4. Data Sharing and Disclosure</h2>
+                        <h2 className="text-2xl font-semibold text-slate-900">4. Data Sharing and Disclosure</h2>
                         <p>
                             We do not sell or rent your personal information to third parties. We may share your information in the following circumstances:
                         </p>
@@ -59,28 +59,28 @@ export default function PrivacyPolicy() {
                     </section>
 
                     <section className="space-y-4">
-                        <h2 className="text-2xl font-semibold text-white">5. Data Security</h2>
+                        <h2 className="text-2xl font-semibold text-slate-900">5. Data Security</h2>
                         <p>
                             We implement appropriate technical and organizational security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. However, please be aware that no method of transmission over the Internet or method of electronic storage is 100% secure.
                         </p>
                     </section>
 
                     <section className="space-y-4">
-                        <h2 className="text-2xl font-semibold text-white">6. Your Rights</h2>
+                        <h2 className="text-2xl font-semibold text-slate-900">6. Your Rights</h2>
                         <p>
                             Depending on your location, you may have certain rights regarding your personal information, such as the right to access, correct, or delete your data. To exercise these rights, please contact us at support@folksmeal.com.
                         </p>
                     </section>
 
                     <section className="space-y-4">
-                        <h2 className="text-2xl font-semibold text-white">7. Changes to This Policy</h2>
+                        <h2 className="text-2xl font-semibold text-slate-900">7. Changes to This Policy</h2>
                         <p>
                             We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
                         </p>
                     </section>
 
                     <section className="space-y-4">
-                        <h2 className="text-2xl font-semibold text-white">8. Contact Us</h2>
+                        <h2 className="text-2xl font-semibold text-slate-900">8. Contact Us</h2>
                         <p>
                             If you have any questions about this Privacy Policy, please contact us:
                         </p>

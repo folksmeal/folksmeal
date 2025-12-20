@@ -23,11 +23,11 @@ export function Solution() {
                         transition={{ duration: 0.5 }}
                         className="self-start lg:sticky lg:top-24"
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tighter leading-tight mb-4">
+                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tighter leading-tight mb-4 text-center lg:text-left">
                             A Comprehensive Corporate <span className="text-primary">Meal Partner</span>
                         </h2>
 
-                        <p className="text-lg text-slate-600 leading-relaxed mb-8">
+                        <p className="text-lg text-slate-600 leading-relaxed mb-8 text-center lg:text-left">
                             Folksmeal is a comprehensive corporate food & wellness ecosystem that blends nutrition science, technology, and operational discipline to deliver consistent, personalized meal programs across large teams.
                         </p>
 
@@ -39,7 +39,7 @@ export function Solution() {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
-                                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-white hover:scale-[1.02] cursor-pointer border border-primary/20 hover:border-primary/20"
+                                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-white hover:scale-[1.02] cursor-pointer border border-primary/20 hover:border-primary/20 transition-[scale] duration-300 ease-in-out"
                                 >
                                     <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 border border-primary/20">
                                         <Check className="h-3.5 w-3.5 text-primary" />

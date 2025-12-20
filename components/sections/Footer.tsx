@@ -22,7 +22,7 @@ export function Footer() {
                         transition={{ duration: 0.5 }}
                         className="lg:col-span-2"
                     >
-                        <div className="mb-2">
+                        <Link href="/">
                             <Image
                                 src="/logo-large.png"
                                 alt="Folksmeal Logo"
@@ -30,8 +30,8 @@ export function Footer() {
                                 height={40}
                                 className="h-10 w-auto object-contain invert"
                             />
-                        </div>
-                        <p className="text-slate-600 leading-relaxed max-w-md text-lg">
+                        </Link>
+                        <p className="text-slate-600 leading-relaxed max-w-md text-lg mt-2">
                             Transforming corporate wellness through healthy, dietitian-curated meals.
                             We help organizations improve employee productivity and well-being with zero admin hassle.
                         </p>
@@ -54,7 +54,7 @@ export function Footer() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.1 }}
                     >
-                        <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-6">Quick Links</h4>
+                        <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-6 text-center md:text-left">Quick Links</h4>
                         <ul className="space-y-4">
                             {footerQuickLinks.map((link, index) => (
                                 <li key={index}>
@@ -77,7 +77,7 @@ export function Footer() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-6">Contact</h4>
+                        <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-6 text-center md:text-left">Contact</h4>
                         <ul className="space-y-6">
                             {footerContactInfo.map((info, index) => (
                                 <li key={index} className="flex items-start gap-4 group">

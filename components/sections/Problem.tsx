@@ -36,7 +36,7 @@ export function Problem() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group p-8 rounded-2xl bg-slate-50 border border-primary/20 hover:bg-white hover:shadow-md transition-[background-color,border-color,box-shadow] duration-500"
+                            className="group p-8 rounded-2xl bg-slate-50 border border-primary/20 hover:bg-white hover:shadow-md transition-[background-color,border-color,box-shadow] duration-500 cursor-pointer"
                         >
                             <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
                                 <problem.icon className="h-6 w-6 text-primary" />

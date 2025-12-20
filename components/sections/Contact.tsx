@@ -75,10 +75,10 @@ export function Contact() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5 }}
                         >
-                            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tighter">
+                            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tighter text-center lg:text-left">
                                 Get Started with <span className="text-primary">Folksmeal</span>
                             </h2>
-                            <p className="text-slate-600 text-lg leading-relaxed mb-8">
+                            <p className="text-slate-600 text-lg leading-relaxed mb-8 text-center lg:text-left">
                                 Transform your office dining experience today. Fill out the form, and our team will get back to you with a customized plan within 24 hours.
                             </p>
 
@@ -175,7 +175,7 @@ export function Contact() {
                                                 type="email"
                                                 placeholder="john@company.com"
                                                 required
-                                                className="bg-white border-primary/20 focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 placeholder:text-slate-400 h-12 rounded-xl transition-all duration-300 shadow-sm"
+                                                className="bg-white border-primary/20 focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 placeholder:text-slate-400 h-12 rounded-xl transition-all duration-300"
                                             />
                                         </div>
                                     </div>
@@ -191,7 +191,7 @@ export function Contact() {
                                                 type="tel"
                                                 placeholder="+91 98765 43210"
                                                 required
-                                                className="bg-white border-primary/20 focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 placeholder:text-slate-400 h-12 rounded-xl transition-all duration-300 shadow-sm"
+                                                className="bg-white border-primary/20 focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 placeholder:text-slate-400 h-12 rounded-xl transition-all duration-300"
                                             />
                                         </div>
                                         <div className="flex flex-col gap-2">
@@ -203,7 +203,7 @@ export function Contact() {
                                                 name="company"
                                                 placeholder="Acme Inc."
                                                 required
-                                                className="bg-white border-primary/20 focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 placeholder:text-slate-400 h-12 rounded-xl transition-all duration-300 shadow-sm"
+                                                className="bg-white border-primary/20 focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 placeholder:text-slate-400 h-12 rounded-xl transition-all duration-300"
                                             />
                                         </div>
                                     </div>
@@ -219,7 +219,7 @@ export function Contact() {
                                                 type="number"
                                                 placeholder="e.g. 50"
                                                 required
-                                                className="bg-white border-primary/20 focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 placeholder:text-slate-400 h-12 rounded-xl transition-all duration-300 shadow-sm"
+                                                className="bg-white border-primary/20 focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 placeholder:text-slate-400 h-12 rounded-xl transition-all duration-300"
                                             />
                                         </div>
                                         <div className="flex flex-col gap-2">
@@ -231,7 +231,7 @@ export function Contact() {
                                                 name="location"
                                                 placeholder="e.g. Gurugram"
                                                 required
-                                                className="bg-white border-primary/20 focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 placeholder:text-slate-400 h-12 rounded-xl transition-all duration-300 shadow-sm"
+                                                className="bg-white border-primary/20 focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 placeholder:text-slate-400 h-12 rounded-xl transition-all duration-300"
                                             />
                                         </div>
                                     </div>
@@ -244,7 +244,7 @@ export function Contact() {
                                             id="message"
                                             name="message"
                                             placeholder="Tell us about your specific requirements..."
-                                            className="bg-white border-primary/20 focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 placeholder:text-slate-400 min-h-[120px] resize-none rounded-xl p-4 transition-all duration-300 shadow-sm"
+                                            className="bg-white border-primary/20 focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 placeholder:text-slate-400 min-h-[120px] resize-none rounded-xl p-4 transition-all duration-300"
                                         />
                                     </div>
 
