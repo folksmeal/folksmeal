@@ -26,7 +26,7 @@ export function Hero() {
                         transition={{ duration: 0.5 }}
                         className="text-center lg:text-left"
                     >
-                        <h1 className="text-4xl xl:text-6xl 2xl:text-7xl font-bold tracking-tighter mb-8 text-slate-900 leading-[1.1]">
+                        <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-tighter mb-8 text-slate-900 leading-[1.2]">
                             Redefining Corporate Meals for <span className="text-primary">India's Workforce</span>
                         </h1>
 
