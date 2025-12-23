@@ -16,8 +16,8 @@ export const footerContactInfo = [
 ];
 
 export const footerQuickLinks = [
-    { name: "About Us", href: "#about" },
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "Features", href: "#features" },
-    { name: "Contact", href: "#contact" }
+    { name: "About Us", href: "/#about" },
+    { name: "How It Works", href: "/#how-it-works" },
+    { name: "Features", href: "/#features" },
+    { name: "Contact", href: "/#contact" }
 ];
