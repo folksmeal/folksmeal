@@ -35,7 +35,8 @@ export const metadata: Metadata = {
     "dietitian-curated meals",
     "employee wellness platform",
     "office food delivery",
-    "corporate food service"
+    "corporate food service",
+    "Folksmeal",
   ],
   authors: [{ name: "Folksmeal" }],
   creator: "Folksmeal",
