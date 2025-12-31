@@ -87,16 +87,15 @@ export const metadata: Metadata = {
   // Icons & Favicons
   icons: {
     icon: [
-      { url: "/favicon.png", type: "image/png"},
-      { url: "/logo-small.png", type: "image/png", sizes: "512x512" },
+      { url: "https://www.folksmeal.com/favicon.png", type: "image/png" }
     ],
     apple: [
-      { url: "/apple-touch-icon.png", type: "image/png" },
+      { url: "https://www.folksmeal.com/apple-touch-icon.png", type: "image/png" },
     ],
     other: [
       {
         rel: "mask-icon",
-        url: "/logo-small.png",
+        url: "https://www.folksmeal.com/logo-small.png",
       },
     ],
   },
