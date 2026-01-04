@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     description: "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://www.folksmeal.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Folksmeal - Corporate Meal Subscriptions",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     creator: "@folksmeal",
     title: "Folksmeal | Managed Office Meal Programs & Employee Food Solutions",
     description: "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.",
-    images: ["/og-image.png"],
+    images: ["https://www.folksmeal.com/og-image.png"],
   },
 
   // Icons & Favicons
@@ -105,9 +105,6 @@ export const metadata: Metadata = {
 
   // Additional Metadata
   metadataBase: new URL("https://www.folksmeal.com"),
-  alternates: {
-    canonical: "/",
-  },
 
   // App-specific
   applicationName: "Folksmeal",
@@ -134,7 +131,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-IN">
       <head>
         <StructuredData />
       </head>

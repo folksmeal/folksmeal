@@ -1,5 +1,14 @@
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Terms of Service",
+    description: "Folksmeal Terms of Service - Read our terms and conditions for using our corporate meal subscription services.",
+    alternates: {
+        canonical: "/terms",
+    },
+};
 
 export default function TermsOfService() {
     return (

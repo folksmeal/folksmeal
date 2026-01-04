@@ -1,0 +1,187 @@
+# Folksmeal - LLMs.txt
+# This file provides structured information about Folksmeal for AI language models
+
+# Site Metadata
+Site Name: Folksmeal
+Site URL: https://www.folksmeal.com
+Description: Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.
+Industry: Corporate Meal Subscriptions / B2B Food Service
+Target Audience: Corporate offices, HR departments, businesses with 50+ employees
+Geographic Focus: Delhi NCR (Noida, Gurugram, Delhi), India
+
+# Contact Information
+Email: support@folksmeal.com
+Phone: +91 96507 96929
+WhatsApp: +91 96507 96929
+Address: Building No 439, 1st Floor, Aghapur, Sector 41, Near HP Petrol Pump, Noida 201303
+Social Media:
+  - Twitter: @folksmeal
+  - LinkedIn: https://www.linkedin.com/company/folksmeal
+  - Twitter URL: https://twitter.com/folksmeal
+
+# Main Pages
+
+## Homepage (/)
+The homepage is a comprehensive landing page featuring:
+
+### Hero Section
+- Headline: "Redefining Corporate Meals for India's Workforce"
+- Value Proposition: Healthy, hygienic, and dietitian-curated meals delivered fresh daily to help organizations improve employee productivity and wellness
+- Primary CTA: Request a Quote
+
+### Problem Section
+Addresses three key pain points:
+1. Unhealthy & Inefficient: Dependence on local restaurants or individual delivery leads to oily, unhealthy meals and wasted time
+2. Operational Headache: Managing food delivery, payments, and subsidies is a burden for HR and Admin teams
+3. Inconsistent Quality: Without a managed program, employees face daily confusion and varying food hygiene standards
+
+### Solution Section
+Core solution features:
+- Self-Operated Kitchens: We own the kitchens. No vendors, total control.
+- One Platform: Employees order, HR manages, we deliver.
+- Nutritious & Clean: Balanced meals, responsibly sourced ingredients.
+- Full Management: From cooking to payments, we handle everything.
+
+Sample menu items:
+- Monday: Grilled Chicken (High Protein)
+- Wednesday: Asian Bowl (Chef's Choice)
+
+### How It Works Section
+8-step process:
+1. Consultation & Audit: Assess current food operations, employee preferences, and dietary requirements
+2. Proposal & Customization: Design tailored meal program, including menu structures, subsidy models, and service logistics
+3. Onboarding & Setup: Seamless platform configuration and employee registration with zero administrative burden
+4. Menu Curation: Dietitians and chefs plan weekly rotating menus balancing nutrition, taste, and variety
+5. Employee Ordering: Employees pre-order meals via intuitive app
+6. Fresh Preparation: Meals prepared daily in ISO-certified, self-operated kitchens using fresh, high-quality ingredients
+7. Timely Delivery: Temperature-controlled logistics ensure meals arrive fresh and on time
+8. Feedback & Optimization: Analyze consumption data and user feedback to continuously refine menus
+
+### Meal Showcase Section
+Visual display of meal offerings and quality
+
+### Features Section
+Key features:
+1. Self-Operated Kitchens: Own kitchens ensuring standardized recipes, strict hygiene, and consistent taste. ISO-certified facilities with 100% hygiene and recipe compliance.
+2. Unified Ordering Platform: One app for employees to order and HR to manage subsidies and billing
+3. Healthy & Curated Menus: Balanced, low-oil, high-protein meals designed for workplace productivity. Dietitian-approved with high protein, high fiber, and low oil content.
+4. Data-Driven Insights: Predictive demand planning to reduce waste and optimize menus
+5. Real-Time Feedback: 3-minute feedback loop for continuous improvement
+6. Eco-Friendly: Biodegradable packaging and sustainable practices
+
+### Comparison Section
+Comparison with traditional caterers and aggregators across:
+- Quality Control: Self-operated kitchens with strict hygiene protocols vs inconsistent vendor quality
+- Nutrition Focus: Curated daily menus for office wellness vs generic/unhealthy restaurant food
+- Technology: One platform for ordering, payments & subsidies vs manual coordination or consumer apps
+- Data & Insights: Real-time usage & feedback analytics vs no data or basic order history
+- Business Model: Managed meal program with stable operations vs event-based or consumer transactions
+- Scalability: Centralized operations, scalable & consistent vs limited vendor capacity or fragmented quality
+
+### FAQ Section
+Common questions:
+1. How do you ensure hygiene and quality?
+   Answer: We own and operate our cloud kitchens, adhering to strict FSSAI standards. Regular audits and temperature checks ensure every meal is safe and fresh.
+
+2. Do you deliver during peak hours in Delhi NCR?
+   Answer: Yes. Our logistics network is optimized for NCR traffic patterns. We use advanced route planning to ensure meals arrive on time, every time.
+
+3. Can we customize menus for dietary preferences?
+   Answer: Absolutely. Our app allows employees to set preferences (Veg, Non-Veg, Jain, Keto, etc.), and our menus rotate daily to prevent boredom.
+
+4. What is the minimum order size?
+   Answer: We typically work with companies having 50+ employees to ensure the best value and service levels.
+
+5. How does the subsidy process work?
+   Answer: You set the subsidy rules (e.g., 50% off or fixed amount) in the HR dashboard. It's automatically applied when employees order. We bill the company for the subsidized portion monthly.
+
+### Contact Section
+Contact form and information for quote requests
+
+## Privacy Policy (/privacy-policy)
+Comprehensive privacy policy covering:
+- Information collection (personal info, dietary preferences, usage data)
+- How information is used
+- Data sharing and disclosure policies
+- Data security measures
+- User rights
+- Contact information for privacy concerns
+
+## Terms of Service (/terms)
+Terms of service covering:
+- Agreement to terms
+- Services provided (daily meal delivery, menu customization, HR dashboard)
+- User accounts
+- Ordering and payment terms
+- Cancellation and refunds
+- Intellectual property rights
+- Limitation of liability
+- Governing law (India)
+
+# Key Services
+
+## Corporate Meal Subscriptions
+- Daily meal delivery to corporate offices
+- Managed meal program with full operational support
+- Self-operated ISO-certified kitchens
+- Dietitian-curated menus
+- Employee ordering platform
+- HR dashboard for subsidy management and billing
+- Temperature-controlled logistics
+- Real-time feedback and analytics
+
+## Service Areas
+Primary coverage: Delhi NCR
+- Noida
+- Gurugram
+- Delhi
+
+# Technical Details
+
+## Platform Features
+- Employee mobile app for ordering
+- HR dashboard for management
+- Automated subsidy processing
+- Payment integration
+- Real-time analytics and reporting
+- Feedback collection system
+
+## Quality Standards
+- ISO-certified kitchens
+- FSSAI compliance
+- Strict hygiene protocols
+- Regular quality audits
+- Temperature-controlled delivery
+- Fresh daily preparation
+
+## Dietary Options
+- Vegetarian
+- Non-Vegetarian
+- Jain
+- Keto
+- Custom dietary preferences
+- Daily rotating menus
+
+# Business Model
+- B2B focused (corporate clients)
+- Minimum 50+ employees
+- Managed meal program
+- Recurring subscription model
+- Corporate billing with subsidy management
+- Zero administrative overhead for clients
+
+# Value Propositions
+1. Self-operated kitchens ensure quality and consistency
+2. One unified platform for all meal management needs
+3. Healthy, dietitian-curated meals for employee wellness
+4. Full operational management (cooking to payments)
+5. Data-driven insights for optimization
+6. Zero administrative burden on HR teams
+7. Scalable and consistent service delivery
+
+# Keywords
+corporate meal subscriptions, managed meal program, self-operated kitchens, healthy office meals, employee food solution, office lunch delivery, B2B food service, workplace dining, dietitian-curated meals, employee wellness platform, office food delivery, corporate food service, Folksmeal, Delhi NCR meal delivery, corporate catering, employee meal benefits
+
+# Last Updated
+2025-12-15
+

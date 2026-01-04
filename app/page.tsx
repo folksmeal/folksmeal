@@ -9,8 +9,15 @@ import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
+import type { Metadata } from "next";
 
 import { MealShowcase } from "@/components/sections/MealShowcase";
+
+export const metadata: Metadata = {
+    alternates: {
+        canonical: "/",
+    },
+};
 
 export default function Home() {
   return (
