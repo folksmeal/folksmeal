@@ -32,13 +32,13 @@ export function Navbar() {
         >
             <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2 cursor-pointer">
-                    <div className="relative h-8 w-auto">
+                    <div className="relative h-10 w-auto">
                         <Image
                             src="/logo-small.png"
                             alt="Folksmeal Logo"
                             width={40}
                             height={40}
-                            className="h-8 w-auto object-contain lg:hidden invert"
+                            className="h-full w-auto object-contain lg:hidden"
                             priority
                         />
                         <Image
@@ -46,7 +46,7 @@ export function Navbar() {
                             alt="Folksmeal Logo"
                             width={150}
                             height={40}
-                            className="h-8 w-auto object-contain hidden lg:block invert"
+                            className="h-full w-auto object-contain hidden lg:block"
                             priority
                         />
                     </div>

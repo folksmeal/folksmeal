@@ -28,7 +28,7 @@ export function Footer() {
                                 alt="Folksmeal Logo"
                                 width={150}
                                 height={40}
-                                className="h-10 w-auto object-contain invert"
+                                className="h-10 w-auto object-contain"
                             />
                         </Link>
                         <p className="text-slate-600 leading-relaxed max-w-md text-lg mt-2">
@@ -81,7 +81,7 @@ export function Footer() {
                         <ul className="space-y-6">
                             {footerContactInfo.map((info, index) => (
                                 <li key={index} className="flex items-start gap-4 group">
-                                    <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-white border border-primary/20 flex items-center justify-center text-primary group-hover:border-primary group-hover:shadow-sm transition-all duration-300">
+                                    <div className="shrink-0 w-10 h-10 rounded-xl bg-white border border-primary/20 flex items-center justify-center text-primary group-hover:border-primary group-hover:shadow-sm transition-all duration-300">
                                         {info.icon}
                                     </div>
                                     <div className="flex-1 pt-0.5">
