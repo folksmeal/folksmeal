@@ -11,7 +11,7 @@ const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index:
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="group relative h-full bg-white p-6 border border-primary/20 hover:border-primary/20 hover:shadow-md transition-[border-color,box-shadow] duration-500 flex flex-col cursor-pointer rounded-2xl"
+            className="group relative h-full bg-white p-6 border border-primary/20 hover:border-primary/20 hover:bg-hover-bg hover:shadow-md transition-[border-color,box-shadow,background-color] duration-500 flex flex-col cursor-pointer rounded-2xl"
         >
             {/* Header */}
             <div className="flex items-center gap-4 mb-6 relative z-10">
@@ -87,8 +87,8 @@ export function Comparison() {
                         <span className="text-sm text-primary font-bold tracking-wide uppercase">Competitive Analysis</span>
                     </div>
 
-                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
-                        The Folksmeal <span className="text-primary">Advantage</span>
+                    <h2 className="text-3xl md:text-5xl font-bold text-primary mb-4 tracking-tight">
+                        The Folksmeal Advantage
                     </h2>
 
                     <p className="text-lg text-slate-600 leading-relaxed">

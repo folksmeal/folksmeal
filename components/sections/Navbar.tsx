@@ -24,9 +24,9 @@ export function Navbar() {
     return (
         <header
             className={cn(
-                "fixed top-0 left-0 right-0 z-50 transition-[background-color,backdrop-filter,border-color,padding] duration-300 py-4",
+                "fixed top-0 left-0 right-0 z-50 transition-[background-color,backdrop-filter,border-color,padding] duration-300 py-4 border-b border-transparent",
                 isScrolled
-                    ? "bg-white/70 backdrop-blur-md border-b border-black/5"
+                    ? "bg-white/70 backdrop-blur-md border-black/5"
                     : "bg-transparent"
             )}
         >
@@ -34,19 +34,11 @@ export function Navbar() {
                 <Link href="/" className="flex items-center gap-2 cursor-pointer">
                     <div className="relative h-10 w-auto">
                         <Image
-                            src="/logo-small.png"
-                            alt="Folksmeal Logo"
-                            width={40}
-                            height={40}
-                            className="h-full w-auto object-contain lg:hidden"
-                            priority
-                        />
-                        <Image
                             src="/logo-large.png"
                             alt="Folksmeal Logo"
                             width={150}
                             height={40}
-                            className="h-full w-auto object-contain hidden lg:block"
+                            className="h-full w-auto object-contain"
                             priority
                         />
                     </div>
@@ -75,7 +67,7 @@ export function Navbar() {
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="md:hidden text-foreground cursor-pointer p-2 hover:bg-secondary/10 rounded-lg transition-colors"
+                    className="md:hidden text-foreground cursor-pointer p-2 hover:bg-hover-bg rounded-lg transition-colors"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                     {isMobileMenuOpen ? <MdClose className="text-primary" /> : <MdMenu />}

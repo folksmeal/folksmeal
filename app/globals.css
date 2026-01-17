@@ -24,14 +24,8 @@
   --forest-dark: #3A4A3A;
   --olive: #4F624F;
 
-  /* Premium Gradient Stops */
-  --gradient-start: #455645;
-  --gradient-mid: #4F624F;
-  --gradient-end: #9FAF8F;
-}
-
-html {
-  scroll-behavior: smooth;
+  /* UI States */
+  --hover-bg: #f5f7f2;
 }
 
 @theme inline {
@@ -54,6 +48,7 @@ html {
   --color-forest: var(--forest);
   --color-forest-dark: var(--forest-dark);
   --color-olive: var(--olive);
+  --color-hover-bg: var(--hover-bg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 

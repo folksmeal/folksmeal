@@ -44,7 +44,7 @@ export const BentoGridItem = ({
             borderRadius="1.5rem"
             containerClassName={className}
             className={cn(
-                "h-full w-full p-6 flex flex-col justify-between space-y-4 bg-white/80 hover:bg-white border border-primary/20 backdrop-blur-xl transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)]",
+                "h-full w-full p-6 flex flex-col justify-between space-y-4 bg-white/80 hover:bg-hover-bg border border-primary/20 backdrop-blur-xl transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)]",
                 contentClassName
             )}
             borderClassName={borderClassName}

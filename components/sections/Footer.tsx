@@ -40,7 +40,7 @@ export function Footer() {
                                 href="https://linkedin.com/company/folksmeal"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-10 h-10 rounded-full bg-white border border-primary/20 flex items-center justify-center text-primary hover:bg-secondary/10 hover:border-primary hover:shadow-md transition-all duration-300"
+                                className="w-10 h-10 rounded-full bg-white border border-primary/20 flex items-center justify-center text-primary hover:bg-hover-bg hover:border-primary hover:shadow-md transition-all duration-300"
                             >
                                 <FaLinkedinIn className="w-5 h-5" />
                             </Link>

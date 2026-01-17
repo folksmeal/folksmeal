@@ -9,7 +9,7 @@ export function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     return (
-        <section id="faq" className="py-24 bg-white">
+        <section id="faq" className="py-24 bg-slate-50">
             <div className="container mx-auto px-6 md:px-12 max-w-3xl">
                 <div className="text-center mb-16">
                     <motion.h2
@@ -17,16 +17,16 @@ export function FAQ() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight"
+                        className="text-3xl md:text-5xl font-bold text-primary mb-4 tracking-tight"
                     >
-                        Frequently Asked <span className="text-primary">Questions</span>
+                        Frequently Asked Questions
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.1 }}
-                        className="text-slate-600 text-lg"
+                        className="text-muted-foreground text-lg"
                     >
                         Everything you need to know about Folksmeal and our corporate meal programs.
                     </motion.p>
@@ -40,13 +40,13 @@ export function FAQ() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.4, delay: index * 0.05 }}
-                            className="border border-primary/20 rounded-2xl bg-slate-50/50 overflow-hidden transition-[background-color,border-color,box-shadow] hover:bg-secondary/10"
+                            className="border border-primary/20 rounded-2xl bg-white overflow-hidden transition-[background-color] hover:bg-hover-bg"
                         >
                             <button
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                                className="w-full flex items-center justify-between p-4 text-left cursor-pointer group"
+                                className="w-full flex items-center justify-between px-5 py-3 text-left cursor-pointer group"
                             >
-                                <span className={`text-base font-bold transition-colors ${openIndex === index ? "text-primary" : "text-slate-900"}`}>
+                                <span className={`text-base font-bold transition-colors ${openIndex === index ? "text-primary" : "text-foreground"}`}>
                                     {faq.question}
                                 </span>
                                 <div className={`ml-6 shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all ${openIndex === index ? "bg-primary text-white rotate-180" : "bg-primary/10 text-primary"}`}>
@@ -61,7 +61,7 @@ export function FAQ() {
                                         exit={{ height: 0, opacity: 0 }}
                                         transition={{ duration: 0.3, ease: "easeInOut" }}
                                     >
-                                        <div className="px-6 pb-6 text-slate-600 leading-relaxed text-sm">
+                                        <div className="px-5 pb-4 text-muted-foreground leading-relaxed text-sm">
                                             {faq.answer}
                                         </div>
                                     </motion.div>

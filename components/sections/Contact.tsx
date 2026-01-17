@@ -75,8 +75,8 @@ export function Contact() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5 }}
                         >
-                            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight text-center lg:text-left">
-                                Get Started with <span className="text-primary">Folksmeal</span>
+                            <h2 className="text-3xl md:text-5xl font-bold text-primary mb-4 tracking-tight text-center lg:text-left">
+                                Get Started with Folksmeal
                             </h2>
                             <p className="text-slate-600 text-lg leading-relaxed mb-8 text-center lg:text-left">
                                 Transform your office dining experience today. Fill out the form, and our team will get back to you with a customized plan within 24 hours.

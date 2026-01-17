@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-20">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-20">
             <div className="absolute inset-0 w-full h-full z-0">
                 <div className="absolute inset-0 bg-linear-to-b from-primary/5 via-transparent to-transparent" />
             </div>
@@ -26,11 +26,11 @@ export function Hero() {
                         transition={{ duration: 0.5 }}
                         className="text-center lg:text-left"
                     >
-                        <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-tight mb-8 text-slate-900 leading-[1.2]">
-                            Redefining Corporate Meals for <span className="text-primary">India's Workforce</span>
+                        <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold tracking-tight mb-8 text-primary leading-[1.2]">
+                            Redefining Corporate Meals for India's Workforce
                         </h1>
 
-                        <p className="text-lg xl:text-xl 2xl:text-2xl text-slate-600 mb-10 leading-normal">
+                        <p className="text-base xl:text-lg 2xl:text-xl text-muted-foreground mb-10 leading-normal">
                             Healthy, hygienic, and dietitian-curated meals delivered fresh daily. We help organizations improve employee productivity and wellness.
                         </p>
 
