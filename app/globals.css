@@ -25,7 +25,7 @@
   --olive: #4F624F;
 
   /* UI States */
-  --hover-bg: #f5f7f2;
+  --hover-bg: #fcfdfa;
 }
 
 @theme inline {
@@ -67,12 +67,15 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
   -moz-osx-font-smoothing: grayscale;
 }
 

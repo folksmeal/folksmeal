@@ -145,7 +145,7 @@ export function Contact() {
                                     <Button
                                         variant="outline"
                                         onClick={() => setIsSuccess(false)}
-                                        className="border-primary/20 text-primary hover:bg-secondary/10"
+                                        className="border-primary/20 text-primary hover:bg-hover-bg"
                                     >
                                         Send Another Message
                                     </Button>

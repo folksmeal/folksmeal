@@ -40,11 +40,11 @@ export function FAQ() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.4, delay: index * 0.05 }}
-                            className="border border-primary/20 rounded-2xl bg-white overflow-hidden transition-[background-color] hover:bg-hover-bg"
+                            className="border border-primary/20 rounded-2xl bg-white overflow-hidden transition-[background-color] hover:bg-hover-bg cursor-pointer"
+                            onClick={() => setOpenIndex(openIndex === index ? null : index)}
                         >
-                            <button
-                                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                                className="w-full flex items-center justify-between px-5 py-3 text-left cursor-pointer group"
+                            <div
+                                className="w-full flex items-center justify-between px-5 py-3 text-left group"
                             >
                                 <span className={`text-base font-bold transition-colors ${openIndex === index ? "text-primary" : "text-foreground"}`}>
                                     {faq.question}
@@ -52,7 +52,7 @@ export function FAQ() {
                                 <div className={`ml-6 shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all ${openIndex === index ? "bg-primary text-white rotate-180" : "bg-primary/10 text-primary"}`}>
                                     {openIndex === index ? <MdRemove className="w-4 h-4" /> : <MdAdd className="w-4 h-4" />}
                                 </div>
-                            </button>
+                            </div>
                             <AnimatePresence>
                                 {openIndex === index && (
                                     <motion.div
