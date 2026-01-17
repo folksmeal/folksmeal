@@ -15,7 +15,7 @@ const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index:
         >
             {/* Header */}
             <div className="flex items-center gap-4 mb-6 relative z-10">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
                     {feature.icon}
                 </div>
                 <div className="flex-1">
@@ -25,10 +25,10 @@ const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index:
             </div>
 
             {/* Comparison Grid */}
-            <div className="space-y-4 relative z-10 flex-grow">
+            <div className="space-y-4 relative z-10 grow">
                 {/* Caterers */}
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3">
-                    <div className="flex-shrink-0 w-full sm:w-32 text-xs font-bold text-slate-400 uppercase tracking-wider pt-1">
+                    <div className="shrink-0 w-full sm:w-32 text-xs font-bold text-slate-400 uppercase tracking-wider pt-1">
                         Caterers
                     </div>
                     <div className="flex-1">
@@ -38,7 +38,7 @@ const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index:
 
                 {/* Aggregators */}
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3">
-                    <div className="flex-shrink-0 w-full sm:w-32 text-xs font-bold text-slate-400 uppercase tracking-wider pt-1">
+                    <div className="shrink-0 w-full sm:w-32 text-xs font-bold text-slate-400 uppercase tracking-wider pt-1">
                         Aggregators
                     </div>
                     <div className="flex-1">
@@ -48,7 +48,7 @@ const ComparisonCard = ({ feature, index }: { feature: ComparisonFeature; index:
 
                 {/* Folksmeal - Highlighted */}
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 pt-3 border-t border-primary/20">
-                    <div className="flex-shrink-0 w-full sm:w-32 text-xs font-bold text-primary uppercase tracking-wider pt-1">
+                    <div className="shrink-0 w-full sm:w-32 text-xs font-bold text-primary uppercase tracking-wider pt-1">
                         Folksmeal
                     </div>
                     <div className="flex-1 w-full">
@@ -70,7 +70,7 @@ export function Comparison() {
             {/* Ambient background blobs */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
                 <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
+                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
             </div>
 
             <div className="container mx-auto px-6 md:px-12 relative z-10">
@@ -87,7 +87,7 @@ export function Comparison() {
                         <span className="text-sm text-primary font-bold tracking-wide uppercase">Competitive Analysis</span>
                     </div>
 
-                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tighter">
+                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
                         The Folksmeal <span className="text-primary">Advantage</span>
                     </h2>
 

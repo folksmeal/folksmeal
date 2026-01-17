@@ -15,7 +15,7 @@ export function Features() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tighter">
+                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
                             Redefining <span className="text-primary">Corporate Dining</span>
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto text-lg">

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { MdMenu, MdClose } from "react-icons/md";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -75,10 +75,10 @@ export function Navbar() {
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="md:hidden text-foreground cursor-pointer p-2 hover:bg-black/5 rounded-lg transition-colors"
+                    className="md:hidden text-foreground cursor-pointer p-2 hover:bg-secondary/10 rounded-lg transition-colors"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
-                    {isMobileMenuOpen ? <X className="text-primary" /> : <Menu />}
+                    {isMobileMenuOpen ? <MdClose className="text-primary" /> : <MdMenu />}
                 </button>
             </div>
 

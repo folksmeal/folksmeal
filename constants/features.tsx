@@ -1,5 +1,5 @@
 import React from "react";
-import { Utensils, Smartphone, Leaf, BarChart2, ShieldCheck } from "lucide-react";
+import { MdRestaurant, MdSmartphone, MdEco, MdBarChart, MdVerifiedUser } from "react-icons/md";
 import { motion } from "framer-motion";
 
 export const features = [
@@ -7,7 +7,7 @@ export const features = [
         title: "Self-Operated Kitchens",
         description: "We own our kitchens, ensuring standardized recipes, strict hygiene, and consistent taste every day.",
         header: (
-            <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-orange-500/5 to-red-500/5 border border-orange-500/10 flex items-center justify-center relative overflow-hidden group">
+            <div className="flex-1 w-full h-full min-h-24 rounded-xl bg-linear-to-br from-orange-500/5 to-red-500/5 border border-orange-500/10 flex items-center justify-center relative overflow-hidden group">
                 <div className="absolute inset-0 bg-grid-white/[0.02]" />
 
                 {/* Sophisticated Quality Control Dashboard */}
@@ -31,8 +31,8 @@ export const features = [
                             />
 
                             {/* Main icon container */}
-                            <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500/20 to-red-500/20 border border-orange-500/30 flex items-center justify-center backdrop-blur-sm shadow-[0_8px_32px_rgba(249,115,22,0.15)]">
-                                <Utensils className="h-6 w-6 text-orange-400" />
+                            <div className="relative w-14 h-14 rounded-xl bg-linear-to-br from-orange-500/20 to-red-500/20 border border-orange-500/30 flex items-center justify-center backdrop-blur-sm shadow-[0_8px_32px_rgba(249,115,22,0.15)]">
+                                <MdRestaurant className="h-6 w-6 text-orange-400" />
 
                                 {/* Quality badge */}
                                 <motion.div
@@ -78,7 +78,7 @@ export const features = [
                         {[0.6, 0.8, 0.5, 0.9, 0.7, 0.85, 0.75].map((height, i) => (
                             <motion.div
                                 key={i}
-                                className="w-1 bg-gradient-to-t from-orange-500/40 to-orange-400/60 rounded-t-sm"
+                                className="w-1 bg-linear-to-t from-orange-500/40 to-orange-400/60 rounded-t-sm"
                                 initial={{ height: 0 }}
                                 whileInView={{ height: `${height * 100}%` }}
                                 transition={{
@@ -109,7 +109,7 @@ export const features = [
                         </div>
                         <div className="h-0.5 w-full bg-orange-500/10 rounded-full overflow-hidden">
                             <motion.div
-                                className="h-full bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.4)]"
+                                className="h-full bg-linear-to-r from-orange-500 via-orange-400 to-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.4)]"
                                 initial={{ width: "0%" }}
                                 whileInView={{ width: "100%" }}
                                 transition={{ delay: 0.7, duration: 1.2, ease: "easeOut" }}
@@ -174,14 +174,14 @@ export const features = [
                 </div>
             </div>
         ),
-        icon: <Utensils className="h-4 w-4 text-orange-500" />,
+        icon: <MdRestaurant className="h-4 w-4 text-orange-500" />,
         className: "md:col-span-2",
     },
     {
         title: "Unified Ordering Platform",
         description: "One app for employees to order and HR to manage subsidies and billing.",
         header: (
-            <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-blue-500/5 to-cyan-500/5 border border-blue-500/10 flex items-center justify-center relative overflow-hidden">
+            <div className="flex-1 w-full h-full min-h-24 rounded-xl bg-linear-to-br from-blue-500/5 to-cyan-500/5 border border-blue-500/10 flex items-center justify-center relative overflow-hidden">
                 {/* Floating UI Layers */}
                 <motion.div
                     initial={{ y: 0 }}
@@ -212,14 +212,14 @@ export const features = [
                 </motion.div>
             </div>
         ),
-        icon: <Smartphone className="h-4 w-4 text-blue-500" />,
+        icon: <MdSmartphone className="h-4 w-4 text-blue-500" />,
         className: "md:col-span-1",
     },
     {
         title: "Healthy & Curated Menus",
         description: "Balanced, low-oil, high-protein meals designed for workplace productivity.",
         header: (
-            <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-green-500/5 to-emerald-500/5 border border-green-500/10 flex items-center justify-center relative overflow-hidden">
+            <div className="flex-1 w-full h-full min-h-24 rounded-xl bg-linear-to-br from-green-500/5 to-emerald-500/5 border border-green-500/10 flex items-center justify-center relative overflow-hidden">
                 {/* Macro Nutrient Visualization */}
                 <div className="relative w-full h-full flex items-center justify-center gap-4 p-4">
                     {/* Protein Ring */}
@@ -253,7 +253,7 @@ export const features = [
                             </div>
                             <div className="h-1.5 w-full bg-emerald-500/10 rounded-full overflow-hidden">
                                 <motion.div
-                                    className="h-full bg-gradient-to-r from-emerald-400 to-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.4)]"
+                                    className="h-full bg-linear-to-r from-emerald-400 to-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.4)]"
                                     initial={{ width: 0 }}
                                     whileInView={{ width: "80%" }}
                                     transition={{ duration: 1, delay: 0.3 }}
@@ -269,7 +269,7 @@ export const features = [
                             </div>
                             <div className="h-1.5 w-full bg-green-500/10 rounded-full overflow-hidden">
                                 <motion.div
-                                    className="h-full bg-gradient-to-r from-green-400 to-green-500 shadow-[0_0_8px_rgba(34,197,94,0.4)]"
+                                    className="h-full bg-linear-to-r from-green-400 to-green-500 shadow-[0_0_8px_rgba(34,197,94,0.4)]"
                                     initial={{ width: 0 }}
                                     whileInView={{ width: "60%" }}
                                     transition={{ duration: 1, delay: 0.5 }}
@@ -285,7 +285,7 @@ export const features = [
                             </div>
                             <div className="h-1.5 w-full bg-teal-500/10 rounded-full overflow-hidden">
                                 <motion.div
-                                    className="h-full bg-gradient-to-r from-teal-400 to-teal-500 shadow-[0_0_8px_rgba(20,184,166,0.4)]"
+                                    className="h-full bg-linear-to-r from-teal-400 to-teal-500 shadow-[0_0_8px_rgba(20,184,166,0.4)]"
                                     initial={{ width: 0 }}
                                     whileInView={{ width: "5%" }}
                                     transition={{ duration: 1, delay: 0.7 }}
@@ -296,14 +296,14 @@ export const features = [
                 </div>
             </div>
         ),
-        icon: <Leaf className="h-4 w-4 text-green-500" />,
+        icon: <MdEco className="h-4 w-4 text-green-500" />,
         className: "md:col-span-1",
     },
     {
         title: "Data-Driven Insights",
         description: "Predictive demand planning to reduce waste and optimize menus.",
         header: (
-            <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-purple-500/5 to-pink-500/5 border border-purple-500/10 flex items-end justify-center p-4 relative overflow-hidden">
+            <div className="flex-1 w-full h-full min-h-24 rounded-xl bg-linear-to-br from-purple-500/5 to-pink-500/5 border border-purple-500/10 flex items-end justify-center p-4 relative overflow-hidden">
                 {/* Smooth Curve Graph */}
                 <div className="w-full h-16 relative">
                     <svg viewBox="0 0 100 40" className="w-full h-full overflow-visible" preserveAspectRatio="none">
@@ -343,14 +343,14 @@ export const features = [
                 </div>
             </div>
         ),
-        icon: <BarChart2 className="h-4 w-4 text-purple-500" />,
+        icon: <MdBarChart className="h-4 w-4 text-purple-500" />,
         className: "md:col-span-2",
     },
     {
         title: "Real-Time Feedback",
         description: "3-minute feedback loop for continuous improvement.",
         header: (
-            <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-yellow-500/5 to-amber-500/5 border border-yellow-500/10 flex items-center justify-center relative overflow-hidden">
+            <div className="flex-1 w-full h-full min-h-24 rounded-xl bg-linear-to-br from-yellow-500/5 to-amber-500/5 border border-yellow-500/10 flex items-center justify-center relative overflow-hidden">
                 {/* Pulse/Signal Abstract */}
                 <div className="flex gap-1 items-end h-8">
                     {[0.4, 0.7, 1, 0.6, 0.8].map((h, i) => (
@@ -377,14 +377,14 @@ export const features = [
                 </motion.div>
             </div>
         ),
-        icon: <ShieldCheck className="h-4 w-4 text-yellow-500" />,
+        icon: <MdVerifiedUser className="h-4 w-4 text-yellow-500" />,
         className: "md:col-span-2",
     },
     {
         title: "Eco-Friendly",
         description: "Biodegradable packaging and sustainable practices.",
         header: (
-            <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-teal-500/5 to-green-500/5 border border-teal-500/10 flex items-center justify-center relative overflow-hidden">
+            <div className="flex-1 w-full h-full min-h-24 rounded-xl bg-linear-to-br from-teal-500/5 to-green-500/5 border border-teal-500/10 flex items-center justify-center relative overflow-hidden">
                 {/* Recycling/Cycle Abstract */}
                 <div className="relative w-16 h-16">
                     <motion.div
@@ -402,13 +402,13 @@ export const features = [
                             animate={{ scale: [1, 1.1, 1] }}
                             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                         >
-                            <Leaf className="h-5 w-5 text-teal-500/80" />
+                            <MdEco className="h-5 w-5 text-teal-500/80" />
                         </motion.div>
                     </div>
                 </div>
             </div>
         ),
-        icon: <Leaf className="h-4 w-4 text-teal-500" />,
+        icon: <MdEco className="h-4 w-4 text-teal-500" />,
         className: "md:col-span-1",
     },
 ];

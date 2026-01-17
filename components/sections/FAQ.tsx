@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Minus } from "lucide-react";
+import { MdAdd, MdRemove } from "react-icons/md";
 import { faqs } from "@/constants/faq";
 
 export function FAQ() {
@@ -17,7 +17,7 @@ export function FAQ() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tighter"
+                        className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight"
                     >
                         Frequently Asked <span className="text-primary">Questions</span>
                     </motion.h2>
@@ -40,7 +40,7 @@ export function FAQ() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.4, delay: index * 0.05 }}
-                            className="border border-primary/20 rounded-2xl bg-slate-50/50 overflow-hidden transition-[background-color,border-color,box-shadow] hover:bg-white"
+                            className="border border-primary/20 rounded-2xl bg-slate-50/50 overflow-hidden transition-[background-color,border-color,box-shadow] hover:bg-secondary/10"
                         >
                             <button
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -49,8 +49,8 @@ export function FAQ() {
                                 <span className={`text-base font-bold transition-colors ${openIndex === index ? "text-primary" : "text-slate-900"}`}>
                                     {faq.question}
                                 </span>
-                                <div className={`ml-6 flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all ${openIndex === index ? "bg-primary text-white rotate-180" : "bg-primary/10 text-primary"}`}>
-                                    {openIndex === index ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                                <div className={`ml-6 shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all ${openIndex === index ? "bg-primary text-white rotate-180" : "bg-primary/10 text-primary"}`}>
+                                    {openIndex === index ? <MdRemove className="w-4 h-4" /> : <MdAdd className="w-4 h-4" />}
                                 </div>
                             </button>
                             <AnimatePresence>

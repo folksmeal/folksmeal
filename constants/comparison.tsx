@@ -1,5 +1,5 @@
 import React from "react";
-import { Shield, Heart, Zap, BarChart3, TrendingUp, Rocket } from "lucide-react";
+import { MdSecurity, MdFavorite, MdFlashOn, MdInsertChart, MdTrendingUp, MdRocketLaunch } from "react-icons/md";
 
 export interface ComparisonFeature {
     icon: React.ReactNode;
@@ -12,7 +12,7 @@ export interface ComparisonFeature {
 
 export const comparisonFeatures: ComparisonFeature[] = [
     {
-        icon: <Shield className="w-5 h-5" />,
+        icon: <MdSecurity className="w-5 h-5" />,
         category: "Quality Control",
         description: "End-to-End food safety and consistency",
         Caterers: "Inconsistent quality across vendors",
@@ -20,7 +20,7 @@ export const comparisonFeatures: ComparisonFeature[] = [
         folksmeal: "Self-operated kitchens with strict hygiene protocols"
     },
     {
-        icon: <Heart className="w-5 h-5" />,
+        icon: <MdFavorite className="w-5 h-5" />,
         category: "Nutrition Focus",
         description: "Dietitian-approved balanced meals",
         Caterers: "Generic vendor menus",
@@ -28,7 +28,7 @@ export const comparisonFeatures: ComparisonFeature[] = [
         folksmeal: "Curated daily menus for office wellness"
     },
     {
-        icon: <Zap className="w-5 h-5" />,
+        icon: <MdFlashOn className="w-5 h-5" />,
         category: "Technology",
         description: "Seamless integration and automation",
         Caterers: "Manual coordination required",
@@ -36,7 +36,7 @@ export const comparisonFeatures: ComparisonFeature[] = [
         folksmeal: "One platform for ordering, payments & subsidies"
     },
     {
-        icon: <BarChart3 className="w-5 h-5" />,
+        icon: <MdInsertChart className="w-5 h-5" />,
         category: "Data & Insights",
         description: "Employee wellness and engagement metrics",
         Caterers: "No data or reporting",
@@ -44,7 +44,7 @@ export const comparisonFeatures: ComparisonFeature[] = [
         folksmeal: "Real-time usage & feedback analytics"
     },
     {
-        icon: <TrendingUp className="w-5 h-5" />,
+        icon: <MdTrendingUp className="w-5 h-5" />,
         category: "Business Model",
         description: "Predictable recurring revenue",
         Caterers: "Event-based, irregular income",
@@ -52,7 +52,7 @@ export const comparisonFeatures: ComparisonFeature[] = [
         folksmeal: "Managed meal program with stable operations"
     },
     {
-        icon: <Rocket className="w-5 h-5" />,
+        icon: <MdRocketLaunch className="w-5 h-5" />,
         category: "Scalability",
         description: "Growth without compromising quality",
         Caterers: "Limited by vendor capacity",

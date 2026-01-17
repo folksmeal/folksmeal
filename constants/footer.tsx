@@ -1,14 +1,14 @@
-import { MapPin, Mail } from "lucide-react";
+import { MdLocationOn, MdEmail } from "react-icons/md";
 import { CONTACT_ADDRESS, CONTACT_EMAIL } from "./contact";
 
 export const footerContactInfo = [
     {
-        icon: <MapPin className="w-4 h-4" />,
+        icon: <MdLocationOn className="w-4 h-4" />,
         label: "Address",
         value: CONTACT_ADDRESS
     },
     {
-        icon: <Mail className="w-4 h-4" />,
+        icon: <MdEmail className="w-4 h-4" />,
         label: "Email",
         value: CONTACT_EMAIL,
         href: `mailto:${CONTACT_EMAIL}`

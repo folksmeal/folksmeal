@@ -14,9 +14,9 @@ import type { Metadata } from "next";
 import { MealShowcase } from "@/components/sections/MealShowcase";
 
 export const metadata: Metadata = {
-    alternates: {
-        canonical: "/",
-    },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function Home() {

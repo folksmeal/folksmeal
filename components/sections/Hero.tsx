@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { MdArrowForward } from "react-icons/md";
 import Link from "next/link";
 
 import Image from "next/image";
@@ -26,7 +26,7 @@ export function Hero() {
                         transition={{ duration: 0.5 }}
                         className="text-center lg:text-left"
                     >
-                        <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-tighter mb-8 text-slate-900 leading-[1.2]">
+                        <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-tight mb-8 text-slate-900 leading-[1.2]">
                             Redefining Corporate Meals for <span className="text-primary">India's Workforce</span>
                         </h1>
 
@@ -37,7 +37,7 @@ export function Hero() {
                         <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4">
                             <Link href="#contact">
                                 <Button className="group" size="lg">
-                                    Request a Quote <ArrowRight className="ml-2 h-4 w-4 group-hover:ml-4 transition-all duration-300 ease-in-out" />
+                                    Request a Quote <MdArrowForward className="ml-2 h-4 w-4 group-hover:ml-4 transition-all duration-300 ease-in-out" />
                                 </Button>
                             </Link>
                         </div>
@@ -50,7 +50,7 @@ export function Hero() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="relative h-[300px] sm:h-[400px] lg:h-[500px] w-full"
                     >
-                        <div className="relative h-full w-full flex items-center justify-center drop-shadow-[0_10px_30px_rgba(76,175,80,0.1)] hover:scale-105 transition-transform duration-500">
+                        <div className="relative h-full w-full flex items-center justify-center drop-shadow-[0_10px_30px_rgba(69,86,69,0.15)] hover:scale-105 transition-transform duration-500">
                             <Image
                                 src="/hero-bowl.png"
                                 alt="Meal Bowl"

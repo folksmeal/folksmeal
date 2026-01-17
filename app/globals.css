@@ -1,16 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
-  --primary: #4CAF50;
-  --primary-foreground: #ffffff;
-  --secondary: #d5d5d5;
-  --secondary-foreground: #0f172a;
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
-  --border: #e2e8f0;
-  --ring: #4CAF50;
+  /* Core Colors from Logo */
+  --background: #FDFBF7;
+  --foreground: #2D3A2D;
+  --primary: #455645;
+  --primary-foreground: #FDFBF7;
+  --secondary: #9FAF8F;
+  --secondary-foreground: #2D3A2D;
+  --muted: #EFE2C2;
+  --muted-foreground: #4F624F;
+  --border: #D4C9A8;
+  --ring: #455645;
+
+  /* Extended Premium Palette */
+  --accent: #4F624F;
+  --accent-foreground: #FDFBF7;
+  --cream: #EFE2C2;
+  --cream-light: #F7F1E3;
+  --sage: #9FAF8F;
+  --sage-light: #C5D4B8;
+  --forest: #455645;
+  --forest-dark: #3A4A3A;
+  --olive: #4F624F;
+
+  /* Premium Gradient Stops */
+  --gradient-start: #455645;
+  --gradient-mid: #4F624F;
+  --gradient-end: #9FAF8F;
 }
 
 html {
@@ -28,6 +45,15 @@ html {
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
   --color-ring: var(--ring);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-cream: var(--cream);
+  --color-cream-light: var(--cream-light);
+  --color-sage: var(--sage);
+  --color-sage-light: var(--sage-light);
+  --color-forest: var(--forest);
+  --color-forest-dark: var(--forest-dark);
+  --color-olive: var(--olive);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
@@ -57,14 +83,14 @@ body {
 
 @utility bg-grid-black {
   background-size: 40px 40px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(69, 86, 69, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(69, 86, 69, 0.05) 1px, transparent 1px);
 }
 
 @utility bg-grid-small-black {
   background-size: 20px 20px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(69, 86, 69, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(69, 86, 69, 0.05) 1px, transparent 1px);
 }
 
 /* Scrollbar Customization */
@@ -80,4 +106,10 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--primary) !important;
   border-radius: 3px !important;
+}
+
+/* Premium Selection Colors */
+::selection {
+  background: var(--sage);
+  color: var(--foreground);
 }

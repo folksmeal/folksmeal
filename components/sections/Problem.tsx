@@ -13,7 +13,7 @@ export function Problem() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tighter mb-4"
+                        className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4"
                     >
                         The Hidden Cost of <span className="text-primary">Unmanaged Meals</span>
                     </motion.h2>
@@ -36,7 +36,7 @@ export function Problem() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group p-8 rounded-2xl bg-slate-50 border border-primary/20 hover:bg-white hover:shadow-md transition-[background-color,border-color,box-shadow] duration-500 cursor-pointer"
+                            className="group p-8 rounded-2xl bg-slate-50 border border-primary/20 hover:bg-secondary/10 hover:shadow-md transition-[background-color,border-color,box-shadow] duration-500 cursor-pointer"
                         >
                             <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
                                 <problem.icon className="h-6 w-6 text-primary" />

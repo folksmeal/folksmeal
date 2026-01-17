@@ -40,7 +40,7 @@ export function MealShowcase() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tighter mb-4"
+                        className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4"
                     >
                         Culinary Excellence, <span className="text-primary">Delivered Daily</span>
                     </motion.h2>

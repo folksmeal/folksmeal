@@ -9,7 +9,7 @@ export function HowItWorks() {
             {/* Background Gradients */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
                 <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
+                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
             </div>
 
             <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
@@ -18,7 +18,7 @@ export function HowItWorks() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tighter mb-4"
+                        className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4"
                     >
                         How It <span className="text-primary">Works</span>
                     </motion.h2>
@@ -43,7 +43,7 @@ export function HowItWorks() {
                             className="group relative cursor-pointer h-full p-6 sm:p-8 bg-white border border-primary/20 hover:shadow-md transition-[border-color,box-shadow] duration-500 overflow-hidden flex flex-col rounded-3xl"
                         >
                             {/* Number Watermark */}
-                            <div className="absolute right-0 -top-2 sm:-top-4 text-7xl sm:text-8xl md:text-9xl font-bold text-slate-100 group-hover:text-primary/5 transition-colors select-none pr-2">
+                            <div className="absolute right-0 -top-2 sm:-top-4 text-7xl sm:text-8xl md:text-9xl font-bold text-slate-100 group-hover:text-secondary transition-colors duration-500 select-none pr-2">
                                 {index + 1}
                             </div>
 

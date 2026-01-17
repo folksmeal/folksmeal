@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, ArrowRight } from "lucide-react";
+import { MdCheck, MdArrowForward } from "react-icons/md";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -23,7 +23,7 @@ export function Solution() {
                         transition={{ duration: 0.5 }}
                         className="self-start lg:sticky lg:top-24"
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tighter leading-tight mb-4 text-center lg:text-left">
+                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight mb-4 text-center lg:text-left">
                             A Comprehensive Corporate <span className="text-primary">Meal Partner</span>
                         </h2>
 
@@ -39,10 +39,10 @@ export function Solution() {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
-                                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-white hover:scale-[1.02] cursor-pointer border border-primary/20 hover:border-primary/20 transition-[scale] duration-300 ease-in-out"
+                                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-secondary/10 hover:scale-[1.02] cursor-pointer border border-primary/20 hover:border-primary/20 transition-[scale] duration-300 ease-in-out"
                                 >
                                     <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 border border-primary/20">
-                                        <Check className="h-3.5 w-3.5 text-primary" />
+                                        <MdCheck className="h-3.5 w-3.5 text-primary" />
                                     </div>
                                     <span className="text-slate-700 font-medium">{item}</span>
                                 </motion.div>
@@ -59,7 +59,7 @@ export function Solution() {
                             <Link href="#contact" className="rounded-xl">
                                 <Button className="group">
                                     Request a Quote{" "}
-                                    <ArrowRight className="ml-2 h-4 w-4 group-hover:ml-4 transition-all duration-300 ease-in-out" />
+                                    <MdArrowForward className="ml-2 h-4 w-4 group-hover:ml-4 transition-all duration-300 ease-in-out" />
                                 </Button>
                             </Link>
                         </motion.div>
@@ -79,7 +79,7 @@ export function Solution() {
                             {/* glass card */}
                             <div
                                 className={[
-                                    "relative h-auto md:aspect-square rounded-[2rem] overflow-hidden",
+                                    "relative h-auto md:aspect-square rounded-4xl overflow-hidden",
                                     "bg-primary/1 backdrop-blur-xl",
                                     "border border-primary/20",
                                     "p-6 flex flex-col gap-5",
@@ -232,7 +232,7 @@ export function Solution() {
                                                         <div className="flex-1">
                                                             <div className="text-[11px] text-slate-700 font-medium">{s.label}</div>
                                                             {i !== 3 && (
-                                                                <div className="mt-1 h-[1px] w-full bg-linear-to-r from-slate-100 to-transparent" />
+                                                                <div className="mt-1 h-px w-full bg-linear-to-r from-slate-100 to-transparent" />
                                                             )}
                                                         </div>
 
@@ -243,7 +243,7 @@ export function Solution() {
 
                                             <div className="mt-3 flex items-center justify-between text-[10px] text-slate-400">
                                                 <span>Serving counters: 6</span>
-                                                <span className="text-blue-500 font-bold">Peak 12:40–1:10</span>
+                                                <span className="text-primary font-bold">Peak 12:40–1:10</span>
                                             </div>
                                         </div>
 

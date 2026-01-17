@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Linkedin, Instagram, Twitter } from "lucide-react";
+import { FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 import { footerContactInfo, footerQuickLinks } from "@/constants/footer";
 import Image from "next/image";
@@ -42,7 +42,7 @@ export function Footer() {
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 rounded-full bg-white border border-primary/20 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary hover:shadow-md transition-all duration-300"
                             >
-                                <Linkedin className="w-5 h-5" />
+                                <FaLinkedinIn className="w-5 h-5" />
                             </Link>
                         </div>
                     </motion.div>
