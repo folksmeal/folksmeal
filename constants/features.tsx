@@ -150,7 +150,7 @@ export const features = [
                         />
                     ))}
 
-                    {/* Corner accent lines */}
+                    {/* Corner accent lines - Left */}
                     <svg className="absolute inset-0 w-full h-full pointer-events-none" preserveAspectRatio="none">
                         <motion.path
                             d="M 10 10 L 30 10 M 10 10 L 10 30"
@@ -161,8 +161,11 @@ export const features = [
                             whileInView={{ pathLength: 1, opacity: 1 }}
                             transition={{ delay: 0.8, duration: 0.6 }}
                         />
+                    </svg>
+                    {/* Corner accent lines - Right */}
+                    <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ transform: "scaleX(-1)" }} preserveAspectRatio="none">
                         <motion.path
-                            d="M 90% 10 L 100% 10 L 100% 30"
+                            d="M 10 10 L 30 10 M 10 10 L 10 30"
                             stroke="rgba(249, 115, 22, 0.2)"
                             strokeWidth="1"
                             fill="none"
