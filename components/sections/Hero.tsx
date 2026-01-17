@@ -26,11 +26,11 @@ export function Hero() {
                         transition={{ duration: 0.5 }}
                         className="text-center lg:text-left"
                     >
-                        <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold tracking-tight mb-8 text-primary leading-[1.2]">
+                        <h1 className="text-[40px] xl:text-5xl 2xl:text-[64px] font-bold tracking-tight mb-8 text-primary leading-[1.2]">
                             Redefining Corporate Meals for India's Workforce
                         </h1>
 
-                        <p className="text-base xl:text-lg 2xl:text-xl text-muted-foreground mb-10 leading-normal">
+                        <p className="text-lg xl:text-xl 2xl:text-2xl text-muted-foreground mb-10 leading-normal">
                             Healthy, hygienic, and dietitian-curated meals delivered fresh daily. We help organizations improve employee productivity and wellness.
                         </p>
 
