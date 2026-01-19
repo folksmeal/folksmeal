@@ -24,7 +24,7 @@ export function Hero() {
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="text-center lg:text-left"
+                        className="min-h-[calc(100vh-80px)] lg:min-h-0 flex flex-col justify-center text-center lg:text-left"
                     >
                         <h1 className="text-[40px] xl:text-5xl 2xl:text-[64px] font-bold tracking-tight mb-8 text-primary leading-[1.2]">
                             Redefining Corporate Meals for India's Workforce
@@ -34,10 +34,10 @@ export function Hero() {
                             Healthy, hygienic, and dietitian-curated meals delivered fresh daily. We help organizations improve employee productivity and wellness.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4">
+                        <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center lg:items-start gap-4">
                             <Link href="#contact">
                                 <Button className="group" size="lg">
-                                    Request a Quote <MdArrowForward className="ml-2 h-4 w-4 group-hover:ml-4 transition-all duration-300 ease-in-out" />
+                                    Schedule a Demo <MdArrowForward className="ml-2 h-4 w-4 group-hover:ml-4 transition-all duration-300 ease-in-out" />
                                 </Button>
                             </Link>
                         </div>

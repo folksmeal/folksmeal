@@ -60,7 +60,7 @@ export function Navbar() {
                 <div className="hidden md:flex items-center gap-4">
                     <Link href="/#contact">
                         <Button>
-                            Request Quote
+                            Get Pricing
                         </Button>
                     </Link>
                 </div>
@@ -95,7 +95,7 @@ export function Navbar() {
                                 </Link>
                             ))}
                             <Link href="/#contact" className="mt-2">
-                                <Button className="w-full">Request Quote</Button>
+                                <Button className="w-full">Get Pricing</Button>
                             </Link>
                         </div>
                     </motion.div>
