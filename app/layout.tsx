@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     default: "Folksmeal | Managed Office Meal Programs & Employee Food Solutions",
     template: "%s | Folksmeal"
   },
-  description: "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.",
+  description: "FolksMeal is a managed corporate meal brand that helps companies manage everyday office food seamlessly.",
   keywords: [
     "corporate meal subscriptions",
     "managed meal program",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     url: "https://www.folksmeal.com",
     siteName: "Folksmeal",
     title: "Folksmeal | Managed Office Meal Programs & Employee Food Solutions",
-    description: "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.",
+    description: "FolksMeal is a managed corporate meal brand that helps companies manage everyday office food seamlessly.",
     images: [
       {
         url: "https://www.folksmeal.com/og-image.png",
@@ -77,10 +77,10 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@folksmeal",
-    creator: "@folksmeal",
+    site: "@FolksMealIndia",
+    creator: "@FolksMealIndia",
     title: "Folksmeal | Managed Office Meal Programs & Employee Food Solutions",
-    description: "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.",
+    description: "FolksMeal is a managed corporate meal brand that helps companies manage everyday office food seamlessly.",
     images: ["https://www.folksmeal.com/og-image.png"],
   },
 

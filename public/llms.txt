@@ -4,7 +4,7 @@
 # Site Metadata
 Site Name: Folksmeal
 Site URL: https://www.folksmeal.com
-Description: Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery, empowering businesses to prioritize employee wellbeing with minimal effort.
+Description: FolksMeal is a managed corporate meal brand that helps companies manage everyday office food seamlessly.
 Industry: Corporate Meal Subscriptions / B2B Food Service
 Target Audience: Corporate offices, HR departments, businesses with 50+ employees
 Geographic Focus: Delhi NCR (Noida, Gurugram, Delhi), India
@@ -15,9 +15,10 @@ Phone: +91 96507 96929
 WhatsApp: +91 96507 96929
 Address: Building No 439, 1st Floor, Aghapur, Sector 41, Near HP Petrol Pump, Noida 201303
 Social Media:
-  - Twitter: @folksmeal
+  - Twitter: @FolksMealIndia
   - LinkedIn: https://www.linkedin.com/company/folksmeal
-  - Twitter URL: https://twitter.com/folksmeal
+  - Twitter URL: https://x.com/FolksMealIndia
+  - Instagram URL: https://www.instagram.com/folksmealindia
 
 # Main Pages
 

@@ -13,7 +13,7 @@ export function StructuredData() {
         logo: `${BASE_URL}/logo-large.png`,
         image: `${BASE_URL}/og-image.png`,
         description:
-            "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens. Our managed meal program ensures seamless delivery and better employee wellbeing.",
+            "FolksMeal is a managed corporate meal brand that helps companies manage everyday office food seamlessly.",
         telephone: CONTACT_PHONE,
         email: CONTACT_EMAIL,
         address: {
@@ -47,7 +47,8 @@ export function StructuredData() {
         ],
         sameAs: [
             "https://www.linkedin.com/company/folksmeal",
-            "https://twitter.com/folksmeal",
+            "https://x.com/FolksMealIndia",
+            "https://www.instagram.com/folksmealindia",
         ],
     };
 
@@ -58,7 +59,7 @@ export function StructuredData() {
         url: BASE_URL,
         name: "Folksmeal",
         description:
-            "Folksmeal delivers healthy and hygienic meals to workplaces through self-operated kitchens.",
+            "FolksMeal is a managed corporate meal brand that helps companies manage everyday office food seamlessly.",
         publisher: {
             "@id": `${BASE_URL}/#organization`,
         },
@@ -87,7 +88,7 @@ export function StructuredData() {
             },
         ],
         description:
-            "Dietitian-curated office meals delivered daily through ISO-standard kitchens with zero admin overhead.",
+            "FolksMeal is a managed corporate meal brand that helps companies manage everyday office food seamlessly.",
         offers: {
             "@type": "Offer",
             availability: "https://schema.org/InStock",

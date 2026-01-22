@@ -32,8 +32,7 @@ export function Footer() {
                             />
                         </Link>
                         <p className="text-slate-600 leading-relaxed max-w-md text-lg mt-2">
-                            Transforming corporate wellness through healthy, dietitian-curated meals.
-                            We help organizations improve employee productivity and well-being with zero admin hassle.
+                            FolksMeal is a managed corporate meal brand that helps companies manage everyday office food seamlessly.
                         </p>
                         <div className="flex gap-4 mt-4">
                             <Link
@@ -43,6 +42,22 @@ export function Footer() {
                                 className="w-10 h-10 rounded-full bg-white border border-primary/20 flex items-center justify-center text-primary hover:bg-hover-bg hover:border-primary hover:shadow-md transition-all duration-300"
                             >
                                 <FaLinkedinIn className="w-5 h-5" />
+                            </Link>
+                            <Link
+                                href="https://x.com/FolksMealIndia"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 rounded-full bg-white border border-primary/20 flex items-center justify-center text-primary hover:bg-hover-bg hover:border-primary hover:shadow-md transition-all duration-300"
+                            >
+                                <FaTwitter className="w-5 h-5" />
+                            </Link>
+                            <Link
+                                href="https://www.instagram.com/folksmealindia"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 rounded-full bg-white border border-primary/20 flex items-center justify-center text-primary hover:bg-hover-bg hover:border-primary hover:shadow-md transition-all duration-300"
+                            >
+                                <FaInstagram className="w-5 h-5" />
                             </Link>
                         </div>
                     </motion.div>

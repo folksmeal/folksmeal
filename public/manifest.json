@@ -1,7 +1,7 @@
 {
   "name": "Folksmeal - Corporate Meal Subscriptions",
   "short_name": "Folksmeal",
-  "description": "Healthy, dietitian-curated office meals delivered daily. Simplify corporate food with Folksmeal's tech-enabled subscription platform.",
+  "description": "FolksMeal is a managed corporate meal brand that helps companies manage everyday office food seamlessly.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#08090a",
