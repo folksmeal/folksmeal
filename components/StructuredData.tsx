@@ -1,17 +1,23 @@
 import { CONTACT_EMAIL, CONTACT_PHONE } from "@/constants/contact";
 import { faqs } from "@/constants/faq";
+import { LocalBusiness, WebSite, Service, FAQPage, BreadcrumbList, WithContext } from "schema-dts";
+import { JsonLd } from "./JsonLd";
 
 const BASE_URL = "https://www.folksmeal.com";
 
 export function StructuredData() {
-    const localBusinessSchema = {
+    const localBusinessSchema: WithContext<LocalBusiness> = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "@id": `${BASE_URL}/#organization`,
         name: "Folksmeal",
         url: BASE_URL,
         logo: `${BASE_URL}/logo-large.png`,
-        image: `${BASE_URL}/og-image.png`,
+        image: [
+            `${BASE_URL}/og-image.png`,
+            `${BASE_URL}/logo-large.png`
+        ],
+        priceRange: "$$",
         description:
             "FolksMeal is a managed corporate meal brand that helps companies manage everyday office food seamlessly.",
         telephone: CONTACT_PHONE,
@@ -52,7 +58,7 @@ export function StructuredData() {
         ],
     };
 
-    const websiteSchema = {
+    const websiteSchema: WithContext<WebSite> = {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "@id": `${BASE_URL}/#website`,
@@ -65,7 +71,7 @@ export function StructuredData() {
         },
     };
 
-    const serviceSchema = {
+    const serviceSchema: WithContext<Service> = {
         "@context": "https://schema.org",
         "@type": "Service",
         "@id": `${BASE_URL}/#service`,
@@ -96,7 +102,7 @@ export function StructuredData() {
         },
     };
 
-    const faqSchema =
+    const faqSchema: WithContext<FAQPage> | null =
         faqs?.length > 0
             ? {
                 "@context": "https://schema.org",
@@ -113,34 +119,26 @@ export function StructuredData() {
             }
             : null;
 
+    const breadcrumbSchema: WithContext<BreadcrumbList> = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: BASE_URL,
+            },
+        ],
+    };
+
     return (
         <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(localBusinessSchema),
-                }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(websiteSchema),
-                }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(serviceSchema),
-                }}
-            />
-            {faqSchema && (
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(faqSchema),
-                    }}
-                />
-            )}
+            <JsonLd schema={localBusinessSchema} />
+            <JsonLd schema={websiteSchema} />
+            <JsonLd schema={serviceSchema} />
+            {faqSchema && <JsonLd schema={faqSchema} />}
+            <JsonLd schema={breadcrumbSchema} />
         </>
     );
 }
