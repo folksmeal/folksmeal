@@ -75,7 +75,7 @@ export function StructuredData() {
         "@context": "https://schema.org",
         "@type": "Service",
         "@id": `${BASE_URL}/#service`,
-        serviceType: "Corporate Meal Subscriptions",
+        serviceType: "Managed Corporate Meal Services",
         provider: {
             "@id": `${BASE_URL}/#organization`,
         },

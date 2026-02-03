@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function WhatsAppWidget() {
     const message = encodeURIComponent(
-        "Hi Folksmeal, I’m interested in corporate meal subscriptions. Please share pricing and next steps."
+        "Hi FolksMeal, I'm interested in your managed corporate meal services. Please share more details."
     );
     const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE_HREF}?text=${message}`;
 
