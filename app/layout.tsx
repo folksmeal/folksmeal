@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     "office food delivery",
     "corporate food service",
     "Folksmeal",
+    "Folks meal",
   ],
   authors: [{ name: "Folksmeal" }],
   creator: "Folksmeal",
